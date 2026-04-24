@@ -19,6 +19,7 @@ import json
 import logging
 import os
 import re
+import shutil
 import subprocess
 import sys
 import threading
@@ -835,6 +836,9 @@ def _run_stage_once(
 
     if stage == "transcribe":
         from transcriber import transcribe
+
+        if _reuse_base_transcript_for_tagged_run(video_path, working_dir, working_tag, cfg):
+            return
         transcribe(video_path, str(working_dir), cfg)
         return
     if stage == "llm":
@@ -873,6 +877,47 @@ def _run_stage_once(
         return
 
     raise RuntimeError(f"Unknown stage: {stage}")
+
+
+def _reuse_base_transcript_for_tagged_run(
+    video_path: str,
+    tagged_working_dir: Path,
+    working_tag: str | None,
+    cfg,
+) -> bool:
+    if not working_tag:
+        return False
+
+    from transcriber import load_cached_transcript, transcript_cache_is_compatible
+
+    stem = Path(video_path).stem
+    base_working_dir = Path(cfg.WORKING_DIR) / _build_versioned_stem(stem, None)
+    if base_working_dir.resolve() == tagged_working_dir.resolve():
+        return False
+
+    tagged_transcript = load_cached_transcript(str(tagged_working_dir))
+    if tagged_transcript is not None and transcript_cache_is_compatible(tagged_transcript, cfg):
+        log.info(f"Loading cached transcript from {tagged_working_dir / 'transcript.json'}")
+        return True
+
+    base_transcript_path = base_working_dir / "transcript.json"
+    base_transcript = load_cached_transcript(str(base_working_dir))
+    if base_transcript is None:
+        return False
+    if not transcript_cache_is_compatible(base_transcript, cfg):
+        log.info(
+            "Base transcript exists but is older, raw, or invalid; "
+            f"redo will transcribe again: {base_transcript_path}"
+        )
+        return False
+
+    tagged_working_dir.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(base_transcript_path, tagged_working_dir / "transcript.json")
+    log.info(
+        "Reusing compatible aligned transcript from first run for redo: "
+        f"{base_transcript_path} -> {tagged_working_dir / 'transcript.json'}"
+    )
+    return True
 
 
 if __name__ == "__main__":
