@@ -1,0 +1,25 @@
+[
+  {
+    "start": 187.1,
+    "end": 225.6,
+    "score": 9.0,
+    "hook": "Manfaat Skincare PROYA",
+    "reason": "Menggambarkan manfaat produk secara jelas dan detail.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan, memudarkan bekas dirawat"
+      },
+      {
+        "word": "flek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0001"
+  }
+]

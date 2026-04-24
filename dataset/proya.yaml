@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 6
+names: ['cleanser', 'eye cream', 'host face', 'serum', 'skin cream', 'toner']
+
+roboflow:
+  workspace: denys-workspace-nsfol
+  project: my-first-project-e06by
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/denys-workspace-nsfol/my-first-project-e06by/dataset/3

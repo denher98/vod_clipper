@@ -1,0 +1,516 @@
+[
+  {
+    "start": 1468.3,
+    "end": 1506.8,
+    "score": 9.0,
+    "hook": "KULIT KERING HILANG, CERAH DATANG",
+    "reason": "Mengatasi masalah kulit kering dan menjelaskan manfaat produk secara detail.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "muka itu suka kering"
+      },
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "melembatkan kulit wajah kamu"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KULIT KERING HILANG, CERAH DATANG",
+      "subtext": "Dipakai rutin tiap hari",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 3909.8,
+    "end": 3948.3,
+    "score": 9.0,
+    "hook": "AWALNYA MATA PANDA, SEKARANG SAMAR",
+    "reason": "Menjelaskan manfaat produk secara detail dan langsung",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "bagus",
+        "category": "attention_benefits",
+        "context": "produk bagus"
+      },
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "aman untuk mata panda akibat bergadang"
+      },
+      {
+        "word": "memudarkan pigment gelap",
+        "category": "attention_benefits",
+        "context": "mampu memudarkan pigment gelap"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA MATA PANDA, SEKARANG SAMAR",
+      "subtext": "Sekali pakai langsung keliatan",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 8342.1,
+    "end": 8380.6,
+    "score": 9.0,
+    "hook": "FLEK HITAM AUTO CERAH",
+    "reason": "Menggambarkan manfaat produk secara detail dan spesifik",
+    "product": "Serum Vitamin C C Dairy",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajahnya lagi kusam"
+      },
+      {
+        "word": "mencerahkan kulit",
+        "category": "attention_benefits",
+        "context": "bisa untuk mencerahkan kulit wajah kamu yang lagi kusamnya"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "pain_problem",
+        "context": "bekas jerawat atau flek hitam nih kalian harus cobain si serum Vitamin C C Dairy"
+      },
+      {
+        "word": "mencerahkan kulit",
+        "category": "attention_benefits",
+        "context": "bisa untuk mencerahkan kulit wajah kamu yang lagi kusamnya"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "FLEK HITAM AUTO CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 1619.9,
+    "end": 1649.4,
+    "score": 8.0,
+    "hook": "MALU KARENA KUSAM? CEK INI",
+    "reason": "Mengatasi masalah kulit kemerahan dan memberikan informasi diskon.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kemerahan",
+        "category": "pain_problem",
+        "context": "kulit wajahnya kemerahan"
+      },
+      {
+        "word": "cocok",
+        "category": "attention_benefits",
+        "context": "cukup banget untuk kulit wajahnya kemerahan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "MALU KARENA KUSAM? CEK INI",
+      "subtext": "Tanpa treatment mahal",
+      "cta": "RAHASIANYA DI SINI??"
+    },
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 2042.5,
+    "end": 2081.0,
+    "score": 8.0,
+    "hook": "FLEK HITAM PARAH JADI CERAH",
+    "reason": "Menggambarkan manfaat produk untuk melembabkan kulit kering dan meredakan iritasi.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "malembatkan kulit wajah"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "merdakan kemerahan atau irritasi pada kulit wajah kamu"
+      },
+      {
+        "word": "menyamarkan noda hitam",
+        "category": "attention_benefits",
+        "context": "menyamarkan noda-noda hitam seperti dekas-bekas jerawat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "FLEK HITAM PARAH JADI CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 4966.8,
+    "end": 5005.3,
+    "score": 8.0,
+    "hook": "KEMERAHAN PARAH JADI LEMBAP",
+    "reason": "Clip ini menjelaskan berbagai manfaat toner spray seperti melembapkan kulit, meredakan kemerahan dan iritasi serta mencerahkan wajah.",
+    "product": "toner spray 360 de rajatnya",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "bisa merdakan kemerahan"
+      },
+      {
+        "word": "mencerahkan wajah",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KEMERAHAN PARAH JADI LEMBAP",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 5453.1,
+    "end": 5491.6,
+    "score": 8.0,
+    "hook": "KOK BISA BERSIH GINI?",
+    "reason": "Menggambarkan manfaat produk yang jelas dan nyata.",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "ke tarik",
+        "category": "pain_problem",
+        "context": "kulit wajah kamu ke tarik"
+      },
+      {
+        "word": "bikin kering",
+        "category": "pain_problem",
+        "context": "bikin kering kulit wajah kamu"
+      },
+      {
+        "word": "kelembapan alaminya",
+        "category": "attention_benefits",
+        "context": "menjaga kelembapan alaminya pada kulit wajah kamu"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KOK BISA BERSIH GINI?",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 5546.5,
+    "end": 5585.0,
+    "score": 8.0,
+    "hook": "KUSAM PARAH JADI CERAH",
+    "reason": "Mengandung manfaat produk dan cara pemakaian yang jelas.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "membersihkan",
+        "category": "attention_benefits",
+        "context": "membersihkan kulit wajah"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan wajah kamu"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KUSAM PARAH JADI CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 6300.9,
+    "end": 6339.4,
+    "score": 8.0,
+    "hook": "SEBELUMNYA FLEK HITAM, SEKARANG LEMBAP",
+    "reason": "Menjelaskan manfaat produk secara detail",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan noda hitam"
+      },
+      {
+        "word": "lembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan serta mengurangi pembengkakan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "SEBELUMNYA FLEK HITAM, SEKARANG LEMBAP",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 6588.6,
+    "end": 6627.1,
+    "score": 8.0,
+    "hook": "KEMERAHAN AUTO LEMBAP",
+    "reason": "Menggambarkan permasalahan kulit yang umum (kering, merah) dan solusinya dengan produk ini.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "membuat kulit lembut"
+      },
+      {
+        "word": "kemerahan",
+        "category": "pain_problem",
+        "context": "kulit kering dan merah"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KEMERAHAN AUTO LEMBAP",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 290.5,
+    "end": 329.0,
+    "score": 7.0,
+    "hook": "BEKAS JERAWAT -> LEBIH PUDAR",
+    "reason": "Menginformasikan penurunan harga produk dengan klaim manfaat yang jelas.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan wajah"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "BEKAS JERAWAT -> LEBIH PUDAR",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 408.2,
+    "end": 446.7,
+    "score": 7.0,
+    "hook": "KUSAM AUTO CERAH",
+    "reason": "Menginformasikan penurunan harga produk dengan klaim manfaat yang jelas.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "harganya turun",
+        "category": "attention_benefits",
+        "context": "harganya itu turun banget"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KUSAM AUTO CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 2157.3,
+    "end": 2195.8,
+    "score": 7.0,
+    "hook": "CUMA PAKAI INI, JADI CERAH",
+    "reason": "Menggambarkan fitur unik dari produk dan cara penggunaannya.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "toner spray 360 derajat",
+        "category": "attention_benefits",
+        "context": "toner spray 360 doar rajat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "CUMA PAKAI INI, JADI CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "RAHASIANYA DI SINI??"
+    },
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 2873.9,
+    "end": 2885.4,
+    "score": 7.0,
+    "hook": "CUMA PAKAI INI, JADI GLOWING",
+    "reason": "Menggambarkan masalah kulit kusam dan solusi dengan produk.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu lagi kusam"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "CUMA PAKAI INI, JADI GLOWING",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0014"
+  },
+  {
+    "start": 2939.5,
+    "end": 2978.0,
+    "score": 7.0,
+    "hook": "FLEK HITAM PARAH JADI CERAH",
+    "reason": "Menjelaskan manfaat produk dalam mencerahkan kulit yang kusam, meredakan bekas jerawat dan flek hitam.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajah yang kusamnya"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "FLEK HITAM PARAH JADI CERAH",
+      "subtext": "Tanpa treatment mahal",
+      "cta": "RAHASIANYA DI SINI??"
+    },
+    "clip_id": "clip_0015"
+  },
+  {
+    "start": 3605.6,
+    "end": 3644.1,
+    "score": 7.0,
+    "hook": "NODANYA MAKIN SAMAR",
+    "reason": "Menjelaskan manfaat produk secara rinci.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "mudarkan lingkaran hitam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa juga untuk mencerahkan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "NODANYA MAKIN SAMAR",
+      "subtext": "Tanpa treatment mahal",
+      "cta": "RAHASIANYA DI SINI??"
+    },
+    "clip_id": "clip_0016"
+  },
+  {
+    "start": 4518.9,
+    "end": 4557.4,
+    "score": 7.0,
+    "hook": "FLEK HITAM PARAH JADI SAMAR",
+    "reason": "Menggambarkan manfaat produk untuk mencerahkan kulit kusam, memudarkan bekas jerawat atau flek hitam.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit yang kusam"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "FLEK HITAM PARAH JADI SAMAR",
+      "subtext": "Dipakai rutin tiap hari",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0017"
+  },
+  {
+    "start": 5830.5,
+    "end": 5848.0,
+    "score": 7.0,
+    "hook": "DARI JERAWAT JADI GLOWING",
+    "reason": "Mengandung masalah kulit yang belum diatasi.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajah itu lagi kusam"
+      },
+      {
+        "word": "jerawat",
+        "category": "pain_problem",
+        "context": "bakas jerawat lekitam"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "DARI JERAWAT JADI GLOWING",
+      "subtext": "Tanpa treatment mahal",
+      "cta": "RAHASIANYA DI SINI??"
+    },
+    "clip_id": "clip_0018"
+  }
+]

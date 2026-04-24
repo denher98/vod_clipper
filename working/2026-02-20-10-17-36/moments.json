@@ -1,0 +1,191 @@
+[
+  {
+    "start": 7689.6,
+    "end": 7728.1,
+    "score": 9.0,
+    "hook": "PROYA Vitamin C: Kulit Glowing dan Cerah",
+    "reason": "Mengandung penjelasan manfaat produk yang jelas dan menggambarkan perubahan kulit setelah penggunaan.",
+    "product": "5X Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "auto glowing"
+      },
+      {
+        "word": "lembab",
+        "category": "attention_benefits",
+        "context": "lembab dan juga dia itu"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerakan seketika kulit"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 4106.8,
+    "end": 4145.3,
+    "score": 8.0,
+    "hook": "Vitamin C untuk Mencerahkan Kulit",
+    "reason": "Mengandung penjelasan manfaat produk yang jelas dan menjelaskan efek nyata vitamin C ke kulit.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "vitamin C mencerahkan"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "menyamarkan bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 6130.5,
+    "end": 6169.0,
+    "score": 8.0,
+    "hook": "Serum Vitamin C untuk kulit wajah",
+    "reason": "Menggambarkan manfaat produk secara jelas",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      },
+      {
+        "word": "flek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 7209.1,
+    "end": 7247.6,
+    "score": 8.0,
+    "hook": "Solusi Kulit Kering & Merah",
+    "reason": "Menjelaskan manfaat produk untuk kulit kering dan merah serta mendorong penonton untuk membeli.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu lagi kering"
+      },
+      {
+        "word": "merah",
+        "category": "pain_problem",
+        "context": "suka ke merahan nya"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "dia ini bisa untuk melembapkan kulit wajah kamu yang lagi kering nya"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 3794.5,
+    "end": 3833.0,
+    "score": 7.0,
+    "hook": "Vitamin C Mencerahkan Wajah",
+    "reason": "Menginformasikan manfaat Vitamin C dalam mencerahkan wajah dan mengatasi masalah kulit kusam.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan wajah kamu"
+      },
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajanya itu lagi kusam"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 6341.4,
+    "end": 6379.9,
+    "score": 7.0,
+    "hook": "Serum Vitamin C aman untuk semua jenis kulit",
+    "reason": "Menggambarkan manfaat produk secara jelas",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "semua jenis kulit",
+        "category": "attention_benefits",
+        "context": "aman untuk semua jenis kulit"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 7033.2,
+    "end": 7071.7,
+    "score": 7.0,
+    "hook": "Glow Up Kulit Sebelum Lebaran",
+    "reason": "Mendorong penonton untuk mengungkapkan masalah kulit mereka dan menjelaskan manfaat produk.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glow up",
+        "category": "attention_benefits",
+        "context": "sebelum lebaran kita sama-sama glow up nya"
+      },
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu lagi kering"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 9516.4,
+    "end": 9541.5,
+    "score": 7.0,
+    "hook": "Mencerahkan Wajah",
+    "reason": "Menjelaskan manfaat produk untuk kulit kusam",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "masalah kulit wajahnya lagi kusam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan wajah kamu"
+      }
+    ],
+    "clip_id": "clip_0008"
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "start": 3595.9,
+    "end": 3634.4,
+    "score": 9.0,
+    "hook": "CUMA 1 PRODUK INI...",
+    "reason": "Menggambarkan berbagai manfaat produk secara detail",
+    "product": "PROYA 5X Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "melembabkan kulit kering"
+      },
+      {
+        "word": "meredakan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkannya juga"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "CUMA 1 PRODUK INI...",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 4588.6,
+    "end": 4627.1,
+    "score": 9.0,
+    "hook": "MATA PANDA PARAH JADI SEGAR",
+    "reason": "Menjelaskan manfaat produk secara detail dan efektif.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "membantu memudarkan"
+      },
+      {
+        "word": "lingkaran hitam",
+        "category": "pain_problem",
+        "context": "lingkaran hitam atau juga pigment gelap di area bawah mata pandanya kamu ya cukup ambil ukuran kacang polong aja sebiji kacang polong ya lalu kalian bisa ditetepin ke bawah mata pandanya kalian ya beb"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "ini bisa untuk mencerahkan melembabkan serta bisa mengurangi pembengkakan pada area bawah mata pandanya kamu ya cukup ambil ukuran kacang polong aja sebiji kacang polong ya lalu kalian bisa ditetepin ke bawah mata pandanya kalian ya beb"
+      },
+      {
+        "word": "fresh",
+        "category": "attention_benefits",
+        "context": "ini tuh bantu area mata pandanya kamu itu akan terasa lebih freshnya beb"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "MATA PANDA PARAH JADI SEGAR",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 5490.2,
+    "end": 5528.7,
+    "score": 9.0,
+    "hook": "KUSAM AUTO CERAH",
+    "reason": "Menjelaskan manfaat produk secara detail dan spesifik.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "melembabkan kulit wajah kamu"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "dia juga bisa mencerahkan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KUSAM AUTO CERAH",
+      "subtext": "Dipakai rutin tiap hari",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 3908.7,
+    "end": 3947.2,
+    "score": 8.0,
+    "hook": "INI BUKAN FILTER, SAMAR",
+    "reason": "Penjelasan tentang hasil positif yang dapat diharapkan dari produk, termasuk mencerahkan dan memudarkan bekas jerawat.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit kusam"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "INI BUKAN FILTER, SAMAR",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 4962.5,
+    "end": 5001.0,
+    "score": 8.0,
+    "hook": "AWALNYA FLEK HITAM, SEKARANG SAMAR",
+    "reason": "Menggambarkan hasil positif dari penggunaan serum treatment pada masalah kulit kusam, bekas jerawat dan flek hitam.",
+    "product": "serum treatment",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "memudarkan bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA FLEK HITAM, SEKARANG SAMAR",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 5645.9,
+    "end": 5684.4,
+    "score": 8.0,
+    "hook": "MINYAKAN AUTO CERAH",
+    "reason": "Mengandung manfaat produk yang jelas untuk kulit berminyak.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "kulit wajahnya itu oiling gak usah khawatir"
+      },
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "kulit wajah kamu yang lagi keringnya"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "kulit wajah kamu seketika"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "MINYAKAN AUTO CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0006"
+  }
+]

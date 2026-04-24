@@ -1,0 +1,260 @@
+[
+  {
+    "start": 4259.1,
+    "end": 4297.6,
+    "score": 9.0,
+    "hook": "Redakan Kemerahan dengan PROYA",
+    "reason": "Menggambarkan manfaat produk yang jelas dan nyata.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "bisa meredakan kemerahannya"
+      },
+      {
+        "word": "mencerahkan kulit",
+        "category": "attention_benefits",
+        "context": "dan juga bisa mencerahkan"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 6818.9,
+    "end": 6857.4,
+    "score": 9.0,
+    "hook": "Vitamin C Proya Mencerahkan Kulit",
+    "reason": "Menggambarkan manfaat produk yang jelas dan langsung.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan kulit wajah kamu"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat atau flek hitam"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 8495.3,
+    "end": 8533.8,
+    "score": 9.0,
+    "hook": "Manfaat Sitmes PROYA",
+    "reason": "Menjelaskan manfaat produk secara detail dengan hasil yang jelas.",
+    "product": "Sitmes",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "nutrisi langsung cair",
+        "category": "attention_benefits",
+        "context": "bisa kasih nutrisi langsung cair"
+      },
+      {
+        "word": "lembab banget",
+        "category": "attention_benefits",
+        "context": "kulit jadi lembab banget"
+      },
+      {
+        "word": "mencerahkan seketika",
+        "category": "attention_benefits",
+        "context": "mencerahkan seketika"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 1837.9,
+    "end": 1876.4,
+    "score": 8.0,
+    "hook": "Facial Cleanser PROYA",
+    "reason": "Mengklaim produk membuat kulit lebih lembut dan cerah",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "smooth",
+        "category": "attention_benefits",
+        "context": "bikin wajah aku itu lebih smooth"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "dia juga bisa mencerahkan"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 3515.8,
+    "end": 3554.3,
+    "score": 8.0,
+    "hook": "Mencerahkan Kulit & Mengurangi Kemerahan",
+    "reason": "Menjelaskan manfaat produk secara rinci.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan pada kulit wajah kamu"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 3759.0,
+    "end": 3797.5,
+    "score": 8.0,
+    "hook": "Mencerahkan Kulit & Mengurangi Kemerahan",
+    "reason": "Menjelaskan manfaat produk secara rinci.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahannya juga"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 7132.7,
+    "end": 7171.2,
+    "score": 8.0,
+    "hook": "Serum Vitamin C Mencerahkan",
+    "reason": "Menggambarkan manfaat produk secara jelas",
+    "product": "serum vitamin c",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan"
+      },
+      {
+        "word": "memudarkan bekas jerawat",
+        "category": "attention_benefits",
+        "context": "bekas jerawat serum ini"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 7941.8,
+    "end": 7961.6,
+    "score": 8.0,
+    "hook": "Atalasa No.5 Meredakan Kemerahan",
+    "reason": "Menggambarkan manfaat produk dalam mengurangi kemerahan pada kulit.",
+    "product": "Atal Asa nomor 5",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "meredakan",
+        "category": "attention_benefits",
+        "context": "meredakan ke merahan"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerakannya juga bisa"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 931.3,
+    "end": 969.8,
+    "score": 7.0,
+    "hook": "Promo PROYA Facial Cleanser",
+    "reason": "Menjelaskan pilihan pembelian dan manfaat produk",
+    "product": "PROYA Facial Cleanser",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "bisa bikin kulit",
+        "category": "attention_benefits",
+        "context": "bisa bikin kulit jaram"
+      },
+      {
+        "word": "kelembapan alami",
+        "category": "attention_benefits",
+        "context": "menjaga kelembapan alaminya"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 1750.5,
+    "end": 1789.0,
+    "score": 7.0,
+    "hook": "Cegah Kulit Kering & Terkikis",
+    "reason": "Menyebut masalah dan solusi yang jelas",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu suka kering"
+      },
+      {
+        "word": "tertarik",
+        "category": "pain_problem",
+        "context": "pas lagi cuci mukanya"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 9954.1,
+    "end": 9992.6,
+    "score": 7.0,
+    "hook": "Meredakan Kemerahan & Mencerahkan Kulit",
+    "reason": "Menjelaskan manfaat produk secara langsung",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "meredakan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahannya"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0011"
+  }
+]

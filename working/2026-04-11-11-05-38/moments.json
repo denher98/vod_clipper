@@ -1,0 +1,219 @@
+[
+  {
+    "start": 32.7,
+    "end": 60.4,
+    "score": 9.0,
+    "hook": "Facial Cleanser: Bersihkan & Cerahkan Kulit",
+    "reason": "Menjelaskan manfaat produk dengan jelas dan spesifik.",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mengangkat",
+        "category": "attention_benefits",
+        "context": "mengangkat debu"
+      },
+      {
+        "word": "cerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 582.5,
+    "end": 621.0,
+    "score": 9.0,
+    "hook": "Manfaat Serum Vitamin C",
+    "reason": "Mengandung penjelasan manfaat produk yang jelas dan detail.",
+    "product": "serum 5x vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerakan",
+        "category": "attention_benefits",
+        "context": "mencerakan kulit wajah"
+      },
+      {
+        "word": "memudarkan bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      },
+      {
+        "word": "memudarkan flek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 123.7,
+    "end": 145.9,
+    "score": 8.0,
+    "hook": "Hydrating Toner: Melembapkan & Meredakan Kemerahan",
+    "reason": "Menjelaskan manfaat produk dengan jelas.",
+    "product": "hydrating toner",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit kering"
+      },
+      {
+        "word": "meredakan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 196.8,
+    "end": 218.6,
+    "score": 8.0,
+    "hook": "Serum Vitamin C: Cerahkan & Bersihkan Kulit",
+    "reason": "Menjelaskan manfaat produk dengan jelas.",
+    "product": "serum vitamin c",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit kusam"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 312.5,
+    "end": 351.0,
+    "score": 8.0,
+    "hook": "Eye Cream Proya - Manfaat Luar Biasa",
+    "reason": "Mencerahkan dan meratakan warna kulit serta memudarkan kemerahan mata panda.",
+    "product": "eye cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "meratakan warna kulit",
+        "category": "attention_benefits",
+        "context": "meratakan warna kulit"
+      },
+      {
+        "word": "memudarkan kemerahan",
+        "category": "attention_benefits",
+        "context": "memudarkan kemerahan mata panda"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 283.4,
+    "end": 303.5,
+    "score": 7.0,
+    "hook": "Skin Cream: Mengunci Skincare",
+    "reason": "Menjelaskan manfaat produk dengan jelas.",
+    "product": "skin cream",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mengunci",
+        "category": "attention_benefits",
+        "context": "mengunci skincare"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 417.9,
+    "end": 456.4,
+    "score": 7.0,
+    "hook": "Sheet Mask Proya - Solusi Darurat",
+    "reason": "Menyelamatkan kulit kering dan perawatan darurat dengan harga promo.",
+    "product": "sheet mask",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "penyelamat",
+        "category": "attention_benefits",
+        "context": "penyelamat darurat"
+      },
+      {
+        "word": "auto lembab",
+        "category": "attention_benefits",
+        "context": "kulit wajah auto lembab"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 511.2,
+    "end": 549.7,
+    "score": 7.0,
+    "hook": "Facial Cleanser Proya - Kulit Segar",
+    "reason": "Mencegah kulit kering saat mencuci wajah serta membersihkan dan mencerahkan kulit.",
+    "product": "facial cleanser",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "enggak bikin kering",
+        "category": "attention_benefits",
+        "context": "tidak membuat kulit kering"
+      },
+      {
+        "word": "mencerahkan dan membersihkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan dan membersihkan kulit"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 874.5,
+    "end": 913.0,
+    "score": 7.0,
+    "hook": "PROYA Vitamin C Mencerahkan Kulit",
+    "reason": "Menggambarkan manfaat produk secara jelas dan komposisinya.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit"
+      },
+      {
+        "word": "geloingkan",
+        "category": "attention_benefits",
+        "context": "menggeloingkan kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0009"
+  }
+]

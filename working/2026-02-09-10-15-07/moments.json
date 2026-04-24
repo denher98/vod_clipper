@@ -1,0 +1,762 @@
+[
+  {
+    "start": 4857.5,
+    "end": 4879.0,
+    "score": 10.0,
+    "hook": "Voucher 50rb Untuk Follower Baru",
+    "reason": "Mengumumkan penawaran khusus untuk follower baru yang bergabung.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "voucher",
+        "category": "result_proof",
+        "context": "voucher nail follower"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 1526.5,
+    "end": 1565.0,
+    "score": 9.0,
+    "hook": "Cara Pakai Facial Cleanser",
+    "reason": "Mengajarkan cara menggunakan produk dengan detail dan manfaatnya",
+    "product": "Facial Cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "lembap",
+        "category": "attention_benefits",
+        "context": "menjaga kelembapan kulit"
+      },
+      {
+        "word": "nyaman",
+        "category": "attention_benefits",
+        "context": "terasa nyaman dan enak"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 3971.0,
+    "end": 4009.5,
+    "score": 9.0,
+    "hook": "Promo Serum Vitamin C",
+    "reason": "Menawarkan diskon besar dan mendorong penonton untuk membeli langsung.",
+    "product": "Serum",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "tunggu apa lagi",
+        "category": "result_proof",
+        "context": "tunggu apa lagi"
+      },
+      {
+        "word": "60 persen",
+        "category": "result_proof",
+        "context": "diskon 60 persennya"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 4689.7,
+    "end": 4728.2,
+    "score": 9.0,
+    "hook": "Eye Cream PROYA Solusi Mata Panda",
+    "reason": "Menjelaskan dan mengajak penonton yang memiliki masalah mata panda untuk mencoba produk ini.",
+    "product": "Eye Cream",
+    "clip_type": "testimoni",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "mata panda",
+        "category": "pain_problem",
+        "context": "permasalahan mata panda"
+      },
+      {
+        "word": "lingkaran hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 6039.1,
+    "end": 6077.6,
+    "score": 9.0,
+    "hook": "Cara Pakai Cleanser",
+    "reason": "Demonstrasi cara menggunakan facial cleanser.",
+    "product": "Facial Cleansing",
+    "clip_type": "demo",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "bersih",
+        "category": "pain_problem",
+        "context": "sudah bersihnya"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 6250.3,
+    "end": 6288.8,
+    "score": 9.0,
+    "hook": "Diskon Spesial Sheet Mask",
+    "reason": "Menawarkan harga murah dan diskon besar.",
+    "product": "Sheet Mask",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "murah",
+        "category": "result_proof",
+        "context": "harganya murah banget loh"
+      },
+      {
+        "word": "diskon",
+        "category": "result_proof",
+        "context": "biskond 60 persennya"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 668.5,
+    "end": 707.0,
+    "score": 8.0,
+    "hook": "Diskon 60% dan voucher",
+    "reason": "Informasi penawaran harga dan diskon yang menarik untuk penonton.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "diskon",
+        "category": "result_proof",
+        "context": "mampu-mampu ada diskon"
+      },
+      {
+        "word": "voucher",
+        "category": "result_proof",
+        "context": "voucher new followers kita"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 971.8,
+    "end": 1010.3,
+    "score": 8.0,
+    "hook": "Diskon Spesial Hanya Untuk Kamu",
+    "reason": "Menawarkan penonton diskon khusus yang hanya berlaku selama livestream.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "harga murah",
+        "category": "result_proof",
+        "context": "harga paling murah"
+      },
+      {
+        "word": "live-nya aja",
+        "category": "result_proof",
+        "context": "berlaku selama saat aku lagi live-nya aja"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 1458.5,
+    "end": 1497.0,
+    "score": 8.0,
+    "hook": "Diskon 60% Facial Cleanser",
+    "reason": "Menginformasikan diskon besar dan fitur produk yang menarik",
+    "product": "Facial Cleanser",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "discount",
+        "category": "result_proof",
+        "context": "promosi discount 60%"
+      },
+      {
+        "word": "gratis onkir",
+        "category": "result_proof",
+        "context": "voucher gratis onkir"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 3173.2,
+    "end": 3211.7,
+    "score": 8.0,
+    "hook": "Cara Pakai Etalasenom",
+    "reason": "Menunjukkan cara tepat mengaplikasikan serum pada wajah.",
+    "product": "Serum",
+    "clip_type": "demo",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "gosok-gosok",
+        "category": "pain_problem",
+        "context": "jangan digosok-gosok, cukup di tep-tep aja"
+      },
+      {
+        "word": "merusak skin barrier",
+        "category": "pain_problem",
+        "context": "yang ada bisa merusak skin barrier pada kulit wajah kamunya sayang"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 3540.8,
+    "end": 3579.3,
+    "score": 8.0,
+    "hook": "Diskon Hanya Hari Ini",
+    "reason": "Mendorong penonton untuk membeli produk sebelum diskon berakhir.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "kembali normalnya",
+        "category": "result_proof",
+        "context": "harganya itu bakalan kembali normalnya"
+      }
+    ],
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 4487.5,
+    "end": 4518.0,
+    "score": 8.0,
+    "hook": "Diskon Besar Hanya di Toko Resmi",
+    "reason": "Penawaran diskon besar yang hanya tersedia di toko resmi.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "diskon",
+        "category": "result_proof",
+        "context": "indiskonse banyak ini"
+      },
+      {
+        "word": "tokol ofisial",
+        "category": "result_proof",
+        "context": "hanya di tokol proyel ofisial kita doang-nya"
+      }
+    ],
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 844.5,
+    "end": 875.0,
+    "score": 7.0,
+    "hook": "Mitos Vitamin C",
+    "reason": "Penjelasan tentang kelemahan produk vitamin C biasa yang bisa menimbulkan iritasi pada kulit.",
+    "product": "general",
+    "clip_type": "qna",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "iritasi",
+        "category": "pain_problem",
+        "context": "irritasi kulit wajah kami"
+      },
+      {
+        "word": "keasaman tinggi",
+        "category": "pain_problem",
+        "context": "tingginya keasaman"
+      }
+    ],
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 934.3,
+    "end": 972.8,
+    "score": 7.0,
+    "hook": "Ikuti Kami Untuk Mendapatkan Info Menarik",
+    "reason": "Memotivasi penonton untuk berinteraksi lebih lanjut dengan brand.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "follow",
+        "category": "result_proof",
+        "context": "bantu follow-follow dulu"
+      },
+      {
+        "word": "payment",
+        "category": "result_proof",
+        "context": "cekot dan payment-nya"
+      }
+    ],
+    "clip_id": "clip_0014"
+  },
+  {
+    "start": 1135.6,
+    "end": 1171.5,
+    "score": 7.0,
+    "hook": "Tidak Ada Yang Tahu Jika Kamu Tidak Mencoba",
+    "reason": "Mendorong penonton untuk berpartisipasi dalam komentar dan mendapatkan informasi.",
+    "product": "general",
+    "clip_type": "qna",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "komen-komen",
+        "category": "result_proof",
+        "context": "di komen-komen aja"
+      },
+      {
+        "word": "bantu ngejelasin",
+        "category": "result_proof",
+        "context": "aku bakal bantu ngejelasin"
+      }
+    ],
+    "clip_id": "clip_0015"
+  },
+  {
+    "start": 1750.5,
+    "end": 1789.0,
+    "score": 7.0,
+    "hook": "Cara Pakai Cleanser PROYA",
+    "reason": "Menunjukkan cara penggunaan cleanser dan manfaatnya untuk mencerahkan kulit.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan wajah kamu"
+      }
+    ],
+    "clip_id": "clip_0016"
+  },
+  {
+    "start": 1832.5,
+    "end": 1871.0,
+    "score": 7.0,
+    "hook": "Cleanser PROYA Aman dan Efektif",
+    "reason": "Mengulas manfaat dan keamanan cleanser.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "dia itu aman banget nih gunakannya"
+      }
+    ],
+    "clip_id": "clip_0017"
+  },
+  {
+    "start": 2337.4,
+    "end": 2375.9,
+    "score": 7.0,
+    "hook": "Solusi untuk kulit kering dan merah",
+    "reason": "Mengajak penonton dengan masalah kulit kering dan kemerahan, menunjukkan bahwa produk ini dapat membantu mengatasi masalah tersebut.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu lagi kering"
+      },
+      {
+        "word": "merah",
+        "category": "pain_problem",
+        "context": "kemerahan"
+      }
+    ],
+    "clip_id": "clip_0018"
+  },
+  {
+    "start": 2413.9,
+    "end": 2452.4,
+    "score": 7.0,
+    "hook": "Manfaat toner untuk kulit",
+    "reason": "Menggambarkan manfaat toner dalam melembabkan kulit dan mengunci kelembapan.",
+    "product": "toner",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "manfaat itu dapat untuk melembapkan kulit wajah kamu"
+      },
+      {
+        "word": "mengunci kelembapan",
+        "category": "attention_benefits",
+        "context": "dan juga mengunci kelembapan awal pada kulit wajah kamu"
+      }
+    ],
+    "clip_id": "clip_0019"
+  },
+  {
+    "start": 2478.5,
+    "end": 2517.0,
+    "score": 7.0,
+    "hook": "Gunakan toner sekarang",
+    "reason": "Mengingatkan penonton untuk menggunakan toner dan menjelaskan bahwa event sedang berlangsung.",
+    "product": "toner",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "jangan tunggu",
+        "category": "result_proof",
+        "context": "jangan tunggu dinanti-nanti"
+      },
+      {
+        "word": "mempung aku lagi ngadain perlomenya itu banyak banget",
+        "category": "result_proof",
+        "context": "memang aku lagi ngadain perlombaan"
+      }
+    ],
+    "clip_id": "clip_0020"
+  },
+  {
+    "start": 2958.3,
+    "end": 2996.8,
+    "score": 7.0,
+    "hook": "Etalasenom Nomor 2 Manfaatnya",
+    "reason": "Menggambarkan manfaat produk untuk kulit kering, merah, dan berpigmen.",
+    "product": "Serum",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahannya pada kulit"
+      }
+    ],
+    "clip_id": "clip_0021"
+  },
+  {
+    "start": 3077.7,
+    "end": 3116.2,
+    "score": 7.0,
+    "hook": "Etalasenom Travel Friendly",
+    "reason": "Menunjukkan cara menggunakan produk saat bepergian.",
+    "product": "Serum",
+    "clip_type": "demo",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "traveling",
+        "category": "pain_problem",
+        "context": "pakai etalnya, ya. Kalau misalnya kalian mau traveling"
+      },
+      {
+        "word": "kebesaran",
+        "category": "pain_problem",
+        "context": "botol itu kebesaran"
+      }
+    ],
+    "clip_id": "clip_0022"
+  },
+  {
+    "start": 3644.6,
+    "end": 3683.1,
+    "score": 7.0,
+    "hook": "Bantu Masalah Kulit Kamu",
+    "reason": "Mengajak penonton untuk berkomentar tentang masalah kulit mereka.",
+    "product": "general",
+    "clip_type": "qna",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "masalah kulit wajahnya itu lagi kusam"
+      },
+      {
+        "word": "bakas jerawat",
+        "category": "pain_problem",
+        "context": "ada bakas jerawat flek hitam"
+      }
+    ],
+    "clip_id": "clip_0023"
+  },
+  {
+    "start": 3799.4,
+    "end": 3837.9,
+    "score": 7.0,
+    "hook": "Manfaat Serum Vitamin C",
+    "reason": "Menggambarkan manfaat produk secara detail.",
+    "product": "Serum",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajah kusam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "flek hitam",
+        "category": "pain_problem",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0024"
+  },
+  {
+    "start": 4150.5,
+    "end": 4189.0,
+    "score": 7.0,
+    "hook": "Cara Mengatasi Kulit Berjerawat",
+    "reason": "Menyajikan solusi langsung untuk masalah kulit berjerawat dan flek hitam, dengan rekomendasi produk.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajahnya lagi pusam"
+      },
+      {
+        "word": "jerawat",
+        "category": "pain_problem",
+        "context": "rebakas jerawat, plek hitamana"
+      }
+    ],
+    "clip_id": "clip_0025"
+  },
+  {
+    "start": 4337.8,
+    "end": 4358.6,
+    "score": 7.0,
+    "hook": "Penggunaan Produk Untuk Kulit Sensitif",
+    "reason": "Menjelaskan langkah-langkah penggunaan produk untuk kulit yang sensitif.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "sensitif",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu high-pensensitif"
+      }
+    ],
+    "clip_id": "clip_0026"
+  },
+  {
+    "start": 5381.3,
+    "end": 5419.8,
+    "score": 7.0,
+    "hook": "Manfaat Talah Sen Nomor 5",
+    "reason": "Penjelasan detail tentang manfaat produk untuk berbagai kondisi kulit.",
+    "product": "Talah Sen nomor 5",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajahnya lagi kering"
+      },
+      {
+        "word": "melembakan",
+        "category": "attention_benefits",
+        "context": "melembakan kulit wajah kamu yang lagi kering"
+      }
+    ],
+    "clip_id": "clip_0027"
+  },
+  {
+    "start": 5839.1,
+    "end": 5877.6,
+    "score": 7.0,
+    "hook": "Situs Mask Murah",
+    "reason": "Penjelasan manfaat sitmes untuk kulit dan promosi harga murah.",
+    "product": "Sheet Mask",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "auto glowing"
+      },
+      {
+        "word": "murah banget",
+        "category": "attention_benefits",
+        "context": "harganya juga murah banget"
+      }
+    ],
+    "clip_id": "clip_0028"
+  },
+  {
+    "start": 6168.9,
+    "end": 6207.4,
+    "score": 7.0,
+    "hook": "Cara Pakai Sheet Mask PROYA",
+    "reason": "Menjelaskan cara menggunakan sheet mask dengan detail.",
+    "product": "Sheet Mask",
+    "clip_type": "demo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "sheet mask",
+        "category": "result_proof",
+        "context": "pakai si sheet masknya ini"
+      }
+    ],
+    "clip_id": "clip_0029"
+  },
+  {
+    "start": 902.9,
+    "end": 922.8,
+    "score": 6.0,
+    "hook": "Penggunaan Vitamin C yang benar",
+    "reason": "Membahas cara penggunaan produk dengan tepat untuk menjaga efektivitasnya.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "berubah warna",
+        "category": "pain_problem",
+        "context": "akan berubah warna menjadi kuning"
+      },
+      {
+        "word": "terkena cahaya",
+        "category": "pain_problem",
+        "context": "harus dihindari dari cahayanya"
+      }
+    ],
+    "clip_id": "clip_0030"
+  },
+  {
+    "start": 1070.7,
+    "end": 1109.2,
+    "score": 6.0,
+    "hook": "Bergabunglah Dengan Kami",
+    "reason": "Memotivasi penonton baru untuk berpartisipasi dalam livestream.",
+    "product": "general",
+    "clip_type": "qna",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "welcome",
+        "category": "result_proof",
+        "context": "welcome-welcome"
+      },
+      {
+        "word": "tanya-tanya",
+        "category": "result_proof",
+        "context": "ditanya-tanya aja dulu"
+      }
+    ],
+    "clip_id": "clip_0031"
+  },
+  {
+    "start": 1926.0,
+    "end": 1964.5,
+    "score": 6.0,
+    "hook": "Bagikan PROYA ke Teman",
+    "reason": "Mengingatkan penonton untuk membagikan produk kepada teman dan saudara.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "peroduk yang aku bahas itu aman banget digunakan untuk semua jenis kulitnya"
+      }
+    ],
+    "clip_id": "clip_0032"
+  },
+  {
+    "start": 4262.3,
+    "end": 4300.8,
+    "score": 6.0,
+    "hook": "Minta Bantuan Penonton",
+    "reason": "Ajakan langsung kepada penonton untuk membantu di Teflon.",
+    "product": "general",
+    "clip_type": "humor",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "teflon",
+        "category": "result_proof",
+        "context": "bisa dibantu di teflonnya dulu kali"
+      }
+    ],
+    "clip_id": "clip_0033"
+  },
+  {
+    "start": 4528.5,
+    "end": 4567.0,
+    "score": 6.0,
+    "hook": "Jangan Tunggu Besok",
+    "reason": "Pesan untuk tidak menunda pembelian karena harga akan berubah.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "permasalahan",
+        "category": "pain_problem",
+        "context": "permasalahan pada mata pandanya"
+      },
+      {
+        "word": "muncul",
+        "category": "pain_problem",
+        "context": "muncul ya mata pandannya"
+      }
+    ],
+    "clip_id": "clip_0034"
+  },
+  {
+    "start": 6377.9,
+    "end": 6399.4,
+    "score": 6.0,
+    "hook": "Tidak Perlu Khawatir",
+    "reason": "Menjelaskan bahwa penonton tidak perlu khawatir.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "khawatir",
+        "category": "pain_problem",
+        "context": "kakak gak perlu khawatirnya"
+      }
+    ],
+    "clip_id": "clip_0035"
+  }
+]

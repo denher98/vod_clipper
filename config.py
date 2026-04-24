@@ -1,0 +1,463 @@
+# =============================================================================
+#  PROYA CLIPPER — config.py
+#  All tunable settings in one place. Edit this before running.
+# =============================================================================
+
+# ── Paths ─────────────────────────────────────────────────────────────────────
+INPUT_VIDEO        = "D:\VOD"          # path to your raw livestream
+OUTPUT_DIR         = "D:\output_clips"            # where finished clips go
+WORKING_DIR        = "working"                 # temp files (transcripts, raw cuts)
+YOLO_WEIGHTS       = "models/proya_best.pt"    # your trained YOLO weights
+YOLO_PRETRAIN      = "yolov8n.pt"              # base model for training
+DATASET_YAML       = "dataset/proya.yaml"      # YOLO dataset config
+LOGO_PATH          = None                      # disable watermark for max throughput
+
+# ── Before/After Image Overlay ────────────────────────────────────────────────
+# Drop your before/after result photos into this folder.
+# The pipeline will randomly pick one and show it in the middle of the screen
+# at the start of each clip (after the hook text fades out).
+BEFORE_AFTER_DIR        = "assets/before_after"   # folder with your images
+BEFORE_AFTER_ENABLED    = True                    # set False to disable globally
+BEFORE_AFTER_START_T    = 0        # seconds — when image appears (after hook)
+BEFORE_AFTER_DURATION   = 2.5        # seconds the image is shown
+BEFORE_AFTER_WIDTH_PCT  = 0.72       # image width as fraction of frame width
+BEFORE_AFTER_Y_CENTER   = 0.48       # vertical center position (0=top, 1=bottom)
+BEFORE_AFTER_OPACITY    = 1.0       # 0.0 = invisible, 1.0 = fully opaque
+BEFORE_AFTER_FADE_IN    = 0.00       # seconds to fade in
+BEFORE_AFTER_FADE_OUT   = 0.25       # seconds to fade out
+BEFORE_AFTER_ROUNDED    = False       # apply rounded corner mask to image
+BEFORE_AFTER_CORNER_R   = 24         # corner radius in pixels (if ROUNDED = True)
+# Label shown above the image — set to None to disable
+BEFORE_AFTER_LABEL      = ""
+BEFORE_AFTER_LABEL_COLOR = "white"
+
+# ── Word Correction / Brand Name Normalization ────────────────────────────────
+# Whisper sometimes mishears brand/product names. This dictionary maps
+# wrong transcriptions → correct versions. Case-insensitive matching.
+# Add as many entries as you discover from your transcripts.
+WORD_CORRECTIONS = {
+    # Brand name variants
+    "peroya"         : "PROYA",
+    "perroya"        : "PROYA",
+    "proya"          : "PROYA",    # lowercase → uppercase
+    "proja"          : "PROYA",
+    "proyya"         : "PROYA",
+    "pro ya"         : "PROYA",
+    "proiya"         : "PROYA",
+    "proyah"         : "PROYA",
+    "proya5x"        : "PROYA 5X",
+    "proyafaifeks"   : "PROYA 5X",
+    "five x"         : "5X",
+    "faif eks"       : "5X",
+    "Froyo"          : "PROYA",
+    "proyo"          : "PROYA",
+    "Froya"          : "PROYA",
+
+    # Product names
+    "sером"          : "serum",
+    "Cicero"         : "serum",
+    "serum vitamin"  : "serum Vitamin C",
+    "vit c"          : "Vitamin C",
+    "vitamin si"     : "Vitamin C",
+    "moisurizer"     : "moisturizer",
+    "moisturaizer"   : "moisturizer",
+    "tóner"          : "toner",
+    "tooner"         : "toner",
+    "klenser"        : "cleanser",
+    "eye krim"       : "eye cream",
+    "ai krim"        : "eye cream",
+    "sheetmask"      : "sheet mask",
+    "sit mask"       : "sheet mask",
+    "sitmes"         : "sheet mask",
+    "dari  vetif"    : "derivative",
+    "plan"           : "plant",
+    "patipus"        : "derivatives",
+    "tetamik"        : "tranexamic",
+    "asid"           : "acid",
+    "alparbutin"     : "alpha arbutin",
+    "dari patipe"    : "derivatives",
+    "bestibestiku"   : "bestie bestieku",
+    "bakas"          : "bekas",
+    "kelencernya"    : "cleanser", 
+
+
+    # Common Indonesian skincare terms Whisper mishears
+    "skinker"        : "skincare",
+    "skin ker"       : "skincare",
+    "skin care"      : "skincare",
+    "skin care-nya"  : "skincarenya",
+    "glowing"        : "glowing",   # keep correct spellings too (force casing)
+    "etal asunya"    : "etalasenya",
+    "main-komen"     : "mau komen",
+    "Tev"            : "tap",
+    "KKA"            : "kakak",
+    "welkom-welkom"  : "welcome-welcome",
+    "mehol"          : "mehong",
+    "sepilih"        : "spill",
+    "etal-ase"       : "etalase",
+    "menemuin"       : "nemenin",
+    "Etal-ase"       : "etalase",
+    "developnya"     : "tap-tap lovenya",
+    "disepilin"      : "di spill-in",
+    "di skon"        : "diskon",
+    "Di skon"        : "diskon",
+    "nge-sepilihnya" : "nge-spillnya",
+    "Eta laksan"     : "etalase",
+    "di skor"        : "diskon",
+    "tanggerang"     : "Tangerang",
+    "permasaan"      : "permasalahan",
+    "pemenya"        : "nyampenya",
+    "sepilihnya"     : "spillnya",
+    "setelah senomor": "etalase nomer",
+    "kesampainya"    : "sampainya",
+    "memakinya"      : "packingnya",
+    "cekol"          : "checkout",
+    "tarini"         : "hari ini",
+    "Membung"        : "mumpung",
+    "lipenya"        : "livenya",
+    "tevlovnya"      : "tap tap lovenya",
+    "etal asenya"    : "etalasenya",
+    "Etal asen"      : "etalase",
+    "kulitu"         : "kulit",
+    "etal asen"      : "etalase",
+    "kotaan"         : "kotoran",
+    "visi"           : "fisik",
+    "teratasih"      : "teratasi",
+    "kulitu"         : "kulit",
+    "Meniyan"        : "mendingan",
+    "de tu"          : "dia itu",
+    "debua"          : "debu",
+    "mainin"         : "komenin",
+    "ditanyatannya"  : "ditanya tanya",
+    "etal losen"     : "etalase",
+    "omor"           : "nomor",
+    "bebek"          : "bebep",
+    "Lerma"          : "remaja",
+    "permasang"      : "permasalahan",
+    "pelek"          : "flek",
+    "mencarakan"     : "mencerahkan",
+    "targainya"      : "harganya",
+    "Meningin"       : "mendingan",
+    "cekotin"        : "checkout",
+    "Wartit"         : "worth it",
+    "cekotin"        : "checkout",
+    "sepel-sepel"    : "spill spill",
+    "menganuh"       : "mengandung",
+    "menyewimbangkan": "menyeimbangkan",
+    "wakam-wakam"    : "welcome-welcome",
+    "bermingat"      : "berminyak",
+    "dehydrasi"      : "dehidrasi",
+    "ibadat"         : "ibarat",
+    "mencerakan"     : "mencerahkan",
+    "jerout"         : "jerawat",
+    "diya"           : "dia",
+    "funcinya"       : "fungsinya",
+    "mantulita"      : "mantul",
+    "eh atas"        : "etalase",
+    "atas-atas"      : "etalase",
+    "kulitulah"      : "kulit",
+    "kulitulah saya" : "kulit wajah",
+    "meradakan"      : "meredahkan",
+    "kayaknya"       : "ya kak ya",
+    "melebabkan"     : "melembapkan",
+    "nodah-nodah"    : "noda-noda",
+    "salah se-nomor" : "etalase nomor",
+    "sekali gust"    : "sekaligus",
+    "kawatiang"      : "khawatir",
+    "lihat laksana uang"  : "di etalase",
+    "merdakan"       : "meredahkan",
+    "plek"           : "flek",
+    "benarbenar"     : "bener bener",
+    "mencerakannya"  : "mencerahkannya",
+    "seat"           : "sheet",
+    "wetening"       : "whitening",
+    "ethalase"       : "etalase",
+    "lesson"         : "etalase",
+    "eh selesai"     : "etalase",
+    "atas laksan"    : "etalase",
+    "benerbener"     : "bener bener",
+    "meletelasin"    : "etalase",
+    "kejanya"        : "wajahnya",
+    "etal asen"      : "etalase",
+    "tuajanya"       : "wajahnya",
+    "rebakas"        : "ada bekas",
+    "meletelasin"    : "etalase",
+    "keringi"        : "kering",
+    "telah senomor"  : "etalase nomor",
+    "black"          : "flek",
+    "ceritmen"       : "treatment",
+    "ethelosan"      : "etalase",
+    "pembersi"       : "pembersih",
+
+
+
+    
+}
+# Apply corrections to subtitle text displayed on clips (in addition to transcript)
+WORD_CORRECTION_APPLY_TO_SUBTITLES = True
+
+# ── LM Studio ─────────────────────────────────────────────────────────────────
+# LM Studio → Local Server → must be running before you start the pipeline
+LM_STUDIO_BASE_URL = "http://localhost:1234/v1"
+LM_STUDIO_API_KEY  = "lm-studio"               # LM Studio accepts any non-empty string
+LM_STUDIO_MODEL    = "qwen2.5-14b-instruct"          # match the model name shown in LM Studio
+LM_STUDIO_TIMEOUT  = 360                       # seconds per request
+
+# ── Whisper ───────────────────────────────────────────────────────────────────
+WHISPER_MODEL_SIZE = "large-v3"                # prioritize transcription quality on high-end GPU
+WHISPER_DEVICE     = "cuda"                    # use RTX GPU
+WHISPER_COMPUTE    = "float16"                 # fast GPU inference
+WHISPER_BEAM_SIZE  = 5                         # broader search improves tricky words/prices
+WHISPER_BEST_OF    = 5                         # keep multiple candidates before final decode
+WHISPER_LANGUAGE   = "id"                      # Indonesian language code
+
+# Word-level subtitle timing backend.
+# "whisperx" is recommended for karaoke because it force-aligns words to audio.
+WORD_ALIGNMENT_BACKEND      = "whisperx"
+WHISPERX_DEVICE             = WHISPER_DEVICE
+WHISPERX_ALIGN_MODEL        = None             # auto-pick based on language
+WHISPERX_INTERPOLATE_METHOD = "nearest"
+WHISPERX_MODEL_DIR          = None
+WHISPERX_MODEL_CACHE_ONLY   = False
+WHISPERX_MAX_SEGMENT_SECONDS = 30              # cap Wav2Vec2 alignment windows to avoid CUDA OOM
+WHISPERX_FALLBACK_TO_RAW_ON_OOM = True         # keep queue moving if WhisperX still runs out of VRAM
+WHISPERX_ACCEPT_RAW_FALLBACK_CACHE = True      # reuse fallback transcripts instead of retrying WhisperX forever
+
+# ── YOLO / Vision ─────────────────────────────────────────────────────────────
+YOLO_CONF_THRESHOLD = 0.55                     # detection confidence cutoff
+YOLO_FRAME_SKIP     = 24                       # scan fewer frames for faster throughput
+YOLO_DEVICE         = "0"                      # use first NVIDIA GPU
+YOLO_IMGSZ          = 416                      # smaller input for faster inference
+YOLO_HALF           = True                     # fp16 inference on GPU
+YOLO_SCAN_ONLY_MOMENTS   = True                # scan only candidate clip windows, not the full VOD
+YOLO_SCAN_PAD_BEFORE     = 3.0                 # extra seconds before each moment when scanning
+YOLO_SCAN_PAD_AFTER      = 3.0                 # extra seconds after each moment when scanning
+YOLO_SCAN_RANGE_MERGE_GAP = 4.0                # merge nearby scan windows into one range
+
+# Region of Interest — only look inside this zone (as fraction of frame size).
+# Tune this to where the presenter typically holds products.
+# (0,0) = top-left corner, (1,1) = bottom-right corner
+ROI = {
+    "x1": 0.0,   # kiri (0%)
+    "y1": 0.0,   # atas (0%)
+    "x2": 1.0,   # kanan (100%)
+    "y2": 0.6    # 60% dari atas
+}
+
+# How long (seconds) to sustain zoom after product detected
+ZOOM_DURATION  = 3.0    # total zoom window (ease-in + hold + ease-out)
+ZOOM_SCALE     = 1.45   # 1.45 = 45% zoom in — tight enough to see product clearly
+
+# ── Clip Detection ────────────────────────────────────────────────────────────
+CHUNK_DURATION     = 120          # seconds of transcript sent to LLM at once (3 min)
+CHUNK_OVERLAP      = 10           # overlap to avoid missing clips at chunk boundaries
+MIN_CLIP_DURATION  = 15           # seconds — ignore shorter moments
+MAX_CLIP_DURATION  = 60           # seconds — cap clip length
+MIN_SCORE          = 6.0          # LLM score threshold out of 10 (lower = more clips)
+PAD_START          = 1.5          # seconds to add before moment start
+PAD_END            = 2.0          # seconds to add after moment end
+
+# ── Fonts ─────────────────────────────────────────────────────────────────────
+# ImageMagick font names. Run `convert -list font | grep -i name` to see what's
+# installed on your system. Install Bebas Neue, Anton, Montserrat via:
+#   Windows: download TTF → right-click → Install for All Users
+#   Linux:   sudo cp *.ttf /usr/local/share/fonts && sudo fc-cache -fv
+#
+# If a font isn't found, MoviePy falls back to the system default.
+# Safe cross-platform fallback names are shown in comments.
+
+FONT_HOOK       = "assets/fonts/Anton-Regular.ttf"              # or "Bebas-Neue", "Impact"
+FONT_LABEL      = "assets/fonts/Montserrat-SemiBold.ttf"  # or "Poppins-Medium", "Arial-Bold"
+FONT_SUBTITLE   = "assets/fonts/Montserrat-ExtraBold.ttf"    # or "Arial-Bold"
+FONT_PRODUCT    = "assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf"  # for zoom caption
+
+# ── Hook / Title overlay ──────────────────────────────────────────────────────
+HOOK_FONTSIZE       = 150           # 110–150 range; scales with text length
+HOOK_COLOR          = "white"       # "white" | "yellow" — alternate per vibe
+HOOK_STROKE_COLOR   = "black"
+HOOK_STROKE_W       = 5            # 4–6px thick for TikTok style
+HOOK_DURATION       = 2.5          # show hook title briefly at the start
+HOOK_Y_POS          = 0.5         # vertical start as fraction of frame height
+# Background is auto-height (fits text exactly + padding)
+
+# ── Subtitles ─────────────────────────────────────────────────────────────────
+SUBTITLE_FONTSIZE   = 120           # 60–80 range
+SUBTITLE_COLOR      = "#FFFFFF"    # default white; highlight words override this
+SUBTITLE_STROKE     = "#000000"
+SUBTITLE_STROKE_W   = 3            # 2–4px
+SUBTITLE_Y_POS      = 0.80        # vertical position (fraction of frame height)
+
+# PNG emoji overlays triggered by subtitle keywords.
+# Position is randomized per subtitle chunk at render time.
+EMOJI_CONFIG = {
+    "fade_in": 0.2,
+    "emoji_rules": [
+        {
+            "keywords": ["mencerahkan", "brightening", "glow", "vitamin", "cerah", "glowing"],
+            "png_path": "assets/emojis/sun.png",
+            "scale": 0.4,
+            # "offset_x": 10,
+           # "offset_y": -10,
+        },
+        {
+            "keywords": ["jerawat", "acne", "flek", "flek hitam", "kemerahan"],
+            "png_path": "assets/emojis/scared.png",
+            "scale": 0.4,
+        },
+        {
+            "keywords": ["eye", "eye cream"],
+            "png_path": "assets/emojis/eye.png",
+            "scale": 0.4,
+        },
+                {
+            "keywords": ["mata", "mata panda", "panda"],
+            "png_path": "assets/emojis/panda.png",
+            "scale": 0.4,
+        },
+    ],
+}
+
+# ── Subtitle keyword highlight colours ───────────────────────────────────────
+# Phrases are stored in HIGHLIGHT_PHRASES_PATH and matched case-insensitively.
+# Edit highlight_phrases.json directly for curated phrase/category changes.
+
+# Persistent registry path + category colors
+HIGHLIGHT_PHRASES_PATH = "highlight_phrases.json"
+HIGHLIGHT_YELLOW_COLOR = "#FFD600"
+
+HIGHLIGHT_GREEN_COLOR = "#00C853"
+
+HIGHLIGHT_RED_COLOR = "#FF3B30"
+
+# ── Products ──────────────────────────────────────────────────────────────────
+PRODUCT_CLASSES = {
+    0: "Cleanser",
+    1: "Serum",
+    2: "Toner",
+    3: "Eye Cream",
+    4: "Sheet Mask",
+    5: "skin cream",
+    # When you add host_face to your YOLO dataset, add it here too:
+    6: "host_face",
+}
+BRAND_NAME = "PROYA 5X Vitamin C"
+
+# ── Host Face Zoom ─────────────────────────────────────────────────────────────
+# Add "host_face" as a class in your YOLO dataset (class index 6 or whatever
+# comes next). The pipeline will zoom into the face every 4-5 words automatically.
+HOST_FACE_CLASS        = "host_face"   # must match the class_name in your YOLO labels
+HOST_FACE_ZOOM_ENABLED = True          # set False to disable all face zooms
+
+# How many spoken words between each face zoom trigger (cycles through this list)
+FACE_ZOOM_WORDS_TRIGGER = [4, 4, 5, 5, 4, 5]
+
+# Zoom scale range — each face zoom picks a random value in this range
+FACE_ZOOM_SCALE_MIN    = 1.25     # 1.25 = 25% zoom in (subtle)
+FACE_ZOOM_SCALE_MAX    = 1.55     # 1.55 = 55% zoom in (punchy)
+
+# Ease-in speed — lower = faster snap in, higher = floaty
+FACE_ZOOM_EASE_MIN     = 0.0     # seconds (very snappy)
+FACE_ZOOM_EASE_MAX     = 0.0     # seconds (smooth)
+
+# How long to hold the face zoom before hard-cutting back
+FACE_ZOOM_DUR_MIN      = 1.5      # seconds
+FACE_ZOOM_DUR_MAX      = 2.5      # seconds
+
+# Where the face lands vertically on screen after zoom (0=top, 1=bottom)
+# 0.30 = face appears in the top 30% of the frame — typical TikTok talking-head
+FACE_ZOOM_SCREEN_Y     = 0.10
+
+# How far (seconds) to search around the trigger word for a YOLO face detection
+FACE_ZOOM_SEARCH_WINDOW = 3.0
+
+# Minimum gap (seconds) between consecutive face zooms
+FACE_ZOOM_MIN_GAP      = 1.0
+
+# ── Karaoke Subtitle Style ────────────────────────────────────────────────────
+# Active word highlight colour (used when word is not a semantic keyword)
+KARAOKE_ACTIVE_COLOR     = "#FFD600"   # TikTok yellow
+KARAOKE_INACTIVE_OPACITY = 1.0       # 0.0=invisible, 1.0=same as active; try 0.3–0.5
+KARAOKE_WORD_SPACING     = 14         # px gap between words in a row
+
+# ── Product Zoom Caption ──────────────────────────────────────────────────────
+ZOOM_CAPTION_TEXT_COLOR     = "white"      # product name
+ZOOM_CAPTION_BRAND_COLOR    = "#FFD600"    # "PROYA 5X VITAMIN C" line
+ZOOM_CAPTION_STROKE_COLOR   = "black"      # outline on both lines
+ZOOM_CAPTION_STROKE_WIDTH   = 4
+ZOOM_CAPTION_BRAND_STROKE_W = 4
+ZOOM_CAPTION_ICON           = ""         # change to "✨" "🧴" etc.
+ZOOM_CAPTION_FONTSIZE       = 120    # ← product name (e.g. "SERUM") — increase for bigger
+ZOOM_CAPTION_BRAND_FONTSIZE = 0    # ← brand line ("PROYA 5X VITAMIN C") — increase for bigger
+ZOOM_CAPTION_Y_POS          = 0.10  # top-center caption vertical position as fraction of frame height
+
+# ── Output Video ──────────────────────────────────────────────────────────────
+OUTPUT_FPS     = 30
+OUTPUT_CODEC   = "libx264"
+OUTPUT_AUDIO   = "aac"
+OUTPUT_CRF     = 23               # lower = better quality, bigger file
+OUTPUT_PRESET  = "fast"           # ultrafast/fast/medium
+
+# ── SFX (Sound Effects) ───────────────────────────────────────────────────────
+# Drop audio files (.wav / .mp3) into the folders below.
+# The pipeline picks one randomly per trigger event.
+#
+# Folder layout:
+#   assets/sfx/
+#     product_zoom/       ← plays when product zoom triggers (whoosh, ding, etc.)
+#     highlight_yellow/   ← Attention / Benefits words (sparkle, chime, etc.)
+#     highlight_green/    ← Results / Speed / Proof words (success, pop, etc.)
+#     highlight_red/      ← Pain / Problem words (thud, bass hit, etc.)
+#
+# Run  python main.py --setup-sfx  to create the folders and see their status.
+
+SFX_ENABLED            = True
+SFX_DIR                = "assets/sfx"          # base folder
+SFX_PRODUCT_FOLDER     = "product_zoom"
+SFX_YELLOW_FOLDER      = "highlight_yellow"
+SFX_GREEN_FOLDER       = "highlight_green"
+SFX_RED_FOLDER         = "highlight_red"
+
+# Volume multiplier per category (1.0 = original file volume)
+SFX_VOLUME_PRODUCT     = 0.20    # product zoom whoosh
+SFX_VOLUME_YELLOW      = 0.15    # attention / benefit words
+SFX_VOLUME_GREEN       = 0.15    # result / proof words
+SFX_VOLUME_RED         = 0.15    # pain / problem words
+
+# Minimum seconds between SFX of the same highlight category
+# (prevents rapid-fire SFX when multiple keywords appear back-to-back)
+SFX_HIGHLIGHT_DEBOUNCE = 1.5
+
+# Throughput-first overrides for high-volume clip generation on a modern GPU PC.
+# These values intentionally prioritize speed and clip count over quality.
+CHUNK_DURATION = 300
+CHUNK_OVERLAP = 8
+MIN_CLIP_DURATION = 8
+MAX_CLIP_DURATION = 35
+MIN_SCORE = 4.5
+# HOOK_DURATION = 0.0
+# HOST_FACE_ZOOM_ENABLED = False
+OUTPUT_FPS = 24
+OUTPUT_CODEC = "h264_nvenc"
+OUTPUT_PRESET = "p1"
+OUTPUT_CRF = 35
+OUTPUT_CQ = 35
+OUTPUT_THREADS = 8
+OUTPUT_AUDIO_BITRATE = "96k"
+MAX_PARALLEL_CLIPS = 6
+RAW_CUT_CODEC   = "libx264"   # CPU — fast enough, no NVENC slot used
+RAW_CUT_PRESET  = "ultrafast"
+FFMPEG_GPU_ENCODER = "h264_nvenc"
+
+# ── Variation Engine ──────────────────────────────────────────────────────────
+# How many style variants to render per detected moment.
+#   1  = original only (no variation, current behaviour)
+#   6  = 6× output  — good starting point
+#   12 = 12× output — for 8–18k/day target across multiple VODs
+VARIANTS_PER_CLIP = 6
+
+# Deterministic seed. Change to get a different style mix across runs.
+VARIANT_SEED = 42
+
+# Bake mirror/speed/grade/crop into the FFmpeg raw-cut step (recommended).
+# True = fastest (pure FFmpeg, GPU-accelerated). False = MoviePy (slower).
+VARIANT_FFMPEG_BAKE = True

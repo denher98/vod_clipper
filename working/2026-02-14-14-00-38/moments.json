@@ -1,0 +1,209 @@
+[
+  {
+    "start": 4603.8,
+    "end": 4642.3,
+    "score": 9.0,
+    "hook": "Cara Mengatasi Mata Panda",
+    "reason": "Menjelaskan manfaat dan cara penggunaan produk untuk mengurangi masalah mata panda.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "mata pandanya"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit bawah mata panda"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 5497.3,
+    "end": 5535.8,
+    "score": 9.0,
+    "hook": "Lanser Proya Melembabkan Kulit Kering",
+    "reason": "Menggambarkan manfaat produk secara jelas untuk kulit kering, termasuk melembabkan, meredakan kemerahan dan irritasi.",
+    "product": "skin cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembatkan",
+        "category": "attention_benefits",
+        "context": "melembabkan kulit"
+      },
+      {
+        "word": "kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 3596.2,
+    "end": 3634.7,
+    "score": 8.0,
+    "hook": "Manfaat produk PROYA",
+    "reason": "Penjelasan manfaat produk yang jelas dan detail.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "malembabkan",
+        "category": "attention_benefits",
+        "context": "malembabkan kulit kering"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 3908.9,
+    "end": 3947.4,
+    "score": 8.0,
+    "hook": "Mencerahkan Kulit Kusam",
+    "reason": "Menjelaskan manfaat produk untuk kulit kusam dan memudarkan bekas jerawat.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajah nya lagi kusam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah kamu"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bakas jerawat"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 4206.8,
+    "end": 4245.3,
+    "score": 8.0,
+    "hook": "Serum Vitamin C Putih Bening",
+    "reason": "Menggambarkan manfaat produk dengan jelas",
+    "product": "serum Vitamin C",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "putih bending",
+        "category": "attention_benefits",
+        "context": "warna putih bending"
+      },
+      {
+        "word": "cair",
+        "category": "attention_benefits",
+        "context": "tekstur cair"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 2636.4,
+    "end": 2674.9,
+    "score": 7.0,
+    "hook": "Facial Cleanser Mencerahkan Kulit",
+    "reason": "Mengandung penjelasan tentang hasil positif produk.",
+    "product": "Facial Cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "smooth",
+        "category": "attention_benefits",
+        "context": "smooth banget ke kulit wajahnya"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan kulit wajah kamu"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 4329.6,
+    "end": 4363.9,
+    "score": 7.0,
+    "hook": "Serum Vitamin C Aman",
+    "reason": "Menginformasikan hasil uji klinis yang positif",
+    "product": "serum Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman banget",
+        "category": "attention_benefits",
+        "context": "99% aman banget"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 4962.5,
+    "end": 5001.0,
+    "score": 7.0,
+    "hook": "Mencerahkan Kulit Kusam",
+    "reason": "Menjelaskan manfaat serum untuk mengatasi masalah kulit kusam, bekas jerawat dan flek hitam.",
+    "product": "Tersenamor 3",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan wajah"
+      },
+      {
+        "word": "memudarkan bekas jerawat",
+        "category": "attention_benefits",
+        "context": "bekas jera wad"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 5791.4,
+    "end": 5829.9,
+    "score": 7.0,
+    "hook": "Manfaat Vitamin C Serum",
+    "reason": "Mengandung manfaat produk dan cara penggunaan yang mudah.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "gampang banget",
+        "category": "result_proof",
+        "context": "cara pemakaian gampang"
+      }
+    ],
+    "clip_id": "clip_0009"
+  }
+]

@@ -1,0 +1,349 @@
+[
+  {
+    "start": 2629.6,
+    "end": 2668.1,
+    "score": 9.0,
+    "hook": "Manfaat Serum Vitamin C",
+    "reason": "Menggambarkan manfaat dan perbedaan produk dengan vitamin C murni.",
+    "product": "5x Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "putih bening",
+        "category": "attention_benefits",
+        "context": "warna putih bening"
+      },
+      {
+        "word": "irritasi",
+        "category": "pain_problem",
+        "context": "bisa bikin kulit irrtasi"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 3738.5,
+    "end": 3777.0,
+    "score": 9.0,
+    "hook": "Manfaat Eye Cream PROYA",
+    "reason": "Mengklaim manfaat eye cream untuk memudarkan lingkaran hitam, serta menjelaskan manfaat lainnya seperti mencerahkan dan melembapkan.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan area mata panda"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 3799.7,
+    "end": 3838.2,
+    "score": 9.0,
+    "hook": "Proya Eye Cream: The Best Mata Panda",
+    "reason": "Mengatasi masalah mata panda dengan hasil yang sangat baik.",
+    "product": "eye cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kerut",
+        "category": "attention_benefits",
+        "context": "menyamarkan kerut-kerutan"
+      },
+      {
+        "word": "mata panda",
+        "category": "attention_benefits",
+        "context": "mengatasi masalah mata panda"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 1185.5,
+    "end": 1224.0,
+    "score": 8.0,
+    "hook": "Diskon Besar Paket Skincare",
+    "reason": "Mengumumkan diskon besar dan menjelaskan berbagai manfaat produk.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "diskon",
+        "category": "result_proof",
+        "context": "diskon perumonya besar banget"
+      },
+      {
+        "word": "benefitnya apa?",
+        "category": "attention_benefits",
+        "context": "Benefitnya apa sih Kak kalau pakai yang satu paket?"
+      },
+      {
+        "word": "melembapkan kulit wajah kamu",
+        "category": "attention_benefits",
+        "context": "Untuk melembapkan kulit wajah kamu, benefitnya udah pasti."
+      },
+      {
+        "word": "mencerahkan kulit wajah kamu",
+        "category": "attention_benefits",
+        "context": "Mencerahkan kulit wajah kamu dia bisa."
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 1229.2,
+    "end": 1267.7,
+    "score": 8.0,
+    "hook": "Manfaat Paket Skincare",
+    "reason": "Mengulangi berbagai manfaat dari paket skincare dan menekankan keamanannya.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan kulit wajah kamu",
+        "category": "attention_benefits",
+        "context": "Mencerahkan kulit wajah kamu dia bisa."
+      },
+      {
+        "word": "memudarkan bekas dirawat flek hitam",
+        "category": "attention_benefits",
+        "context": "Memudarkan bekas dirawat flek hitam dia juga bisa."
+      },
+      {
+        "word": "meredakan kemerahan pada kulit wajah kamu",
+        "category": "attention_benefits",
+        "context": "Supaya memudarkan flek hitam dia bisa meredakan kemerahan pada kulit wajah kamu dia bisa."
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 2360.2,
+    "end": 2398.7,
+    "score": 8.0,
+    "hook": "Serum Vitamin C untuk kulit usam",
+    "reason": "Mengandung manfaat produk yang jelas dan spesifik.",
+    "product": "Proya Serum Treatment",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "usam",
+        "category": "pain_problem",
+        "context": "kulit wajah usam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "untuk mencerahkan kulit"
+      },
+      {
+        "word": "bekas dirawat",
+        "category": "pain_problem",
+        "context": "bekas dirawat"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 2941.5,
+    "end": 2980.0,
+    "score": 8.0,
+    "hook": "Skin Cream Anti Kering",
+    "reason": "Menggambarkan manfaat produk yang jelas dan langsung menawarkannya kepada penonton.",
+    "product": "skin cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu suka kering"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "bisa melembapkan kulit wajah kamu"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 3852.1,
+    "end": 3890.6,
+    "score": 8.0,
+    "hook": "Proya Eye Cream: Fresh & No Swelling",
+    "reason": "Membantu area mata panda terlihat lebih fresh dan mengurangi pembengkakan.",
+    "product": "eye cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "fresh",
+        "category": "attention_benefits",
+        "context": "terlihat lebih fresh"
+      },
+      {
+        "word": "mata panda",
+        "category": "attention_benefits",
+        "context": "mengurangi pembengkakan pada area bawah mata panda"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 2042.8,
+    "end": 2081.3,
+    "score": 7.0,
+    "hook": "Hydrating Toner Manfaatnya Luar Biasa",
+    "reason": "Menjelaskan beberapa manfaat hydrating toner, meskipun tidak spesifik dan detail.",
+    "product": "hydrating toner",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "permasalahan kulit kusam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa juga untuk mencerahkan kulit wajah kamu"
+      },
+      {
+        "word": "menyamarkan noda hitam",
+        "category": "attention_benefits",
+        "context": "menyamarkan nodenodohitam"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 2183.6,
+    "end": 2222.1,
+    "score": 7.0,
+    "hook": "Hydrating Toner Aman dan Mantap",
+    "reason": "Menjelaskan bahwa produk aman dan memiliki manfaat seperti melembapkan kulit.",
+    "product": "hydrating toner",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "dia ini super duper aman banget"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "udah bisa untuk melembapkan"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 2466.1,
+    "end": 2504.6,
+    "score": 7.0,
+    "hook": "Tekstur Serum Vitamin C",
+    "reason": "Mengandung manfaat produk yang jelas.",
+    "product": "Proya Serum Treatment",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "cair",
+        "category": "attention_benefits",
+        "context": "teksturnya cair"
+      }
+    ],
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 2598.5,
+    "end": 2636.7,
+    "score": 7.0,
+    "hook": "Warna Serum Vitamin C",
+    "reason": "Mengandung manfaat produk yang jelas.",
+    "product": "Proya Serum Treatment",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "putih bening",
+        "category": "attention_benefits",
+        "context": "warna putih bening"
+      }
+    ],
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 3538.5,
+    "end": 3577.0,
+    "score": 7.0,
+    "hook": "Coba PROYA Vitamin C Sekarang",
+    "reason": "Mendorong penonton untuk mencoba produk sekarang dengan harga diskon, menekankan manfaat cepat sampai ke rumah.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "panon",
+        "category": "pain_problem",
+        "context": "pengobatan panon"
+      },
+      {
+        "word": "mata panda",
+        "category": "pain_problem",
+        "context": "permasalahan mata panda"
+      }
+    ],
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 4207.9,
+    "end": 4246.4,
+    "score": 7.0,
+    "hook": "Benefit Sitmes PROYA",
+    "reason": "Mengandung penjelasan manfaat produk yang jelas.",
+    "product": "sitmes",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "benefit",
+        "category": "attention_benefits",
+        "context": "benefit nya apa sih"
+      },
+      {
+        "word": "lembab",
+        "category": "attention_benefits",
+        "context": "auto lembab, auto glowing"
+      },
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "auto lembab, auto glowing"
+      }
+    ],
+    "clip_id": "clip_0014"
+  }
+]

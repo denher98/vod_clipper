@@ -1,0 +1,459 @@
+[
+  {
+    "start": 991.8,
+    "end": 1030.3,
+    "score": 9.0,
+    "hook": "PROYA 5X Vitamin C - Solusi Flek Hitam",
+    "reason": "Menjelaskan manfaat produk secara detail, termasuk hasil nyata yang dapat dilihat.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan wajah"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 1907.8,
+    "end": 1946.3,
+    "score": 9.0,
+    "hook": "Serum Vitamin C Anti Kusam",
+    "reason": "Menerangkan manfaat produk secara detail, menjelaskan hasil nyata yang bisa didapatkan pengguna.",
+    "product": "serum Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu lagi kusam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah kamu"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat di kulit wajah kamu"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 5406.4,
+    "end": 5444.9,
+    "score": 9.0,
+    "hook": "Mencerahkan Kulit Wajah",
+    "reason": "Menjelaskan manfaat produk secara jelas dan detail.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit wajah"
+      },
+      {
+        "word": "nutrisi langsung",
+        "category": "attention_benefits",
+        "context": "memberikan nutrisi langsung"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 6179.4,
+    "end": 6217.9,
+    "score": 9.0,
+    "hook": "Etal-lasa nomor 7: Solusi Flek Hitam",
+    "reason": "Menggambarkan manfaat produk secara jelas dan spesifik untuk masalah kulit wajah.",
+    "product": "etal-lasa nomor 7",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      },
+      {
+        "word": "flek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 7928.5,
+    "end": 7967.0,
+    "score": 9.0,
+    "hook": "Hydrating Toner Mencerahkan Kulit",
+    "reason": "Menggambarkan manfaat produk secara jelas dan detail",
+    "product": "hydrating toner",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kemerahan",
+        "category": "pain_problem",
+        "context": "kulit wajah nya kemerahan"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "udah bisa mencerahkan juga bebep"
+      },
+      {
+        "word": "meredakan",
+        "category": "attention_benefits",
+        "context": "merdakan kemerahan dia bisa"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 7299.6,
+    "end": 7338.1,
+    "score": 8.2,
+    "hook": "Pembersih Wajah Proya",
+    "reason": "Mengandung manfaat produk dan menjelaskan hasil positif",
+    "product": "Facial Cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa juga untuk mencerahkan kulit wajah kamu"
+      },
+      {
+        "word": "menjaga kelembapan alami",
+        "category": "attention_benefits",
+        "context": "menjaga kelembapan alami pada kulit wajah kalian-nya guys"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 1438.0,
+    "end": 1467.7,
+    "score": 8.0,
+    "hook": "Facial Cleanser Mencerahkan",
+    "reason": "Menjelaskan manfaat facial cleanser untuk mencerahkan kulit",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerakan",
+        "category": "attention_benefits",
+        "context": "bisa untuk mencerakan"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 1526.7,
+    "end": 1565.2,
+    "score": 8.0,
+    "hook": "Hydrating Toner Manfaat Luar Biasa",
+    "reason": "Mengandung manfaat melembapkan kulit wajah, mencerahkan, dan mengurangi noda hitam.",
+    "product": "hydrating toner",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "dipakai semua jenis kulit"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "kulit wajah kamu"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "wajah kamu"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 4211.2,
+    "end": 4249.7,
+    "score": 8.0,
+    "hook": "Skin Cream Melembapkan & Mencerahkan",
+    "reason": "Menggambarkan manfaat produk secara jelas.",
+    "product": "skin cream",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit wajah"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 6480.2,
+    "end": 6518.7,
+    "score": 8.0,
+    "hook": "Serum Data Lasso No.3",
+    "reason": "Menggambarkan manfaat produk yang jelas untuk mencerahkan kulit wajah dan mengurangi flek hitam.",
+    "product": "Data Lasso Serum Nomor Tiga",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas flek hitam"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 9985.5,
+    "end": 10024.0,
+    "score": 8.0,
+    "hook": "Serum Mencerahkan Kulit",
+    "reason": "Menginformasikan manfaat produk secara detail kepada penonton.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "bekas jerawat atau plek hitam"
+      }
+    ],
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 10342.0,
+    "end": 10380.5,
+    "score": 8.0,
+    "hook": "Rekomendasi untuk Mata Panda",
+    "reason": "Menjelaskan manfaat produk secara detail",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      }
+    ],
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 10582.0,
+    "end": 10620.5,
+    "score": 8.0,
+    "hook": "Manfaat Sheetmess",
+    "reason": "Menjelaskan manfaat produk yang jelas.",
+    "product": "Sheetmess",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "malembabkan",
+        "category": "attention_benefits",
+        "context": "membantu malembabkan kulit wajah"
+      },
+      {
+        "word": "menggloinkan",
+        "category": "attention_benefits",
+        "context": "membantu menggloinkan kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 10684.1,
+    "end": 10722.6,
+    "score": 8.0,
+    "hook": "Sheetmess untuk Kondangan",
+    "reason": "Menjelaskan manfaat produk yang jelas.",
+    "product": "Sheetmess",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "yang mau mencerahkan kulit wajahnya"
+      },
+      {
+        "word": "cukup 2-3 kali seminggu",
+        "category": "result_proof",
+        "context": "sudah cukup banget pakai si sheetmess ini seminggu sampai 2-3 kali aja"
+      }
+    ],
+    "clip_id": "clip_0014"
+  },
+  {
+    "start": 1369.1,
+    "end": 1407.6,
+    "score": 7.0,
+    "hook": "Facial Cleanser Unik",
+    "reason": "Menginformasikan manfaat facial cleanser",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "menyeluruh",
+        "category": "attention_benefits",
+        "context": "membersihkan wajah kamu secara menyeluruh"
+      },
+      {
+        "word": "unik",
+        "category": "attention_benefits",
+        "context": "teksurnya unik"
+      }
+    ],
+    "clip_id": "clip_0015"
+  },
+  {
+    "start": 4680.3,
+    "end": 4718.8,
+    "score": 7.0,
+    "hook": "Rekomendasi Produk Mata Panda",
+    "reason": "Mengandung penjelasan manfaat produk yang jelas dan detail.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan kulit"
+      }
+    ],
+    "clip_id": "clip_0016"
+  },
+  {
+    "start": 10539.9,
+    "end": 10578.4,
+    "score": 7.0,
+    "hook": "Promo Sheetmess Murah",
+    "reason": "Menjelaskan penawaran harga spesial dan bonus produk.",
+    "product": "Sheetmess",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "murcak",
+        "category": "attention_benefits",
+        "context": "harganya itu lagi murcak"
+      },
+      {
+        "word": "gratis",
+        "category": "attention_benefits",
+        "context": "mendapatkan satu sheetmess gratis"
+      }
+    ],
+    "clip_id": "clip_0017"
+  },
+  {
+    "start": 1299.3,
+    "end": 1337.8,
+    "score": 6.0,
+    "hook": "Diskon Sampai 60%",
+    "reason": "Menginformasikan diskon besar dan manfaat produk",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "diskon",
+        "category": "attention_benefits",
+        "context": "perromonya itu banyak banget ya diskon"
+      },
+      {
+        "word": "gratis",
+        "category": "attention_benefits",
+        "context": "gratis onkir dan COD"
+      }
+    ],
+    "clip_id": "clip_0018"
+  },
+  {
+    "start": 1458.5,
+    "end": 1497.0,
+    "score": 6.0,
+    "hook": "Facial Cleanser Mencerahkan & Membersihkan",
+    "reason": "Mengandung manfaat mencerahkan kulit wajah dan membersihkan debu/polusi.",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerakan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "membersihkan",
+        "category": "attention_benefits",
+        "context": "membersihkan wajah"
+      }
+    ],
+    "clip_id": "clip_0019"
+  }
+]

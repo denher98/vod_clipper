@@ -1,0 +1,349 @@
+[
+  {
+    "start": 290.5,
+    "end": 329.0,
+    "score": 9.0,
+    "hook": "PROYA 5X Vitamin C - Cerahkan Wajah",
+    "reason": "Menggambarkan manfaat produk secara jelas, termasuk mencerahkan wajah, memudarkan bekas jerawat, melembapkan kulit dan meredakan kemerahan.",
+    "product": "PROYA 5X Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "full brightening",
+        "category": "attention_benefits",
+        "context": "full mencerakkan"
+      },
+      {
+        "word": "memudarkan bekas jerawat",
+        "category": "attention_benefits",
+        "context": "bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 2463.4,
+    "end": 2501.9,
+    "score": 9.0,
+    "hook": "Toner Mencerahkan Kulit",
+    "reason": "Menjelaskan manfaat produk yang jelas dan nyata.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "merdakan kemerahan pada kulit"
+      },
+      {
+        "word": "mencerahkan kulit",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit dan noden-nodah hitam"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 3195.0,
+    "end": 3220.2,
+    "score": 9.0,
+    "hook": "Manfaat Facial Cleanser & Toner",
+    "reason": "Menggambarkan manfaat produk secara detail dan jelas.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "bersih",
+        "category": "attention_benefits",
+        "context": "membersihkan wajah"
+      },
+      {
+        "word": "meredakan kemerahan kulit",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan kulit"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "menyamarkan noda hitam",
+        "category": "attention_benefits",
+        "context": "menyamarkan noda hitam"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 3801.6,
+    "end": 3840.1,
+    "score": 9.0,
+    "hook": "Serum Vitamin C Mencerahkan Kulit",
+    "reason": "Menggambarkan manfaat produk secara jelas",
+    "product": "serum vitamin c",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      },
+      {
+        "word": "flek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 4127.6,
+    "end": 4166.1,
+    "score": 9.0,
+    "hook": "Mencerahkan Wajah dan Menghilangkan Flek",
+    "reason": "Menjelaskan manfaat produk dengan jelas dan spesifik.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "yang bisa mencerahkan wajahnya"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas cerawat di kulit wajah kamu"
+      },
+      {
+        "word": "flek hitam",
+        "category": "attention_benefits",
+        "context": "mempudarkan flek hitam pada kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 4378.5,
+    "end": 4417.0,
+    "score": 9.0,
+    "hook": "Serum Vitamin C Mencerahkan Kulit",
+    "reason": "Menggambarkan manfaat produk secara jelas dan detail.",
+    "product": "serum vitamin c",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "memudarkan flek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 5369.4,
+    "end": 5407.9,
+    "score": 9.0,
+    "hook": "Cerahkan Kulit Wajah",
+    "reason": "Menggambarkan manfaat produk secara jelas.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 6779.0,
+    "end": 6817.5,
+    "score": 9.0,
+    "hook": "Melembapkan & Mencerahkan Kulit",
+    "reason": "Menjelaskan manfaat produk dengan jelas",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "bisa melembapkan kulit"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan pada kulit wajah kamu nya."
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan dan juga meredakan warna kulit"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 8589.5,
+    "end": 8628.0,
+    "score": 9.0,
+    "hook": "PROYA 5X Vitamin C: Solusi Jerawat dan Kulit Sensitif",
+    "reason": "Menggambarkan manfaat produk secara detail, termasuk jenis kulit yang cocok dan hasil nyata.",
+    "product": "PROYA 5X Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan memudarkan bekas jerawat"
+      },
+      {
+        "word": "sensitif",
+        "category": "attention_benefits",
+        "context": "kulit sensitif juga bisa menggunakannya"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 488.2,
+    "end": 526.7,
+    "score": 8.0,
+    "hook": "PROYA 5X Vitamin C - Full Brightening",
+    "reason": "Menggambarkan manfaat produk secara jelas, termasuk mencerahkan wajah dan memudarkan flek hitam.",
+    "product": "PROYA 5X Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "full brightening",
+        "category": "attention_benefits",
+        "context": "full mencerakkan"
+      },
+      {
+        "word": "memudarkan flek hitam",
+        "category": "attention_benefits",
+        "context": "flek hitam"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 1201.3,
+    "end": 1239.8,
+    "score": 8.0,
+    "hook": "Solusi Kulit Kering",
+    "reason": "Menjelaskan masalah kulit kering dan menawarkan solusi dengan facial cleanser yang aman dan efektif.",
+    "product": "facial cleanser",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "suka kering pas cuci muka"
+      },
+      {
+        "word": "lembap",
+        "category": "attention_benefits",
+        "context": "menjaga kelembapan kulit wajah"
+      },
+      {
+        "word": "bersihkan",
+        "category": "attention_benefits",
+        "context": "mengangkat kotoran dan polusi"
+      }
+    ],
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 4670.5,
+    "end": 4709.0,
+    "score": 8.0,
+    "hook": "Serum 5x Vitamin C Proya",
+    "reason": "Mengandung penjelasan manfaat produk yang jelas.",
+    "product": "serum",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulitnya"
+      },
+      {
+        "word": "radikal bebas",
+        "category": "attention_benefits",
+        "context": "melindungi dari radikal bebalesnya"
+      }
+    ],
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 5469.4,
+    "end": 5507.9,
+    "score": 7.0,
+    "hook": "Aman Untuk Semua Jenis Kulit",
+    "reason": "Menggambarkan keterjangkauan produk untuk berbagai jenis kulit.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "aman banget digunakan untuk semua jenis kulit"
+      }
+    ],
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 2351.3,
+    "end": 2389.8,
+    "score": 6.0,
+    "hook": "Toner Spray 360 Derajat",
+    "reason": "Menginformasikan manfaat produk yang unik dan berbeda dari toner biasa.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "toner",
+        "category": "attention_benefits",
+        "context": "bukan cuma sekedar toner"
+      },
+      {
+        "word": "360 derajat",
+        "category": "attention_benefits",
+        "context": "toner spray 360 derejat"
+      }
+    ],
+    "clip_id": "clip_0014"
+  }
+]

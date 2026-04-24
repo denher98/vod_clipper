@@ -1,0 +1,420 @@
+[
+  {
+    "_schema_version": 3,
+    "class_id": 4,
+    "class_name": "Sheet Mask",
+    "start_time": 1751.216,
+    "end_time": 1751.216,
+    "duration": 0.0,
+    "best_confidence": 0.719,
+    "start_bbox": [
+      397.4,
+      833.5,
+      498.5,
+      905.5
+    ],
+    "end_bbox": [
+      397.4,
+      793.4,
+      502.6,
+      909.7
+    ],
+    "best_bbox": [
+      397.4,
+      833.5,
+      498.5,
+      905.5
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 2,
+    "track": [
+      {
+        "time": 1751.216,
+        "bbox": [
+          397.4,
+          833.5,
+          498.5,
+          905.5
+        ],
+        "confidence": 0.719
+      },
+      {
+        "time": 1751.216,
+        "bbox": [
+          397.4,
+          793.4,
+          502.6,
+          909.7
+        ],
+        "confidence": 0.613
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 2951.226,
+    "end_time": 2951.226,
+    "duration": 0.0,
+    "best_confidence": 0.708,
+    "start_bbox": [
+      968.5,
+      816.9,
+      1080.0,
+      1074.5
+    ],
+    "end_bbox": [
+      968.5,
+      816.9,
+      1080.0,
+      1074.5
+    ],
+    "best_bbox": [
+      968.5,
+      816.9,
+      1080.0,
+      1074.5
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 2951.226,
+        "bbox": [
+          968.5,
+          816.9,
+          1080.0,
+          1074.5
+        ],
+        "confidence": 0.708
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 2960.027,
+    "end_time": 2960.027,
+    "duration": 0.0,
+    "best_confidence": 0.708,
+    "start_bbox": [
+      784.4,
+      764.3,
+      939.5,
+      1038.5
+    ],
+    "end_bbox": [
+      784.4,
+      764.3,
+      939.5,
+      1038.5
+    ],
+    "best_bbox": [
+      784.4,
+      764.3,
+      939.5,
+      1038.5
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 2960.027,
+        "bbox": [
+          784.4,
+          764.3,
+          939.5,
+          1038.5
+        ],
+        "confidence": 0.708
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 2,
+    "class_name": "Toner",
+    "start_time": 3004.827,
+    "end_time": 3004.827,
+    "duration": 0.0,
+    "best_confidence": 0.593,
+    "start_bbox": [
+      453.5,
+      640.4,
+      804.5,
+      1122.2
+    ],
+    "end_bbox": [
+      453.5,
+      640.4,
+      804.5,
+      1122.2
+    ],
+    "best_bbox": [
+      453.5,
+      640.4,
+      804.5,
+      1122.2
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 3004.827,
+        "bbox": [
+          453.5,
+          640.4,
+          804.5,
+          1122.2
+        ],
+        "confidence": 0.593
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 1,
+    "class_name": "Serum",
+    "start_time": 4707.242,
+    "end_time": 4707.242,
+    "duration": 0.0,
+    "best_confidence": 0.776,
+    "start_bbox": [
+      568.4,
+      879.2,
+      666.7,
+      1009.4
+    ],
+    "end_bbox": [
+      568.4,
+      879.2,
+      666.7,
+      1009.4
+    ],
+    "best_bbox": [
+      568.4,
+      879.2,
+      666.7,
+      1009.4
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 4707.242,
+        "bbox": [
+          568.4,
+          879.2,
+          666.7,
+          1009.4
+        ],
+        "confidence": 0.776
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 1,
+    "class_name": "Serum",
+    "start_time": 4709.642,
+    "end_time": 4709.642,
+    "duration": 0.0,
+    "best_confidence": 0.551,
+    "start_bbox": [
+      765.7,
+      728.3,
+      812.8,
+      811.4
+    ],
+    "end_bbox": [
+      765.7,
+      728.3,
+      812.8,
+      811.4
+    ],
+    "best_bbox": [
+      765.7,
+      728.3,
+      812.8,
+      811.4
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 4709.642,
+        "bbox": [
+          765.7,
+          728.3,
+          812.8,
+          811.4
+        ],
+        "confidence": 0.551
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 4,
+    "class_name": "Sheet Mask",
+    "start_time": 5388.048,
+    "end_time": 5389.648,
+    "duration": 1.6,
+    "best_confidence": 0.715,
+    "start_bbox": [
+      886.2,
+      761.5,
+      1019.1,
+      911.1
+    ],
+    "end_bbox": [
+      644.2,
+      825.2,
+      765.7,
+      941.5
+    ],
+    "best_bbox": [
+      644.2,
+      825.2,
+      765.7,
+      941.5
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 3,
+    "track": [
+      {
+        "time": 5388.048,
+        "bbox": [
+          886.2,
+          761.5,
+          1019.1,
+          911.1
+        ],
+        "confidence": 0.602
+      },
+      {
+        "time": 5388.848,
+        "bbox": [
+          703.4,
+          783.7,
+          828.0,
+          886.2
+        ],
+        "confidence": 0.662
+      },
+      {
+        "time": 5389.648,
+        "bbox": [
+          644.2,
+          825.2,
+          765.7,
+          941.5
+        ],
+        "confidence": 0.715
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 2,
+    "class_name": "Toner",
+    "start_time": 5418.449,
+    "end_time": 5419.249,
+    "duration": 0.8,
+    "best_confidence": 0.628,
+    "start_bbox": [
+      349.6,
+      686.8,
+      684.7,
+      1152.0
+    ],
+    "end_bbox": [
+      342.7,
+      726.2,
+      683.3,
+      1149.9
+    ],
+    "best_bbox": [
+      342.7,
+      726.2,
+      683.3,
+      1149.9
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 2,
+    "track": [
+      {
+        "time": 5418.449,
+        "bbox": [
+          349.6,
+          686.8,
+          684.7,
+          1152.0
+        ],
+        "confidence": 0.559
+      },
+      {
+        "time": 5419.249,
+        "bbox": [
+          342.7,
+          726.2,
+          683.3,
+          1149.9
+        ],
+        "confidence": 0.628
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 2,
+    "class_name": "Toner",
+    "start_time": 5428.049,
+    "end_time": 5428.049,
+    "duration": 0.0,
+    "best_confidence": 0.554,
+    "start_bbox": [
+      325.0,
+      652.2,
+      658.7,
+      1152.0
+    ],
+    "end_bbox": [
+      325.0,
+      652.2,
+      658.7,
+      1152.0
+    ],
+    "best_bbox": [
+      325.0,
+      652.2,
+      658.7,
+      1152.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 5428.049,
+        "bbox": [
+          325.0,
+          652.2,
+          658.7,
+          1152.0
+        ],
+        "confidence": 0.554
+      }
+    ]
+  }
+]

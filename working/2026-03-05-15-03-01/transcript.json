@@ -1,0 +1,3065 @@
+{
+  "segments": [
+    {
+      "id": 0,
+      "start": 18.58,
+      "end": 25.72,
+      "text": "Halo kakak aku sayang, kembali lagi bersama aku pada sore hari ini nih.",
+      "words": [
+        {
+          "word": "Halo",
+          "start": 18.58,
+          "end": 19.442,
+          "probability": 0.182
+        },
+        {
+          "word": "kakak",
+          "start": 19.482,
+          "end": 19.723,
+          "probability": 0.599
+        },
+        {
+          "word": "aku",
+          "start": 19.743,
+          "end": 19.924,
+          "probability": 0.344
+        },
+        {
+          "word": "sayang,",
+          "start": 20.104,
+          "end": 20.967,
+          "probability": 0.238
+        },
+        {
+          "word": "kembali",
+          "start": 21.408,
+          "end": 22.15,
+          "probability": 0.451
+        },
+        {
+          "word": "lagi",
+          "start": 22.19,
+          "end": 22.471,
+          "probability": 0.473
+        },
+        {
+          "word": "bersama",
+          "start": 22.551,
+          "end": 23.333,
+          "probability": 0.505
+        },
+        {
+          "word": "aku",
+          "start": 23.413,
+          "end": 23.975,
+          "probability": 0.386
+        },
+        {
+          "word": "pada",
+          "start": 24.075,
+          "end": 24.496,
+          "probability": 0.556
+        },
+        {
+          "word": "sore",
+          "start": 24.637,
+          "end": 25.038,
+          "probability": 0.314
+        },
+        {
+          "word": "hari",
+          "start": 25.098,
+          "end": 25.359,
+          "probability": 0.494
+        },
+        {
+          "word": "ini",
+          "start": 25.419,
+          "end": 25.579,
+          "probability": 0.524
+        },
+        {
+          "word": "nih.",
+          "start": 25.66,
+          "end": 25.72,
+          "probability": 0.666
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "start": 26.22,
+      "end": 29.66,
+      "text": "Ya gimana kabar kalian semuanya guys?",
+      "words": [
+        {
+          "word": "Ya",
+          "start": 26.22,
+          "end": 26.562,
+          "probability": 0.046
+        },
+        {
+          "word": "gimana",
+          "start": 26.723,
+          "end": 27.226,
+          "probability": 0.251
+        },
+        {
+          "word": "kabar",
+          "start": 27.286,
+          "end": 27.668,
+          "probability": 0.556
+        },
+        {
+          "word": "kalian",
+          "start": 27.749,
+          "end": 28.252,
+          "probability": 0.307
+        },
+        {
+          "word": "semuanya",
+          "start": 28.393,
+          "end": 29.439,
+          "probability": 0.444
+        },
+        {
+          "word": "guys?",
+          "start": 29.519,
+          "end": 29.66,
+          "probability": 0.212
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 30.04,
+      "end": 31.959,
+      "text": "Ya sehasil selalu kan, Ber?",
+      "words": [
+        {
+          "word": "Ya",
+          "start": 30.04,
+          "end": 30.464,
+          "probability": 0.031
+        },
+        {
+          "word": "sehasil",
+          "start": 30.585,
+          "end": 31.171,
+          "probability": 0.441
+        },
+        {
+          "word": "selalu",
+          "start": 31.292,
+          "end": 31.595,
+          "probability": 0.505
+        },
+        {
+          "word": "kan,",
+          "start": 31.676,
+          "end": 31.797,
+          "probability": 0.75
+        },
+        {
+          "word": "Ber?",
+          "start": 31.898,
+          "end": 31.959,
+          "probability": 0.333
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 32.82,
+      "end": 36.659,
+      "text": "Yow, sebelum kita mulai untuk sesi live kali ini,",
+      "words": [
+        {
+          "word": "Yow,",
+          "start": 32.82,
+          "end": 33.202,
+          "probability": 0.348
+        },
+        {
+          "word": "sebelum",
+          "start": 33.825,
+          "end": 34.207,
+          "probability": 0.598
+        },
+        {
+          "word": "kita",
+          "start": 34.287,
+          "end": 34.549,
+          "probability": 0.598
+        },
+        {
+          "word": "mulai",
+          "start": 34.629,
+          "end": 35.071,
+          "probability": 0.42
+        },
+        {
+          "word": "untuk",
+          "start": 35.152,
+          "end": 35.433,
+          "probability": 0.49
+        },
+        {
+          "word": "sesi",
+          "start": 35.514,
+          "end": 35.875,
+          "probability": 0.562
+        },
+        {
+          "word": "live",
+          "start": 35.936,
+          "end": 36.097,
+          "probability": 0.192
+        },
+        {
+          "word": "kali",
+          "start": 36.177,
+          "end": 36.418,
+          "probability": 0.604
+        },
+        {
+          "word": "ini,",
+          "start": 36.478,
+          "end": 36.659,
+          "probability": 0.556
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 37.42,
+      "end": 42.42,
+      "text": "ya terlebih dahulu kalian perkenalkan nama Pitu Arnold, aku sebagai host disini.",
+      "words": [
+        {
+          "word": "ya",
+          "start": 37.42,
+          "end": 37.761,
+          "probability": 0.042
+        },
+        {
+          "word": "terlebih",
+          "start": 37.842,
+          "end": 38.243,
+          "probability": 0.666
+        },
+        {
+          "word": "dahulu",
+          "start": 38.263,
+          "end": 38.665,
+          "probability": 0.28
+        },
+        {
+          "word": "kalian",
+          "start": 38.725,
+          "end": 39.006,
+          "probability": 0.583
+        },
+        {
+          "word": "perkenalkan",
+          "start": 39.067,
+          "end": 39.649,
+          "probability": 0.526
+        },
+        {
+          "word": "nama",
+          "start": 39.709,
+          "end": 40.071,
+          "probability": 0.322
+        },
+        {
+          "word": "Pitu",
+          "start": 40.091,
+          "end": 40.291,
+          "probability": 0.425
+        },
+        {
+          "word": "Arnold,",
+          "start": 40.372,
+          "end": 40.914,
+          "probability": 0.237
+        },
+        {
+          "word": "aku",
+          "start": 40.994,
+          "end": 41.215,
+          "probability": 0.491
+        },
+        {
+          "word": "sebagai",
+          "start": 41.295,
+          "end": 41.717,
+          "probability": 0.592
+        },
+        {
+          "word": "host",
+          "start": 41.777,
+          "end": 41.958,
+          "probability": 0.542
+        },
+        {
+          "word": "disini.",
+          "start": 42.018,
+          "end": 42.42,
+          "probability": 0.628
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 43.2,
+      "end": 48.736,
+      "text": "Dan aku itu bakal menikah kalian sampai 3 jam ke depannya, sampai di jam 6 sorenya.",
+      "words": [
+        {
+          "word": "Dan",
+          "start": 43.2,
+          "end": 44.042,
+          "probability": 0.178
+        },
+        {
+          "word": "aku",
+          "start": 44.203,
+          "end": 44.363,
+          "probability": 0.721
+        },
+        {
+          "word": "itu",
+          "start": 44.403,
+          "end": 44.524,
+          "probability": 0.463
+        },
+        {
+          "word": "bakal",
+          "start": 44.584,
+          "end": 44.785,
+          "probability": 0.733
+        },
+        {
+          "word": "menikah",
+          "start": 44.825,
+          "end": 45.025,
+          "probability": 0.087
+        },
+        {
+          "word": "kalian",
+          "start": 45.065,
+          "end": 45.306,
+          "probability": 0.611
+        },
+        {
+          "word": "sampai",
+          "start": 45.386,
+          "end": 45.687,
+          "probability": 0.5
+        },
+        {
+          "word": "3",
+          "start": 45.6,
+          "end": 45.96,
+          "probability": 0.818
+        },
+        {
+          "word": "jam",
+          "start": 46.108,
+          "end": 46.249,
+          "probability": 0.583
+        },
+        {
+          "word": "ke",
+          "start": 46.349,
+          "end": 46.449,
+          "probability": 0.186
+        },
+        {
+          "word": "depannya,",
+          "start": 46.51,
+          "end": 47.232,
+          "probability": 0.573
+        },
+        {
+          "word": "sampai",
+          "start": 47.633,
+          "end": 48.034,
+          "probability": 0.436
+        },
+        {
+          "word": "di",
+          "start": 48.094,
+          "end": 48.194,
+          "probability": 0.625
+        },
+        {
+          "word": "jam",
+          "start": 48.355,
+          "end": 48.515,
+          "probability": 0.417
+        },
+        {
+          "word": "6",
+          "start": 48.5,
+          "end": 48.86,
+          "probability": 0.934
+        },
+        {
+          "word": "sorenya.",
+          "start": 48.555,
+          "end": 48.736,
+          "probability": 0.282
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 50.66,
+      "end": 55.38,
+      "text": "Jadi untuk kalian semua bisa banget ditanya-tanyakan dulu sama aku.",
+      "words": [
+        {
+          "word": "Jadi",
+          "start": 50.66,
+          "end": 51.544,
+          "probability": 0.33
+        },
+        {
+          "word": "untuk",
+          "start": 51.604,
+          "end": 51.785,
+          "probability": 0.667
+        },
+        {
+          "word": "kalian",
+          "start": 51.825,
+          "end": 52.086,
+          "probability": 0.37
+        },
+        {
+          "word": "semua",
+          "start": 52.146,
+          "end": 52.367,
+          "probability": 0.533
+        },
+        {
+          "word": "bisa",
+          "start": 52.448,
+          "end": 52.729,
+          "probability": 0.594
+        },
+        {
+          "word": "banget",
+          "start": 52.789,
+          "end": 53.291,
+          "probability": 0.356
+        },
+        {
+          "word": "ditanya-tanyakan",
+          "start": 53.351,
+          "end": 54.315,
+          "probability": 0.457
+        },
+        {
+          "word": "dulu",
+          "start": 54.376,
+          "end": 54.657,
+          "probability": 0.583
+        },
+        {
+          "word": "sama",
+          "start": 54.777,
+          "end": 55.119,
+          "probability": 0.358
+        },
+        {
+          "word": "aku.",
+          "start": 55.179,
+          "end": 55.38,
+          "probability": 0.309
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 55.82,
+      "end": 58.019,
+      "text": "Kita itu dari Toko Froyo Vizialnya nih kak.",
+      "words": [
+        {
+          "word": "Kita",
+          "start": 55.82,
+          "end": 56.002,
+          "probability": 0.042
+        },
+        {
+          "word": "itu",
+          "start": 56.022,
+          "end": 56.284,
+          "probability": 0.533
+        },
+        {
+          "word": "dari",
+          "start": 56.345,
+          "end": 56.526,
+          "probability": 0.562
+        },
+        {
+          "word": "Toko",
+          "start": 56.587,
+          "end": 56.829,
+          "probability": 0.5
+        },
+        {
+          "word": "Froyo",
+          "start": 56.91,
+          "end": 57.253,
+          "probability": 0.366
+        },
+        {
+          "word": "Vizialnya",
+          "start": 57.333,
+          "end": 57.818,
+          "probability": 0.46
+        },
+        {
+          "word": "nih",
+          "start": 57.838,
+          "end": 57.898,
+          "probability": 0.66
+        },
+        {
+          "word": "kak.",
+          "start": 57.959,
+          "end": 58.019,
+          "probability": 0.667
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 59.84,
+      "end": 62.68,
+      "text": "Yang bergerak pada bidang sekian kernyaka.",
+      "words": [
+        {
+          "word": "Yang",
+          "start": 59.84,
+          "end": 60.263,
+          "probability": 0.464
+        },
+        {
+          "word": "bergerak",
+          "start": 60.344,
+          "end": 60.726,
+          "probability": 0.598
+        },
+        {
+          "word": "pada",
+          "start": 60.807,
+          "end": 61.129,
+          "probability": 0.456
+        },
+        {
+          "word": "bidang",
+          "start": 61.189,
+          "end": 61.491,
+          "probability": 0.575
+        },
+        {
+          "word": "sekian",
+          "start": 61.612,
+          "end": 62.156,
+          "probability": 0.345
+        },
+        {
+          "word": "kernyaka.",
+          "start": 62.277,
+          "end": 62.68,
+          "probability": 0.53
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 63.22,
+      "end": 66.24,
+      "text": "Yang bergerak pada bidang sekian kernyaka.",
+      "words": [
+        {
+          "word": "Yang",
+          "start": 63.22,
+          "end": 63.844,
+          "probability": 0.386
+        },
+        {
+          "word": "bergerak",
+          "start": 63.925,
+          "end": 64.368,
+          "probability": 0.515
+        },
+        {
+          "word": "pada",
+          "start": 64.448,
+          "end": 64.69,
+          "probability": 0.604
+        },
+        {
+          "word": "bidang",
+          "start": 64.75,
+          "end": 65.032,
+          "probability": 0.566
+        },
+        {
+          "word": "sekian",
+          "start": 65.173,
+          "end": 65.757,
+          "probability": 0.448
+        },
+        {
+          "word": "kernyaka.",
+          "start": 65.837,
+          "end": 66.24,
+          "probability": 0.422
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 66.86,
+      "end": 70.38,
+      "text": "Jadi kalau kakak mau tanya-tanyakan dulu, boleh banget sayang.",
+      "words": [
+        {
+          "word": "Jadi",
+          "start": 66.86,
+          "end": 67.484,
+          "probability": 0.436
+        },
+        {
+          "word": "kalau",
+          "start": 67.524,
+          "end": 67.705,
+          "probability": 0.563
+        },
+        {
+          "word": "kakak",
+          "start": 67.725,
+          "end": 67.946,
+          "probability": 0.565
+        },
+        {
+          "word": "mau",
+          "start": 67.986,
+          "end": 68.087,
+          "probability": 0.348
+        },
+        {
+          "word": "tanya-tanyakan",
+          "start": 68.127,
+          "end": 68.61,
+          "probability": 0.611
+        },
+        {
+          "word": "dulu,",
+          "start": 68.65,
+          "end": 69.093,
+          "probability": 0.56
+        },
+        {
+          "word": "boleh",
+          "start": 69.173,
+          "end": 69.656,
+          "probability": 0.364
+        },
+        {
+          "word": "banget",
+          "start": 69.756,
+          "end": 70.078,
+          "probability": 0.428
+        },
+        {
+          "word": "sayang.",
+          "start": 70.139,
+          "end": 70.38,
+          "probability": 0.456
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 71.56,
+      "end": 76.83,
+      "text": "Kaka bisa dilihat dulu nih, di etal asa nomor 1 sampai di etal asa yang nomor 7.",
+      "words": [
+        {
+          "word": "Kaka",
+          "start": 71.56,
+          "end": 72.321,
+          "probability": 0.229
+        },
+        {
+          "word": "bisa",
+          "start": 72.382,
+          "end": 72.602,
+          "probability": 0.591
+        },
+        {
+          "word": "dilihat",
+          "start": 72.642,
+          "end": 72.882,
+          "probability": 0.673
+        },
+        {
+          "word": "dulu",
+          "start": 72.923,
+          "end": 73.103,
+          "probability": 0.646
+        },
+        {
+          "word": "nih,",
+          "start": 73.143,
+          "end": 73.263,
+          "probability": 0.334
+        },
+        {
+          "word": "di",
+          "start": 73.303,
+          "end": 73.464,
+          "probability": 0.151
+        },
+        {
+          "word": "etal",
+          "start": 73.484,
+          "end": 73.624,
+          "probability": 0.5
+        },
+        {
+          "word": "asa",
+          "start": 73.644,
+          "end": 73.904,
+          "probability": 0.369
+        },
+        {
+          "word": "nomor",
+          "start": 73.924,
+          "end": 74.185,
+          "probability": 0.626
+        },
+        {
+          "word": "1",
+          "start": 74.18,
+          "end": 74.56,
+          "probability": 0.581
+        },
+        {
+          "word": "sampai",
+          "start": 74.906,
+          "end": 75.387,
+          "probability": 0.415
+        },
+        {
+          "word": "di",
+          "start": 75.467,
+          "end": 75.608,
+          "probability": 0.584
+        },
+        {
+          "word": "etal",
+          "start": 75.648,
+          "end": 75.988,
+          "probability": 0.575
+        },
+        {
+          "word": "asa",
+          "start": 76.008,
+          "end": 76.449,
+          "probability": 0.377
+        },
+        {
+          "word": "yang",
+          "start": 76.529,
+          "end": 76.71,
+          "probability": 0.179
+        },
+        {
+          "word": "nomor",
+          "start": 76.73,
+          "end": 76.83,
+          "probability": 0.196
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 85.96,
+      "end": 91.219,
+      "text": "Bisa dilihat lebih dahulu, untuk etal asa nomor 1 sampai di etal asa nomor 7.",
+      "words": [
+        {
+          "word": "Bisa",
+          "start": 85.96,
+          "end": 86.703,
+          "probability": 0.21
+        },
+        {
+          "word": "dilihat",
+          "start": 86.763,
+          "end": 87.124,
+          "probability": 0.577
+        },
+        {
+          "word": "lebih",
+          "start": 87.586,
+          "end": 87.847,
+          "probability": 0.629
+        },
+        {
+          "word": "dahulu,",
+          "start": 87.867,
+          "end": 88.469,
+          "probability": 0.241
+        },
+        {
+          "word": "untuk",
+          "start": 88.489,
+          "end": 88.61,
+          "probability": 0.201
+        },
+        {
+          "word": "etal",
+          "start": 88.65,
+          "end": 88.85,
+          "probability": 0.434
+        },
+        {
+          "word": "asa",
+          "start": 88.87,
+          "end": 89.111,
+          "probability": 0.217
+        },
+        {
+          "word": "nomor",
+          "start": 89.131,
+          "end": 89.432,
+          "probability": 0.495
+        },
+        {
+          "word": "1",
+          "start": 89.42,
+          "end": 89.82,
+          "probability": 0.976
+        },
+        {
+          "word": "sampai",
+          "start": 90.135,
+          "end": 90.496,
+          "probability": 0.557
+        },
+        {
+          "word": "di",
+          "start": 90.516,
+          "end": 90.577,
+          "probability": 0.0
+        },
+        {
+          "word": "etal",
+          "start": 90.597,
+          "end": 90.777,
+          "probability": 0.333
+        },
+        {
+          "word": "asa",
+          "start": 90.797,
+          "end": 90.898,
+          "probability": 0.01
+        },
+        {
+          "word": "nomor",
+          "start": 90.918,
+          "end": 91.219,
+          "probability": 0.495
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 92.68,
+      "end": 95.99,
+      "text": "Untuk di etal asa nomor 7 itu, yang aku pakai kak.",
+      "words": [
+        {
+          "word": "Untuk",
+          "start": 92.68,
+          "end": 93.362,
+          "probability": 0.517
+        },
+        {
+          "word": "di",
+          "start": 93.422,
+          "end": 93.543,
+          "probability": 0.6
+        },
+        {
+          "word": "etal",
+          "start": 93.563,
+          "end": 93.703,
+          "probability": 0.5
+        },
+        {
+          "word": "asa",
+          "start": 93.723,
+          "end": 94.044,
+          "probability": 0.363
+        },
+        {
+          "word": "nomor",
+          "start": 94.124,
+          "end": 94.606,
+          "probability": 0.449
+        },
+        {
+          "word": "7",
+          "start": 94.62,
+          "end": 94.96,
+          "probability": 0.986
+        },
+        {
+          "word": "itu,",
+          "start": 94.646,
+          "end": 95.007,
+          "probability": 0.361
+        },
+        {
+          "word": "yang",
+          "start": 95.027,
+          "end": 95.187,
+          "probability": 0.25
+        },
+        {
+          "word": "aku",
+          "start": 95.227,
+          "end": 95.308,
+          "probability": 0.333
+        },
+        {
+          "word": "pakai",
+          "start": 95.348,
+          "end": 95.869,
+          "probability": 0.0
+        },
+        {
+          "word": "kak.",
+          "start": 95.889,
+          "end": 95.99,
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 99.58,
+      "end": 107.8,
+      "text": "Untuk etal asa nomor 7 itu, yang aku pakai untuk yang satu set sekian care lengkapnya seperti ini.",
+      "words": [
+        {
+          "word": "Untuk",
+          "start": 99.58,
+          "end": 100.643,
+          "probability": 0.6
+        },
+        {
+          "word": "etal",
+          "start": 100.703,
+          "end": 100.903,
+          "probability": 0.564
+        },
+        {
+          "word": "asa",
+          "start": 100.923,
+          "end": 101.164,
+          "probability": 0.375
+        },
+        {
+          "word": "nomor",
+          "start": 101.184,
+          "end": 101.565,
+          "probability": 0.342
+        },
+        {
+          "word": "7",
+          "start": 101.56,
+          "end": 101.86,
+          "probability": 0.814
+        },
+        {
+          "word": "itu,",
+          "start": 102.307,
+          "end": 102.788,
+          "probability": 0.232
+        },
+        {
+          "word": "yang",
+          "start": 102.908,
+          "end": 103.109,
+          "probability": 0.55
+        },
+        {
+          "word": "aku",
+          "start": 103.209,
+          "end": 103.489,
+          "probability": 0.315
+        },
+        {
+          "word": "pakai",
+          "start": 103.59,
+          "end": 104.091,
+          "probability": 0.409
+        },
+        {
+          "word": "untuk",
+          "start": 104.552,
+          "end": 104.913,
+          "probability": 0.42
+        },
+        {
+          "word": "yang",
+          "start": 104.953,
+          "end": 105.093,
+          "probability": 0.708
+        },
+        {
+          "word": "satu",
+          "start": 105.174,
+          "end": 105.454,
+          "probability": 0.49
+        },
+        {
+          "word": "set",
+          "start": 105.534,
+          "end": 105.675,
+          "probability": 0.609
+        },
+        {
+          "word": "sekian",
+          "start": 105.775,
+          "end": 106.136,
+          "probability": 0.543
+        },
+        {
+          "word": "care",
+          "start": 106.156,
+          "end": 106.316,
+          "probability": 0.086
+        },
+        {
+          "word": "lengkapnya",
+          "start": 106.396,
+          "end": 106.918,
+          "probability": 0.589
+        },
+        {
+          "word": "seperti",
+          "start": 107.038,
+          "end": 107.539,
+          "probability": 0.55
+        },
+        {
+          "word": "ini.",
+          "start": 107.619,
+          "end": 107.8,
+          "probability": 0.553
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 108.36,
+      "end": 112.555,
+      "text": "Aku sematkan untuk etal asa nomor 7, dia itu udah full brightening.",
+      "words": [
+        {
+          "word": "Aku",
+          "start": 108.36,
+          "end": 109.083,
+          "probability": 0.444
+        },
+        {
+          "word": "sematkan",
+          "start": 109.183,
+          "end": 109.645,
+          "probability": 0.497
+        },
+        {
+          "word": "untuk",
+          "start": 109.685,
+          "end": 109.865,
+          "probability": 0.667
+        },
+        {
+          "word": "etal",
+          "start": 109.905,
+          "end": 110.106,
+          "probability": 0.568
+        },
+        {
+          "word": "asa",
+          "start": 110.126,
+          "end": 110.367,
+          "probability": 0.325
+        },
+        {
+          "word": "nomor",
+          "start": 110.387,
+          "end": 110.688,
+          "probability": 0.669
+        },
+        {
+          "word": "7,",
+          "start": 110.7,
+          "end": 111.18,
+          "probability": 0.945
+        },
+        {
+          "word": "dia",
+          "start": 110.728,
+          "end": 110.829,
+          "probability": 0.0
+        },
+        {
+          "word": "itu",
+          "start": 110.849,
+          "end": 111.17,
+          "probability": 0.357
+        },
+        {
+          "word": "udah",
+          "start": 111.19,
+          "end": 111.471,
+          "probability": 0.15
+        },
+        {
+          "word": "full",
+          "start": 111.511,
+          "end": 111.652,
+          "probability": 0.0
+        },
+        {
+          "word": "brightening.",
+          "start": 111.672,
+          "end": 112.555,
+          "probability": 0.101
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 114.84,
+      "end": 118.02,
+      "text": "Etal asa nomor 7 ini udah full brightening.",
+      "words": [
+        {
+          "word": "Etal",
+          "start": 114.84,
+          "end": 115.625,
+          "probability": 0.358
+        },
+        {
+          "word": "asa",
+          "start": 115.645,
+          "end": 115.746,
+          "probability": 0.331
+        },
+        {
+          "word": "nomor",
+          "start": 115.806,
+          "end": 116.088,
+          "probability": 0.595
+        },
+        {
+          "word": "7",
+          "start": 116.08,
+          "end": 116.36,
+          "probability": 0.977
+        },
+        {
+          "word": "ini",
+          "start": 116.531,
+          "end": 116.772,
+          "probability": 0.3
+        },
+        {
+          "word": "udah",
+          "start": 116.913,
+          "end": 117.215,
+          "probability": 0.531
+        },
+        {
+          "word": "full",
+          "start": 117.316,
+          "end": 117.456,
+          "probability": 0.706
+        },
+        {
+          "word": "brightening.",
+          "start": 117.517,
+          "end": 118.02,
+          "probability": 0.395
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 118.74,
+      "end": 120.82,
+      "text": "Dia udah full mencerakan.",
+      "words": [
+        {
+          "word": "Dia",
+          "start": 118.74,
+          "end": 119.487,
+          "probability": 0.15
+        },
+        {
+          "word": "udah",
+          "start": 119.568,
+          "end": 119.851,
+          "probability": 0.46
+        },
+        {
+          "word": "full",
+          "start": 119.972,
+          "end": 120.133,
+          "probability": 0.686
+        },
+        {
+          "word": "mencerakan.",
+          "start": 120.214,
+          "end": 120.82,
+          "probability": 0.448
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 123.08,
+      "end": 126.62,
+      "text": "Bagus banget harganya juga lagi turun banget, lagi murce banget.",
+      "words": [
+        {
+          "word": "Bagus",
+          "start": 123.08,
+          "end": 123.764,
+          "probability": 0.26
+        },
+        {
+          "word": "banget",
+          "start": 123.844,
+          "end": 124.086,
+          "probability": 0.542
+        },
+        {
+          "word": "harganya",
+          "start": 124.146,
+          "end": 124.568,
+          "probability": 0.399
+        },
+        {
+          "word": "juga",
+          "start": 124.629,
+          "end": 124.79,
+          "probability": 0.583
+        },
+        {
+          "word": "lagi",
+          "start": 124.83,
+          "end": 125.051,
+          "probability": 0.625
+        },
+        {
+          "word": "turun",
+          "start": 125.111,
+          "end": 125.313,
+          "probability": 0.645
+        },
+        {
+          "word": "banget,",
+          "start": 125.373,
+          "end": 125.614,
+          "probability": 0.372
+        },
+        {
+          "word": "lagi",
+          "start": 125.675,
+          "end": 125.916,
+          "probability": 0.778
+        },
+        {
+          "word": "murce",
+          "start": 126.016,
+          "end": 126.379,
+          "probability": 0.331
+        },
+        {
+          "word": "banget.",
+          "start": 126.399,
+          "end": 126.62,
+          "probability": 0.08
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 127.42,
+      "end": 132.88,
+      "text": "Ya tunggu apalagi besti, ya dari sekarang aja di kepoin dulu ya sayang.",
+      "words": [
+        {
+          "word": "Ya",
+          "start": 127.42,
+          "end": 127.882,
+          "probability": 0.046
+        },
+        {
+          "word": "tunggu",
+          "start": 128.143,
+          "end": 128.624,
+          "probability": 0.229
+        },
+        {
+          "word": "apalagi",
+          "start": 128.644,
+          "end": 129.146,
+          "probability": 0.235
+        },
+        {
+          "word": "besti,",
+          "start": 129.186,
+          "end": 129.508,
+          "probability": 0.514
+        },
+        {
+          "word": "ya",
+          "start": 129.989,
+          "end": 130.17,
+          "probability": 0.322
+        },
+        {
+          "word": "dari",
+          "start": 130.371,
+          "end": 130.712,
+          "probability": 0.481
+        },
+        {
+          "word": "sekarang",
+          "start": 130.832,
+          "end": 131.334,
+          "probability": 0.575
+        },
+        {
+          "word": "aja",
+          "start": 131.415,
+          "end": 131.736,
+          "probability": 0.433
+        },
+        {
+          "word": "di",
+          "start": 131.796,
+          "end": 131.876,
+          "probability": 0.666
+        },
+        {
+          "word": "kepoin",
+          "start": 131.957,
+          "end": 132.278,
+          "probability": 0.572
+        },
+        {
+          "word": "dulu",
+          "start": 132.338,
+          "end": 132.539,
+          "probability": 0.55
+        },
+        {
+          "word": "ya",
+          "start": 132.559,
+          "end": 132.639,
+          "probability": 0.0
+        },
+        {
+          "word": "sayang.",
+          "start": 132.719,
+          "end": 132.88,
+          "probability": 0.503
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 135.43,
+      "end": 141.51,
+      "text": "Ya dari sekarang aja di kepoin dulu kali Beb ya, mempung aku lagi live nya.",
+      "words": [
+        {
+          "word": "Ya",
+          "start": 135.43,
+          "end": 136.373,
+          "probability": 0.031
+        },
+        {
+          "word": "dari",
+          "start": 136.453,
+          "end": 136.794,
+          "probability": 0.462
+        },
+        {
+          "word": "sekarang",
+          "start": 136.895,
+          "end": 137.437,
+          "probability": 0.492
+        },
+        {
+          "word": "aja",
+          "start": 137.477,
+          "end": 137.918,
+          "probability": 0.234
+        },
+        {
+          "word": "di",
+          "start": 137.978,
+          "end": 138.099,
+          "probability": 0.375
+        },
+        {
+          "word": "kepoin",
+          "start": 138.159,
+          "end": 138.6,
+          "probability": 0.594
+        },
+        {
+          "word": "dulu",
+          "start": 138.641,
+          "end": 138.881,
+          "probability": 0.619
+        },
+        {
+          "word": "kali",
+          "start": 138.942,
+          "end": 139.102,
+          "probability": 0.583
+        },
+        {
+          "word": "Beb",
+          "start": 139.142,
+          "end": 139.303,
+          "probability": 0.401
+        },
+        {
+          "word": "ya,",
+          "start": 139.323,
+          "end": 139.443,
+          "probability": 0.595
+        },
+        {
+          "word": "mempung",
+          "start": 139.965,
+          "end": 140.487,
+          "probability": 0.562
+        },
+        {
+          "word": "aku",
+          "start": 140.567,
+          "end": 140.848,
+          "probability": 0.454
+        },
+        {
+          "word": "lagi",
+          "start": 140.888,
+          "end": 141.169,
+          "probability": 0.528
+        },
+        {
+          "word": "live",
+          "start": 141.249,
+          "end": 141.41,
+          "probability": 0.257
+        },
+        {
+          "word": "nya.",
+          "start": 141.45,
+          "end": 141.51,
+          "probability": 0.667
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 152.99,
+      "end": 159.63,
+      "text": "Ya tunggu apalagi sayangku, digercapin aja dulu sama aku nya.",
+      "words": [
+        {
+          "word": "Ya",
+          "start": 152.99,
+          "end": 154.174,
+          "probability": 0.019
+        },
+        {
+          "word": "tunggu",
+          "start": 154.314,
+          "end": 154.956,
+          "probability": 0.407
+        },
+        {
+          "word": "apalagi",
+          "start": 155.036,
+          "end": 155.678,
+          "probability": 0.33
+        },
+        {
+          "word": "sayangku,",
+          "start": 155.778,
+          "end": 156.561,
+          "probability": 0.394
+        },
+        {
+          "word": "digercapin",
+          "start": 156.641,
+          "end": 157.463,
+          "probability": 0.364
+        },
+        {
+          "word": "aja",
+          "start": 157.524,
+          "end": 157.865,
+          "probability": 0.233
+        },
+        {
+          "word": "dulu",
+          "start": 157.905,
+          "end": 158.487,
+          "probability": 0.429
+        },
+        {
+          "word": "sama",
+          "start": 158.627,
+          "end": 159.189,
+          "probability": 0.437
+        },
+        {
+          "word": "aku",
+          "start": 159.249,
+          "end": 159.53,
+          "probability": 0.178
+        },
+        {
+          "word": "nya.",
+          "start": 159.55,
+          "end": 159.63,
+          "probability": 0.833
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 160.05,
+      "end": 174.73,
+      "text": "Ya ditanyakan dulu sama aku nya.",
+      "words": [
+        {
+          "word": "Ya",
+          "start": 160.05,
+          "end": 172.467,
+          "probability": 0.042
+        },
+        {
+          "word": "ditanyakan",
+          "start": 172.547,
+          "end": 173.148,
+          "probability": 0.581
+        },
+        {
+          "word": "dulu",
+          "start": 173.188,
+          "end": 173.649,
+          "probability": 0.558
+        },
+        {
+          "word": "sama",
+          "start": 173.809,
+          "end": 174.329,
+          "probability": 0.556
+        },
+        {
+          "word": "aku",
+          "start": 174.41,
+          "end": 174.65,
+          "probability": 0.098
+        },
+        {
+          "word": "nya.",
+          "start": 174.67,
+          "end": 174.73,
+          "probability": 0.906
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 318.91,
+      "end": 319.41,
+      "text": "Ngapain?",
+      "words": [
+        {
+          "word": "Ngapain?",
+          "start": 318.91,
+          "end": 319.41,
+          "probability": 0.285
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "Halo",
+      "start": 18.58,
+      "end": 19.442,
+      "probability": 0.182
+    },
+    {
+      "word": "kakak",
+      "start": 19.482,
+      "end": 19.723,
+      "probability": 0.599
+    },
+    {
+      "word": "aku",
+      "start": 19.743,
+      "end": 19.924,
+      "probability": 0.344
+    },
+    {
+      "word": "sayang,",
+      "start": 20.104,
+      "end": 20.967,
+      "probability": 0.238
+    },
+    {
+      "word": "kembali",
+      "start": 21.408,
+      "end": 22.15,
+      "probability": 0.451
+    },
+    {
+      "word": "lagi",
+      "start": 22.19,
+      "end": 22.471,
+      "probability": 0.473
+    },
+    {
+      "word": "bersama",
+      "start": 22.551,
+      "end": 23.333,
+      "probability": 0.505
+    },
+    {
+      "word": "aku",
+      "start": 23.413,
+      "end": 23.975,
+      "probability": 0.386
+    },
+    {
+      "word": "pada",
+      "start": 24.075,
+      "end": 24.496,
+      "probability": 0.556
+    },
+    {
+      "word": "sore",
+      "start": 24.637,
+      "end": 25.038,
+      "probability": 0.314
+    },
+    {
+      "word": "hari",
+      "start": 25.098,
+      "end": 25.359,
+      "probability": 0.494
+    },
+    {
+      "word": "ini",
+      "start": 25.419,
+      "end": 25.579,
+      "probability": 0.524
+    },
+    {
+      "word": "nih.",
+      "start": 25.66,
+      "end": 25.72,
+      "probability": 0.666
+    },
+    {
+      "word": "Ya",
+      "start": 26.22,
+      "end": 26.562,
+      "probability": 0.046
+    },
+    {
+      "word": "gimana",
+      "start": 26.723,
+      "end": 27.226,
+      "probability": 0.251
+    },
+    {
+      "word": "kabar",
+      "start": 27.286,
+      "end": 27.668,
+      "probability": 0.556
+    },
+    {
+      "word": "kalian",
+      "start": 27.749,
+      "end": 28.252,
+      "probability": 0.307
+    },
+    {
+      "word": "semuanya",
+      "start": 28.393,
+      "end": 29.439,
+      "probability": 0.444
+    },
+    {
+      "word": "guys?",
+      "start": 29.519,
+      "end": 29.66,
+      "probability": 0.212
+    },
+    {
+      "word": "Ya",
+      "start": 30.04,
+      "end": 30.464,
+      "probability": 0.031
+    },
+    {
+      "word": "sehasil",
+      "start": 30.585,
+      "end": 31.171,
+      "probability": 0.441
+    },
+    {
+      "word": "selalu",
+      "start": 31.292,
+      "end": 31.595,
+      "probability": 0.505
+    },
+    {
+      "word": "kan,",
+      "start": 31.676,
+      "end": 31.797,
+      "probability": 0.75
+    },
+    {
+      "word": "Ber?",
+      "start": 31.898,
+      "end": 31.959,
+      "probability": 0.333
+    },
+    {
+      "word": "Yow,",
+      "start": 32.82,
+      "end": 33.202,
+      "probability": 0.348
+    },
+    {
+      "word": "sebelum",
+      "start": 33.825,
+      "end": 34.207,
+      "probability": 0.598
+    },
+    {
+      "word": "kita",
+      "start": 34.287,
+      "end": 34.549,
+      "probability": 0.598
+    },
+    {
+      "word": "mulai",
+      "start": 34.629,
+      "end": 35.071,
+      "probability": 0.42
+    },
+    {
+      "word": "untuk",
+      "start": 35.152,
+      "end": 35.433,
+      "probability": 0.49
+    },
+    {
+      "word": "sesi",
+      "start": 35.514,
+      "end": 35.875,
+      "probability": 0.562
+    },
+    {
+      "word": "live",
+      "start": 35.936,
+      "end": 36.097,
+      "probability": 0.192
+    },
+    {
+      "word": "kali",
+      "start": 36.177,
+      "end": 36.418,
+      "probability": 0.604
+    },
+    {
+      "word": "ini,",
+      "start": 36.478,
+      "end": 36.659,
+      "probability": 0.556
+    },
+    {
+      "word": "ya",
+      "start": 37.42,
+      "end": 37.761,
+      "probability": 0.042
+    },
+    {
+      "word": "terlebih",
+      "start": 37.842,
+      "end": 38.243,
+      "probability": 0.666
+    },
+    {
+      "word": "dahulu",
+      "start": 38.263,
+      "end": 38.665,
+      "probability": 0.28
+    },
+    {
+      "word": "kalian",
+      "start": 38.725,
+      "end": 39.006,
+      "probability": 0.583
+    },
+    {
+      "word": "perkenalkan",
+      "start": 39.067,
+      "end": 39.649,
+      "probability": 0.526
+    },
+    {
+      "word": "nama",
+      "start": 39.709,
+      "end": 40.071,
+      "probability": 0.322
+    },
+    {
+      "word": "Pitu",
+      "start": 40.091,
+      "end": 40.291,
+      "probability": 0.425
+    },
+    {
+      "word": "Arnold,",
+      "start": 40.372,
+      "end": 40.914,
+      "probability": 0.237
+    },
+    {
+      "word": "aku",
+      "start": 40.994,
+      "end": 41.215,
+      "probability": 0.491
+    },
+    {
+      "word": "sebagai",
+      "start": 41.295,
+      "end": 41.717,
+      "probability": 0.592
+    },
+    {
+      "word": "host",
+      "start": 41.777,
+      "end": 41.958,
+      "probability": 0.542
+    },
+    {
+      "word": "disini.",
+      "start": 42.018,
+      "end": 42.42,
+      "probability": 0.628
+    },
+    {
+      "word": "Dan",
+      "start": 43.2,
+      "end": 44.042,
+      "probability": 0.178
+    },
+    {
+      "word": "aku",
+      "start": 44.203,
+      "end": 44.363,
+      "probability": 0.721
+    },
+    {
+      "word": "itu",
+      "start": 44.403,
+      "end": 44.524,
+      "probability": 0.463
+    },
+    {
+      "word": "bakal",
+      "start": 44.584,
+      "end": 44.785,
+      "probability": 0.733
+    },
+    {
+      "word": "menikah",
+      "start": 44.825,
+      "end": 45.025,
+      "probability": 0.087
+    },
+    {
+      "word": "kalian",
+      "start": 45.065,
+      "end": 45.306,
+      "probability": 0.611
+    },
+    {
+      "word": "sampai",
+      "start": 45.386,
+      "end": 45.687,
+      "probability": 0.5
+    },
+    {
+      "word": "3",
+      "start": 45.6,
+      "end": 45.96,
+      "probability": 0.818
+    },
+    {
+      "word": "jam",
+      "start": 46.108,
+      "end": 46.249,
+      "probability": 0.583
+    },
+    {
+      "word": "ke",
+      "start": 46.349,
+      "end": 46.449,
+      "probability": 0.186
+    },
+    {
+      "word": "depannya,",
+      "start": 46.51,
+      "end": 47.232,
+      "probability": 0.573
+    },
+    {
+      "word": "sampai",
+      "start": 47.633,
+      "end": 48.034,
+      "probability": 0.436
+    },
+    {
+      "word": "di",
+      "start": 48.094,
+      "end": 48.194,
+      "probability": 0.625
+    },
+    {
+      "word": "jam",
+      "start": 48.355,
+      "end": 48.515,
+      "probability": 0.417
+    },
+    {
+      "word": "6",
+      "start": 48.5,
+      "end": 48.86,
+      "probability": 0.934
+    },
+    {
+      "word": "sorenya.",
+      "start": 48.555,
+      "end": 48.736,
+      "probability": 0.282
+    },
+    {
+      "word": "Jadi",
+      "start": 50.66,
+      "end": 51.544,
+      "probability": 0.33
+    },
+    {
+      "word": "untuk",
+      "start": 51.604,
+      "end": 51.785,
+      "probability": 0.667
+    },
+    {
+      "word": "kalian",
+      "start": 51.825,
+      "end": 52.086,
+      "probability": 0.37
+    },
+    {
+      "word": "semua",
+      "start": 52.146,
+      "end": 52.367,
+      "probability": 0.533
+    },
+    {
+      "word": "bisa",
+      "start": 52.448,
+      "end": 52.729,
+      "probability": 0.594
+    },
+    {
+      "word": "banget",
+      "start": 52.789,
+      "end": 53.291,
+      "probability": 0.356
+    },
+    {
+      "word": "ditanya-tanyakan",
+      "start": 53.351,
+      "end": 54.315,
+      "probability": 0.457
+    },
+    {
+      "word": "dulu",
+      "start": 54.376,
+      "end": 54.657,
+      "probability": 0.583
+    },
+    {
+      "word": "sama",
+      "start": 54.777,
+      "end": 55.119,
+      "probability": 0.358
+    },
+    {
+      "word": "aku.",
+      "start": 55.179,
+      "end": 55.38,
+      "probability": 0.309
+    },
+    {
+      "word": "Kita",
+      "start": 55.82,
+      "end": 56.002,
+      "probability": 0.042
+    },
+    {
+      "word": "itu",
+      "start": 56.022,
+      "end": 56.284,
+      "probability": 0.533
+    },
+    {
+      "word": "dari",
+      "start": 56.345,
+      "end": 56.526,
+      "probability": 0.562
+    },
+    {
+      "word": "Toko",
+      "start": 56.587,
+      "end": 56.829,
+      "probability": 0.5
+    },
+    {
+      "word": "Froyo",
+      "start": 56.91,
+      "end": 57.253,
+      "probability": 0.366
+    },
+    {
+      "word": "Vizialnya",
+      "start": 57.333,
+      "end": 57.818,
+      "probability": 0.46
+    },
+    {
+      "word": "nih",
+      "start": 57.838,
+      "end": 57.898,
+      "probability": 0.66
+    },
+    {
+      "word": "kak.",
+      "start": 57.959,
+      "end": 58.019,
+      "probability": 0.667
+    },
+    {
+      "word": "Yang",
+      "start": 59.84,
+      "end": 60.263,
+      "probability": 0.464
+    },
+    {
+      "word": "bergerak",
+      "start": 60.344,
+      "end": 60.726,
+      "probability": 0.598
+    },
+    {
+      "word": "pada",
+      "start": 60.807,
+      "end": 61.129,
+      "probability": 0.456
+    },
+    {
+      "word": "bidang",
+      "start": 61.189,
+      "end": 61.491,
+      "probability": 0.575
+    },
+    {
+      "word": "sekian",
+      "start": 61.612,
+      "end": 62.156,
+      "probability": 0.345
+    },
+    {
+      "word": "kernyaka.",
+      "start": 62.277,
+      "end": 62.68,
+      "probability": 0.53
+    },
+    {
+      "word": "Yang",
+      "start": 63.22,
+      "end": 63.844,
+      "probability": 0.386
+    },
+    {
+      "word": "bergerak",
+      "start": 63.925,
+      "end": 64.368,
+      "probability": 0.515
+    },
+    {
+      "word": "pada",
+      "start": 64.448,
+      "end": 64.69,
+      "probability": 0.604
+    },
+    {
+      "word": "bidang",
+      "start": 64.75,
+      "end": 65.032,
+      "probability": 0.566
+    },
+    {
+      "word": "sekian",
+      "start": 65.173,
+      "end": 65.757,
+      "probability": 0.448
+    },
+    {
+      "word": "kernyaka.",
+      "start": 65.837,
+      "end": 66.24,
+      "probability": 0.422
+    },
+    {
+      "word": "Jadi",
+      "start": 66.86,
+      "end": 67.484,
+      "probability": 0.436
+    },
+    {
+      "word": "kalau",
+      "start": 67.524,
+      "end": 67.705,
+      "probability": 0.563
+    },
+    {
+      "word": "kakak",
+      "start": 67.725,
+      "end": 67.946,
+      "probability": 0.565
+    },
+    {
+      "word": "mau",
+      "start": 67.986,
+      "end": 68.087,
+      "probability": 0.348
+    },
+    {
+      "word": "tanya-tanyakan",
+      "start": 68.127,
+      "end": 68.61,
+      "probability": 0.611
+    },
+    {
+      "word": "dulu,",
+      "start": 68.65,
+      "end": 69.093,
+      "probability": 0.56
+    },
+    {
+      "word": "boleh",
+      "start": 69.173,
+      "end": 69.656,
+      "probability": 0.364
+    },
+    {
+      "word": "banget",
+      "start": 69.756,
+      "end": 70.078,
+      "probability": 0.428
+    },
+    {
+      "word": "sayang.",
+      "start": 70.139,
+      "end": 70.38,
+      "probability": 0.456
+    },
+    {
+      "word": "Kaka",
+      "start": 71.56,
+      "end": 72.321,
+      "probability": 0.229
+    },
+    {
+      "word": "bisa",
+      "start": 72.382,
+      "end": 72.602,
+      "probability": 0.591
+    },
+    {
+      "word": "dilihat",
+      "start": 72.642,
+      "end": 72.882,
+      "probability": 0.673
+    },
+    {
+      "word": "dulu",
+      "start": 72.923,
+      "end": 73.103,
+      "probability": 0.646
+    },
+    {
+      "word": "nih,",
+      "start": 73.143,
+      "end": 73.263,
+      "probability": 0.334
+    },
+    {
+      "word": "di",
+      "start": 73.303,
+      "end": 73.464,
+      "probability": 0.151
+    },
+    {
+      "word": "etal",
+      "start": 73.484,
+      "end": 73.624,
+      "probability": 0.5
+    },
+    {
+      "word": "asa",
+      "start": 73.644,
+      "end": 73.904,
+      "probability": 0.369
+    },
+    {
+      "word": "nomor",
+      "start": 73.924,
+      "end": 74.185,
+      "probability": 0.626
+    },
+    {
+      "word": "1",
+      "start": 74.18,
+      "end": 74.56,
+      "probability": 0.581
+    },
+    {
+      "word": "sampai",
+      "start": 74.906,
+      "end": 75.387,
+      "probability": 0.415
+    },
+    {
+      "word": "di",
+      "start": 75.467,
+      "end": 75.608,
+      "probability": 0.584
+    },
+    {
+      "word": "etal",
+      "start": 75.648,
+      "end": 75.988,
+      "probability": 0.575
+    },
+    {
+      "word": "asa",
+      "start": 76.008,
+      "end": 76.449,
+      "probability": 0.377
+    },
+    {
+      "word": "yang",
+      "start": 76.529,
+      "end": 76.71,
+      "probability": 0.179
+    },
+    {
+      "word": "nomor",
+      "start": 76.73,
+      "end": 76.83,
+      "probability": 0.196
+    },
+    {
+      "word": "Bisa",
+      "start": 85.96,
+      "end": 86.703,
+      "probability": 0.21
+    },
+    {
+      "word": "dilihat",
+      "start": 86.763,
+      "end": 87.124,
+      "probability": 0.577
+    },
+    {
+      "word": "lebih",
+      "start": 87.586,
+      "end": 87.847,
+      "probability": 0.629
+    },
+    {
+      "word": "dahulu,",
+      "start": 87.867,
+      "end": 88.469,
+      "probability": 0.241
+    },
+    {
+      "word": "untuk",
+      "start": 88.489,
+      "end": 88.61,
+      "probability": 0.201
+    },
+    {
+      "word": "etal",
+      "start": 88.65,
+      "end": 88.85,
+      "probability": 0.434
+    },
+    {
+      "word": "asa",
+      "start": 88.87,
+      "end": 89.111,
+      "probability": 0.217
+    },
+    {
+      "word": "nomor",
+      "start": 89.131,
+      "end": 89.432,
+      "probability": 0.495
+    },
+    {
+      "word": "1",
+      "start": 89.42,
+      "end": 89.82,
+      "probability": 0.976
+    },
+    {
+      "word": "sampai",
+      "start": 90.135,
+      "end": 90.496,
+      "probability": 0.557
+    },
+    {
+      "word": "di",
+      "start": 90.516,
+      "end": 90.577,
+      "probability": 0.0
+    },
+    {
+      "word": "etal",
+      "start": 90.597,
+      "end": 90.777,
+      "probability": 0.333
+    },
+    {
+      "word": "asa",
+      "start": 90.797,
+      "end": 90.898,
+      "probability": 0.01
+    },
+    {
+      "word": "nomor",
+      "start": 90.918,
+      "end": 91.219,
+      "probability": 0.495
+    },
+    {
+      "word": "Untuk",
+      "start": 92.68,
+      "end": 93.362,
+      "probability": 0.517
+    },
+    {
+      "word": "di",
+      "start": 93.422,
+      "end": 93.543,
+      "probability": 0.6
+    },
+    {
+      "word": "etal",
+      "start": 93.563,
+      "end": 93.703,
+      "probability": 0.5
+    },
+    {
+      "word": "asa",
+      "start": 93.723,
+      "end": 94.044,
+      "probability": 0.363
+    },
+    {
+      "word": "nomor",
+      "start": 94.124,
+      "end": 94.606,
+      "probability": 0.449
+    },
+    {
+      "word": "7",
+      "start": 94.62,
+      "end": 94.96,
+      "probability": 0.986
+    },
+    {
+      "word": "itu,",
+      "start": 94.646,
+      "end": 95.007,
+      "probability": 0.361
+    },
+    {
+      "word": "yang",
+      "start": 95.027,
+      "end": 95.187,
+      "probability": 0.25
+    },
+    {
+      "word": "aku",
+      "start": 95.227,
+      "end": 95.308,
+      "probability": 0.333
+    },
+    {
+      "word": "pakai",
+      "start": 95.348,
+      "end": 95.869,
+      "probability": 0.0
+    },
+    {
+      "word": "kak.",
+      "start": 95.889,
+      "end": 95.99,
+      "probability": 0.0
+    },
+    {
+      "word": "Untuk",
+      "start": 99.58,
+      "end": 100.643,
+      "probability": 0.6
+    },
+    {
+      "word": "etal",
+      "start": 100.703,
+      "end": 100.903,
+      "probability": 0.564
+    },
+    {
+      "word": "asa",
+      "start": 100.923,
+      "end": 101.164,
+      "probability": 0.375
+    },
+    {
+      "word": "nomor",
+      "start": 101.184,
+      "end": 101.565,
+      "probability": 0.342
+    },
+    {
+      "word": "7",
+      "start": 101.56,
+      "end": 101.86,
+      "probability": 0.814
+    },
+    {
+      "word": "itu,",
+      "start": 102.307,
+      "end": 102.788,
+      "probability": 0.232
+    },
+    {
+      "word": "yang",
+      "start": 102.908,
+      "end": 103.109,
+      "probability": 0.55
+    },
+    {
+      "word": "aku",
+      "start": 103.209,
+      "end": 103.489,
+      "probability": 0.315
+    },
+    {
+      "word": "pakai",
+      "start": 103.59,
+      "end": 104.091,
+      "probability": 0.409
+    },
+    {
+      "word": "untuk",
+      "start": 104.552,
+      "end": 104.913,
+      "probability": 0.42
+    },
+    {
+      "word": "yang",
+      "start": 104.953,
+      "end": 105.093,
+      "probability": 0.708
+    },
+    {
+      "word": "satu",
+      "start": 105.174,
+      "end": 105.454,
+      "probability": 0.49
+    },
+    {
+      "word": "set",
+      "start": 105.534,
+      "end": 105.675,
+      "probability": 0.609
+    },
+    {
+      "word": "sekian",
+      "start": 105.775,
+      "end": 106.136,
+      "probability": 0.543
+    },
+    {
+      "word": "care",
+      "start": 106.156,
+      "end": 106.316,
+      "probability": 0.086
+    },
+    {
+      "word": "lengkapnya",
+      "start": 106.396,
+      "end": 106.918,
+      "probability": 0.589
+    },
+    {
+      "word": "seperti",
+      "start": 107.038,
+      "end": 107.539,
+      "probability": 0.55
+    },
+    {
+      "word": "ini.",
+      "start": 107.619,
+      "end": 107.8,
+      "probability": 0.553
+    },
+    {
+      "word": "Aku",
+      "start": 108.36,
+      "end": 109.083,
+      "probability": 0.444
+    },
+    {
+      "word": "sematkan",
+      "start": 109.183,
+      "end": 109.645,
+      "probability": 0.497
+    },
+    {
+      "word": "untuk",
+      "start": 109.685,
+      "end": 109.865,
+      "probability": 0.667
+    },
+    {
+      "word": "etal",
+      "start": 109.905,
+      "end": 110.106,
+      "probability": 0.568
+    },
+    {
+      "word": "asa",
+      "start": 110.126,
+      "end": 110.367,
+      "probability": 0.325
+    },
+    {
+      "word": "nomor",
+      "start": 110.387,
+      "end": 110.688,
+      "probability": 0.669
+    },
+    {
+      "word": "7,",
+      "start": 110.7,
+      "end": 111.18,
+      "probability": 0.945
+    },
+    {
+      "word": "dia",
+      "start": 110.728,
+      "end": 110.829,
+      "probability": 0.0
+    },
+    {
+      "word": "itu",
+      "start": 110.849,
+      "end": 111.17,
+      "probability": 0.357
+    },
+    {
+      "word": "udah",
+      "start": 111.19,
+      "end": 111.471,
+      "probability": 0.15
+    },
+    {
+      "word": "full",
+      "start": 111.511,
+      "end": 111.652,
+      "probability": 0.0
+    },
+    {
+      "word": "brightening.",
+      "start": 111.672,
+      "end": 112.555,
+      "probability": 0.101
+    },
+    {
+      "word": "Etal",
+      "start": 114.84,
+      "end": 115.625,
+      "probability": 0.358
+    },
+    {
+      "word": "asa",
+      "start": 115.645,
+      "end": 115.746,
+      "probability": 0.331
+    },
+    {
+      "word": "nomor",
+      "start": 115.806,
+      "end": 116.088,
+      "probability": 0.595
+    },
+    {
+      "word": "7",
+      "start": 116.08,
+      "end": 116.36,
+      "probability": 0.977
+    },
+    {
+      "word": "ini",
+      "start": 116.531,
+      "end": 116.772,
+      "probability": 0.3
+    },
+    {
+      "word": "udah",
+      "start": 116.913,
+      "end": 117.215,
+      "probability": 0.531
+    },
+    {
+      "word": "full",
+      "start": 117.316,
+      "end": 117.456,
+      "probability": 0.706
+    },
+    {
+      "word": "brightening.",
+      "start": 117.517,
+      "end": 118.02,
+      "probability": 0.395
+    },
+    {
+      "word": "Dia",
+      "start": 118.74,
+      "end": 119.487,
+      "probability": 0.15
+    },
+    {
+      "word": "udah",
+      "start": 119.568,
+      "end": 119.851,
+      "probability": 0.46
+    },
+    {
+      "word": "full",
+      "start": 119.972,
+      "end": 120.133,
+      "probability": 0.686
+    },
+    {
+      "word": "mencerakan.",
+      "start": 120.214,
+      "end": 120.82,
+      "probability": 0.448
+    },
+    {
+      "word": "Bagus",
+      "start": 123.08,
+      "end": 123.764,
+      "probability": 0.26
+    },
+    {
+      "word": "banget",
+      "start": 123.844,
+      "end": 124.086,
+      "probability": 0.542
+    },
+    {
+      "word": "harganya",
+      "start": 124.146,
+      "end": 124.568,
+      "probability": 0.399
+    },
+    {
+      "word": "juga",
+      "start": 124.629,
+      "end": 124.79,
+      "probability": 0.583
+    },
+    {
+      "word": "lagi",
+      "start": 124.83,
+      "end": 125.051,
+      "probability": 0.625
+    },
+    {
+      "word": "turun",
+      "start": 125.111,
+      "end": 125.313,
+      "probability": 0.645
+    },
+    {
+      "word": "banget,",
+      "start": 125.373,
+      "end": 125.614,
+      "probability": 0.372
+    },
+    {
+      "word": "lagi",
+      "start": 125.675,
+      "end": 125.916,
+      "probability": 0.778
+    },
+    {
+      "word": "murce",
+      "start": 126.016,
+      "end": 126.379,
+      "probability": 0.331
+    },
+    {
+      "word": "banget.",
+      "start": 126.399,
+      "end": 126.62,
+      "probability": 0.08
+    },
+    {
+      "word": "Ya",
+      "start": 127.42,
+      "end": 127.882,
+      "probability": 0.046
+    },
+    {
+      "word": "tunggu",
+      "start": 128.143,
+      "end": 128.624,
+      "probability": 0.229
+    },
+    {
+      "word": "apalagi",
+      "start": 128.644,
+      "end": 129.146,
+      "probability": 0.235
+    },
+    {
+      "word": "besti,",
+      "start": 129.186,
+      "end": 129.508,
+      "probability": 0.514
+    },
+    {
+      "word": "ya",
+      "start": 129.989,
+      "end": 130.17,
+      "probability": 0.322
+    },
+    {
+      "word": "dari",
+      "start": 130.371,
+      "end": 130.712,
+      "probability": 0.481
+    },
+    {
+      "word": "sekarang",
+      "start": 130.832,
+      "end": 131.334,
+      "probability": 0.575
+    },
+    {
+      "word": "aja",
+      "start": 131.415,
+      "end": 131.736,
+      "probability": 0.433
+    },
+    {
+      "word": "di",
+      "start": 131.796,
+      "end": 131.876,
+      "probability": 0.666
+    },
+    {
+      "word": "kepoin",
+      "start": 131.957,
+      "end": 132.278,
+      "probability": 0.572
+    },
+    {
+      "word": "dulu",
+      "start": 132.338,
+      "end": 132.539,
+      "probability": 0.55
+    },
+    {
+      "word": "ya",
+      "start": 132.559,
+      "end": 132.639,
+      "probability": 0.0
+    },
+    {
+      "word": "sayang.",
+      "start": 132.719,
+      "end": 132.88,
+      "probability": 0.503
+    },
+    {
+      "word": "Ya",
+      "start": 135.43,
+      "end": 136.373,
+      "probability": 0.031
+    },
+    {
+      "word": "dari",
+      "start": 136.453,
+      "end": 136.794,
+      "probability": 0.462
+    },
+    {
+      "word": "sekarang",
+      "start": 136.895,
+      "end": 137.437,
+      "probability": 0.492
+    },
+    {
+      "word": "aja",
+      "start": 137.477,
+      "end": 137.918,
+      "probability": 0.234
+    },
+    {
+      "word": "di",
+      "start": 137.978,
+      "end": 138.099,
+      "probability": 0.375
+    },
+    {
+      "word": "kepoin",
+      "start": 138.159,
+      "end": 138.6,
+      "probability": 0.594
+    },
+    {
+      "word": "dulu",
+      "start": 138.641,
+      "end": 138.881,
+      "probability": 0.619
+    },
+    {
+      "word": "kali",
+      "start": 138.942,
+      "end": 139.102,
+      "probability": 0.583
+    },
+    {
+      "word": "Beb",
+      "start": 139.142,
+      "end": 139.303,
+      "probability": 0.401
+    },
+    {
+      "word": "ya,",
+      "start": 139.323,
+      "end": 139.443,
+      "probability": 0.595
+    },
+    {
+      "word": "mempung",
+      "start": 139.965,
+      "end": 140.487,
+      "probability": 0.562
+    },
+    {
+      "word": "aku",
+      "start": 140.567,
+      "end": 140.848,
+      "probability": 0.454
+    },
+    {
+      "word": "lagi",
+      "start": 140.888,
+      "end": 141.169,
+      "probability": 0.528
+    },
+    {
+      "word": "live",
+      "start": 141.249,
+      "end": 141.41,
+      "probability": 0.257
+    },
+    {
+      "word": "nya.",
+      "start": 141.45,
+      "end": 141.51,
+      "probability": 0.667
+    },
+    {
+      "word": "Ya",
+      "start": 152.99,
+      "end": 154.174,
+      "probability": 0.019
+    },
+    {
+      "word": "tunggu",
+      "start": 154.314,
+      "end": 154.956,
+      "probability": 0.407
+    },
+    {
+      "word": "apalagi",
+      "start": 155.036,
+      "end": 155.678,
+      "probability": 0.33
+    },
+    {
+      "word": "sayangku,",
+      "start": 155.778,
+      "end": 156.561,
+      "probability": 0.394
+    },
+    {
+      "word": "digercapin",
+      "start": 156.641,
+      "end": 157.463,
+      "probability": 0.364
+    },
+    {
+      "word": "aja",
+      "start": 157.524,
+      "end": 157.865,
+      "probability": 0.233
+    },
+    {
+      "word": "dulu",
+      "start": 157.905,
+      "end": 158.487,
+      "probability": 0.429
+    },
+    {
+      "word": "sama",
+      "start": 158.627,
+      "end": 159.189,
+      "probability": 0.437
+    },
+    {
+      "word": "aku",
+      "start": 159.249,
+      "end": 159.53,
+      "probability": 0.178
+    },
+    {
+      "word": "nya.",
+      "start": 159.55,
+      "end": 159.63,
+      "probability": 0.833
+    },
+    {
+      "word": "Ya",
+      "start": 160.05,
+      "end": 172.467,
+      "probability": 0.042
+    },
+    {
+      "word": "ditanyakan",
+      "start": 172.547,
+      "end": 173.148,
+      "probability": 0.581
+    },
+    {
+      "word": "dulu",
+      "start": 173.188,
+      "end": 173.649,
+      "probability": 0.558
+    },
+    {
+      "word": "sama",
+      "start": 173.809,
+      "end": 174.329,
+      "probability": 0.556
+    },
+    {
+      "word": "aku",
+      "start": 174.41,
+      "end": 174.65,
+      "probability": 0.098
+    },
+    {
+      "word": "nya.",
+      "start": 174.67,
+      "end": 174.73,
+      "probability": 0.906
+    },
+    {
+      "word": "Ngapain?",
+      "start": 318.91,
+      "end": 319.41,
+      "probability": 0.285
+    }
+  ],
+  "metadata": {
+    "schema_version": 3,
+    "transcriber": "faster-whisper",
+    "word_alignment_backend": "whisperx",
+    "language": "id",
+    "language_probability": 1.0,
+    "timestamp_precision": "float_seconds",
+    "raw_word_timestamps_available": true,
+    "whisperx_language": "id",
+    "whisperx_align_model": "cahya/wav2vec2-large-xlsr-indonesian"
+  }
+}

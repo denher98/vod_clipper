@@ -1,0 +1,456 @@
+[
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1056.8,
+    "end_time": 1057.6,
+    "duration": 0.8,
+    "best_confidence": 0.83,
+    "start_bbox": [
+      771.9,
+      743.5,
+      896.5,
+      1020.5
+    ],
+    "end_bbox": [
+      865.4,
+      740.8,
+      985.8,
+      970.6
+    ],
+    "best_bbox": [
+      771.9,
+      743.5,
+      896.5,
+      1020.5
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 2,
+    "track": [
+      {
+        "time": 1056.8,
+        "bbox": [
+          771.9,
+          743.5,
+          896.5,
+          1020.5
+        ],
+        "confidence": 0.83
+      },
+      {
+        "time": 1057.6,
+        "bbox": [
+          865.4,
+          740.8,
+          985.8,
+          970.6
+        ],
+        "confidence": 0.638
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1059.2,
+    "end_time": 1059.2,
+    "duration": 0.0,
+    "best_confidence": 0.563,
+    "start_bbox": [
+      873.7,
+      747.0,
+      992.8,
+      969.9
+    ],
+    "end_bbox": [
+      873.7,
+      747.0,
+      992.8,
+      969.9
+    ],
+    "best_bbox": [
+      873.7,
+      747.0,
+      992.8,
+      969.9
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1059.2,
+        "bbox": [
+          873.7,
+          747.0,
+          992.8,
+          969.9
+        ],
+        "confidence": 0.563
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1060.8,
+    "end_time": 1064.0,
+    "duration": 3.2,
+    "best_confidence": 0.903,
+    "start_bbox": [
+      754.6,
+      744.9,
+      879.2,
+      1027.4
+    ],
+    "end_bbox": [
+      767.1,
+      787.8,
+      894.5,
+      987.2
+    ],
+    "best_bbox": [
+      767.1,
+      740.8,
+      894.5,
+      1001.1
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 5,
+    "track": [
+      {
+        "time": 1060.8,
+        "bbox": [
+          754.6,
+          744.9,
+          879.2,
+          1027.4
+        ],
+        "confidence": 0.829
+      },
+      {
+        "time": 1061.6,
+        "bbox": [
+          778.2,
+          732.5,
+          908.3,
+          995.5
+        ],
+        "confidence": 0.854
+      },
+      {
+        "time": 1062.4,
+        "bbox": [
+          767.1,
+          740.8,
+          894.5,
+          1001.1
+        ],
+        "confidence": 0.903
+      },
+      {
+        "time": 1063.2,
+        "bbox": [
+          775.4,
+          733.8,
+          913.8,
+          985.8
+        ],
+        "confidence": 0.848
+      },
+      {
+        "time": 1064.0,
+        "bbox": [
+          767.1,
+          787.8,
+          894.5,
+          987.2
+        ],
+        "confidence": 0.862
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1065.6,
+    "end_time": 1073.6,
+    "duration": 8.0,
+    "best_confidence": 0.853,
+    "start_bbox": [
+      762.9,
+      805.8,
+      887.5,
+      972.0
+    ],
+    "end_bbox": [
+      790.6,
+      726.9,
+      918.0,
+      992.8
+    ],
+    "best_bbox": [
+      758.8,
+      790.6,
+      866.8,
+      984.5
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 11,
+    "track": [
+      {
+        "time": 1065.6,
+        "bbox": [
+          762.9,
+          805.8,
+          887.5,
+          972.0
+        ],
+        "confidence": 0.809
+      },
+      {
+        "time": 1066.4,
+        "bbox": [
+          758.8,
+          790.6,
+          866.8,
+          984.5
+        ],
+        "confidence": 0.853
+      },
+      {
+        "time": 1067.2,
+        "bbox": [
+          760.2,
+          779.5,
+          865.4,
+          985.8
+        ],
+        "confidence": 0.789
+      },
+      {
+        "time": 1068.0,
+        "bbox": [
+          758.8,
+          774.7,
+          866.8,
+          993.5
+        ],
+        "confidence": 0.794
+      },
+      {
+        "time": 1068.8,
+        "bbox": [
+          760.2,
+          774.0,
+          868.2,
+          992.8
+        ],
+        "confidence": 0.794
+      },
+      {
+        "time": 1069.6,
+        "bbox": [
+          756.0,
+          772.6,
+          864.0,
+          994.2
+        ],
+        "confidence": 0.769
+      },
+      {
+        "time": 1070.4,
+        "bbox": [
+          758.8,
+          769.8,
+          872.3,
+          995.5
+        ],
+        "confidence": 0.817
+      },
+      {
+        "time": 1071.2,
+        "bbox": [
+          760.2,
+          787.8,
+          866.8,
+          990.0
+        ],
+        "confidence": 0.826
+      },
+      {
+        "time": 1072.0,
+        "bbox": [
+          765.7,
+          782.3,
+          876.5,
+          990.0
+        ],
+        "confidence": 0.763
+      },
+      {
+        "time": 1072.8,
+        "bbox": [
+          764.3,
+          760.2,
+          877.8,
+          998.3
+        ],
+        "confidence": 0.816
+      },
+      {
+        "time": 1073.6,
+        "bbox": [
+          790.6,
+          726.9,
+          918.0,
+          992.8
+        ],
+        "confidence": 0.729
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1075.2,
+    "end_time": 1075.2,
+    "duration": 0.0,
+    "best_confidence": 0.671,
+    "start_bbox": [
+      840.5,
+      724.2,
+      959.5,
+      1017.7
+    ],
+    "end_bbox": [
+      840.5,
+      724.2,
+      959.5,
+      1017.7
+    ],
+    "best_bbox": [
+      840.5,
+      724.2,
+      959.5,
+      1017.7
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1075.2,
+        "bbox": [
+          840.5,
+          724.2,
+          959.5,
+          1017.7
+        ],
+        "confidence": 0.671
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1087.2,
+    "end_time": 1088.0,
+    "duration": 0.8,
+    "best_confidence": 0.598,
+    "start_bbox": [
+      772.6,
+      815.5,
+      883.4,
+      990.0
+    ],
+    "end_bbox": [
+      750.5,
+      814.8,
+      861.2,
+      990.7
+    ],
+    "best_bbox": [
+      772.6,
+      815.5,
+      883.4,
+      990.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 2,
+    "track": [
+      {
+        "time": 1087.2,
+        "bbox": [
+          772.6,
+          815.5,
+          883.4,
+          990.0
+        ],
+        "confidence": 0.598
+      },
+      {
+        "time": 1088.0,
+        "bbox": [
+          750.5,
+          814.8,
+          861.2,
+          990.7
+        ],
+        "confidence": 0.568
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 6945.6,
+    "end_time": 6945.6,
+    "duration": 0.0,
+    "best_confidence": 0.593,
+    "start_bbox": [
+      507.1,
+      480.5,
+      572.9,
+      537.2
+    ],
+    "end_bbox": [
+      507.1,
+      480.5,
+      572.9,
+      537.2
+    ],
+    "best_bbox": [
+      507.1,
+      480.5,
+      572.9,
+      537.2
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 6945.6,
+        "bbox": [
+          507.1,
+          480.5,
+          572.9,
+          537.2
+        ],
+        "confidence": 0.593
+      }
+    ]
+  }
+]

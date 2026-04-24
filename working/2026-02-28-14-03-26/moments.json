@@ -1,0 +1,306 @@
+[
+  {
+    "start": 1346.9,
+    "end": 1385.4,
+    "score": 9.0,
+    "hook": "Facial Cleanser Unik & Lembut",
+    "reason": "Menggambarkan manfaat produk yang jelas dan nyata.",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "bikin",
+        "category": "attention_benefits",
+        "context": "nggak bikin kulit wajah ketarik"
+      },
+      {
+        "word": "menjaga",
+        "category": "attention_benefits",
+        "context": "menjaga kelembapan alami"
+      },
+      {
+        "word": "smooth",
+        "category": "attention_benefits",
+        "context": "terasa bikin wajah lebih smooth"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 1794.4,
+    "end": 1832.9,
+    "score": 9.0,
+    "hook": "Toner Melembapkan Kulit",
+    "reason": "Menjelaskan manfaat produk yang jelas dan spesifik.",
+    "product": "toner",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "mengunci kelembapan"
+      },
+      {
+        "word": "kulit wajah",
+        "category": "pain_problem",
+        "context": "sering kering"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 4670.5,
+    "end": 4709.0,
+    "score": 9.0,
+    "hook": "i-Cream Froya Solusi Mata Panda",
+    "reason": "Menggambarkan berbagai manfaat produk secara detail.",
+    "product": "i-cream Froya",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam"
+      },
+      {
+        "word": "menyamarkan",
+        "category": "attention_benefits",
+        "context": "menyamarkan kerutan"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan mata panda"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 465.6,
+    "end": 504.1,
+    "score": 8.0,
+    "hook": "Manfaat Eteral Asen Nomor 7",
+    "reason": "Mengklaim manfaat produk yang jelas dan spesifik untuk berbagai masalah kulit.",
+    "product": "Eteral Asen Nomor 7",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "produk aman"
+      },
+      {
+        "word": "sensitif",
+        "category": "pain_problem",
+        "context": "kulit sensitif"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan wajah"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 582.5,
+    "end": 619.9,
+    "score": 8.0,
+    "hook": "5 Manfaat Vitamin C PROYA",
+    "reason": "Mengandung manfaat produk yang jelas.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "bisa melembapkan kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 3860.2,
+    "end": 3898.7,
+    "score": 8.0,
+    "hook": "Serum Vitamin C Proya",
+    "reason": "Menggambarkan produk secara detail dengan menekankan manfaatnya.",
+    "product": "serum Vitamin C si Beb",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajahnya"
+      },
+      {
+        "word": "memudarkan bekas jerawat",
+        "category": "attention_benefits",
+        "context": "bisa memudarkan bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 5658.2,
+    "end": 5696.7,
+    "score": 8.0,
+    "hook": "Skin Cream PROYA - Solusi Kulit Kering & Merah",
+    "reason": "Menggambarkan manfaat produk secara detail, menjelaskan perubahan yang diharapkan pada kulit.",
+    "product": "skin cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kemerahan",
+        "category": "pain_problem",
+        "context": "masalah kulit kering dan merah"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "bisa melembapkan kulit wajah kamu"
+      },
+      {
+        "word": "meredakan",
+        "category": "attention_benefits",
+        "context": "meradakan kemerahan"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 6130.5,
+    "end": 6169.0,
+    "score": 8.0,
+    "hook": "Melembapkan & Mencerahkan Wajah",
+    "reason": "Menggambarkan manfaat produk yang jelas dan langsung.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit wajah"
+      },
+      {
+        "word": "menenangkan kemerahan",
+        "category": "attention_benefits",
+        "context": "menenangkan kemerahan dia juga bisa banget"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan wajah kamu seketika"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 673.3,
+    "end": 692.1,
+    "score": 7.0,
+    "hook": "Vitamin C Untuk Semua Jenis Kulit",
+    "reason": "Mengandung manfaat produk yang jelas.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "digunakan",
+        "category": "attention_benefits",
+        "context": "digunakan untuk semua jenis kulit"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 802.9,
+    "end": 814.4,
+    "score": 7.0,
+    "hook": "Glow Up Sebelum Lebaran",
+    "reason": "Mengandung manfaat produk yang jelas.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glow up",
+        "category": "attention_benefits",
+        "context": "glo up sebelum lebaran"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 1922.3,
+    "end": 1942.5,
+    "score": 7.0,
+    "hook": "Toner Cerahkan Kulit",
+    "reason": "Menjelaskan manfaat produk yang jelas.",
+    "product": "toner",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "boleh banget"
+      }
+    ],
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 1981.5,
+    "end": 2020.0,
+    "score": 7.0,
+    "hook": "Toner Untuk Kulit Kering",
+    "reason": "Menjelaskan manfaat produk yang jelas.",
+    "product": "toner",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajah"
+      },
+      {
+        "word": "wajib menggunakan toner",
+        "category": "attention_benefits",
+        "context": "boleh banget"
+      }
+    ],
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 704.3,
+    "end": 716.5,
+    "score": 6.0,
+    "hook": "Paketan Lebih Murah",
+    "reason": "Mengandung manfaat produk yang jelas.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "lebih murah",
+        "category": "result_proof",
+        "context": "jatuhnya lebih murah"
+      }
+    ],
+    "clip_id": "clip_0013"
+  }
+]

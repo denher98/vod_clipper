@@ -1,0 +1,240 @@
+[
+  {
+    "start": 5619.9,
+    "end": 5658.4,
+    "score": 9.0,
+    "hook": "Menghilangkan Lingkaran Hitam",
+    "reason": "Menjelaskan manfaat produk dalam mengurangi lingkaran hitam dan pigmentasi gelap di area mata.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "lingkaran hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam"
+      },
+      {
+        "word": "pigmentasi gelap",
+        "category": "attention_benefits",
+        "context": "mempudarkan pigmentasi gelap"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 3405.3,
+    "end": 3443.8,
+    "score": 8.0,
+    "hook": "PROYA Vitamin C Cerahkan Kulit",
+    "reason": "Menjelaskan manfaat produk secara jelas dan detail",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "lembabkan",
+        "category": "attention_benefits",
+        "context": "malembabkan kulitwaja kamu yang lagi kering"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 4378.5,
+    "end": 4417.0,
+    "score": 8.0,
+    "hook": "Vitamin C Proya: Cerah Tanpa Iritasi",
+    "reason": "Menjelaskan manfaat serum Vitamin C yang tidak memiliki warna kecoklatan atau kekuningan, merupakan evolusi dari vitamin C biasa dan dapat mencerahkan",
+    "product": "Serum 5X Vitamin C",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "vitamin C",
+        "category": "attention_benefits",
+        "context": "evolusi dari vitamin C biasa"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 5712.4,
+    "end": 5723.9,
+    "score": 8.0,
+    "hook": "Meredakan Pembengkakan Mata",
+    "reason": "Menjelaskan manfaat produk dalam mengurangi pembengkakan di area mata.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "pembengkakan",
+        "category": "attention_benefits",
+        "context": "mengurangi pembengkakan mata"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 5783.2,
+    "end": 5794.7,
+    "score": 8.0,
+    "hook": "Membuat Mata Terlihat Fresh",
+    "reason": "Menjelaskan manfaat produk dalam membuat area mata terlihat lebih segar dan fresh.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "fresh",
+        "category": "attention_benefits",
+        "context": "terlihat lebih fresh"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 7428.2,
+    "end": 7466.7,
+    "score": 8.0,
+    "hook": "PROYA Vitamin C Melembabkan & Mencerahkan",
+    "reason": "Menjelaskan manfaat produk secara detail dan langsung.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "melembabkan kulit wajah kamu"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah kamu"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan pada kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 1959.3,
+    "end": 1997.8,
+    "score": 7.0,
+    "hook": "Cleanser yang Aman untuk Semua Jenis Kulit",
+    "reason": "Mencakup manfaat produk dan klaim keamanannya.",
+    "product": "facial cleanser dari proyofisial",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "sering kering"
+      },
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "bisa pakai debep"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 4089.5,
+    "end": 4128.0,
+    "score": 7.0,
+    "hook": "Serum Vitamin C Mencerahkan Kulit",
+    "reason": "Mengandung manfaat produk yang jelas dan menjelaskan hasil positif.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas dirawat"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 6422.5,
+    "end": 6461.0,
+    "score": 7.0,
+    "hook": "Tela-tela nomor 3 cerahkan kulit",
+    "reason": "Mengandung manfaat produk yang jelas dan langsung",
+    "product": "tela-tela nomor 3",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 6586.0,
+    "end": 6624.5,
+    "score": 7.0,
+    "hook": "Serum Vitamin C tekstur cair",
+    "reason": "Mengandung manfaat produk yang jelas dan langsung",
+    "product": "serum Vitamin C",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "gampang",
+        "category": "attention_benefits",
+        "context": "gampang meresap ke kulit"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 10265.4,
+    "end": 10303.9,
+    "score": 7.0,
+    "hook": "PROYA Vitamin C Mencerahkan Wajah",
+    "reason": "Mengandung manfaat produk yang jelas, termasuk cerah wajah dan mengurangi bekas jerawat.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan wajah"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0011"
+  }
+]

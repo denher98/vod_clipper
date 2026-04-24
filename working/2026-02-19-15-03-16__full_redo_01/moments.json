@@ -1,0 +1,292 @@
+[
+  {
+    "start": 6204.2,
+    "end": 6242.7,
+    "score": 9.0,
+    "hook": "CUMA PAKAI INI, JADI CERAH",
+    "reason": "Menggambarkan manfaat produk dengan jelas dan detail.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "stabil",
+        "category": "attention_benefits",
+        "context": "lebih stabil"
+      },
+      {
+        "word": "efektif",
+        "category": "attention_benefits",
+        "context": "lebih efektif"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "membantu mencerahkan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "CUMA PAKAI INI, JADI CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 8077.5,
+    "end": 8116.0,
+    "score": 9.0,
+    "hook": "AWALNYA KEMERAHAN, SEKARANG CERAH",
+    "reason": "Menggambarkan manfaat produk secara detail dengan hasil positif yang jelas.",
+    "product": "skin cream includes Yes i CC previous",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "melembabkan kulit wajah"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan pada kulit"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan warna kulit wajah"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA KEMERAHAN, SEKARANG CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 4178.8,
+    "end": 4207.5,
+    "score": 8.0,
+    "hook": "INI BUKAN FILTER, SAMAR",
+    "reason": "Menjelaskan manfaat produk secara jelas",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan kulit"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "pain_problem",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "INI BUKAN FILTER, SAMAR",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 5619.3,
+    "end": 5657.8,
+    "score": 8.0,
+    "hook": "MATA PANDA -> CERAH",
+    "reason": "Menjelaskan manfaat produk secara jelas, termasuk menghilangkan lingkaran hitam dan melembabkan area tipis.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "lingkaran hitam",
+        "category": "attention_benefits",
+        "context": "menyamarkan tampilan lingkaran hitam"
+      },
+      {
+        "word": "lembabkan",
+        "category": "attention_benefits",
+        "context": "membantu melembabkan area tipis bawah mata"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "MATA PANDA -> CERAH",
+      "subtext": "Dipakai rutin tiap hari",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 8758.5,
+    "end": 8797.0,
+    "score": 8.0,
+    "hook": "DARI KUSAM JADI CERAH",
+    "reason": "Mengandung manfaat produk yang jelas, termasuk hasil instan dan nutrisi langsung cair.",
+    "product": "sheet mask",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "segar",
+        "category": "attention_benefits",
+        "context": "terlihat lebih segar"
+      },
+      {
+        "word": "nutrisi langsung cair",
+        "category": "attention_benefits",
+        "context": "kasih nutrisi langsung cair"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan kulit wajah"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "DARI KUSAM JADI CERAH",
+      "subtext": "Sekali pakai langsung keliatan",
+      "cta": "PRODUKNYA APA??"
+    },
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 10397.2,
+    "end": 10435.7,
+    "score": 8.0,
+    "hook": "KUSAM PARAH JADI CERAH",
+    "reason": "Menjelaskan manfaat produk dan mengarahkan penonton untuk membeli",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "telase nomor 3 mencerahkan kulit wajah kamu"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KUSAM PARAH JADI CERAH",
+      "subtext": "Tanpa treatment mahal",
+      "cta": "RAHASIANYA DI SINI??"
+    },
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 1842.0,
+    "end": 1880.5,
+    "score": 7.0,
+    "hook": "INI BUKAN FILTER, BERSIH",
+    "reason": "Menggambarkan manfaat produk dalam membersihkan kulit dari residu polusi dan sisa-sisa sunscreen, serta menjelaskan pentingnya kulit bersih sebagai fo",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "membersihkan",
+        "category": "attention_benefits",
+        "context": "membantu mengangkat residu"
+      },
+      {
+        "word": "bersih",
+        "category": "attention_benefits",
+        "context": "kulit yang bersih itu adalah fondasi"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "INI BUKAN FILTER, BERSIH",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 1950.7,
+    "end": 1970.1,
+    "score": 7.0,
+    "hook": "KUSAM -> CERAH",
+    "reason": "Menggambarkan manfaat produk dalam meratakan warna kulit.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "meratakan",
+        "category": "attention_benefits",
+        "context": "untuk meratakan warna kulit wajah kamunya"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KUSAM -> CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 2959.0,
+    "end": 2997.5,
+    "score": 7.0,
+    "hook": "CUMA PAKAI INI, JADI CERAH",
+    "reason": "Menjelaskan masalah kulit yang umum dialami, serta manfaat produk untuk mengatasinya.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajahnya yang sering terasa kering"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "dia juga bisa meredakan kemerahan pada kulit wajah kamu"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "CUMA PAKAI INI, JADI CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 4883.9,
+    "end": 4922.4,
+    "score": 6.0,
+    "hook": "AWALNYA GA PERCAYA, EH CERAH",
+    "reason": "Menjelaskan manfaat produk untuk mencerahkan kulit yang kusam dan berjerawat.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah kamu"
+      },
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajahnya lagi kusam"
+      },
+      {
+        "word": "jerawat",
+        "category": "pain_problem",
+        "context": "kira bakal jerawat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA GA PERCAYA, EH CERAH",
+      "subtext": "Tanpa treatment mahal",
+      "cta": "RAHASIANYA DI SINI??"
+    },
+    "clip_id": "clip_0010"
+  }
+]

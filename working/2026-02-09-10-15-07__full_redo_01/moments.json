@@ -1,0 +1,185 @@
+[
+  {
+    "start": 3794.9,
+    "end": 3833.4,
+    "score": 9.0,
+    "hook": "AWALNYA GA PERCAYA, EH LEBIH PUDAR",
+    "reason": "Menjelaskan manfaat produk secara detail",
+    "product": "serum Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulit wajahnya itu lagi kusam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah yang lagi kusam"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan flag hitam"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA GA PERCAYA, EH LEBIH PUDAR",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 4670.5,
+    "end": 4709.0,
+    "score": 9.0,
+    "hook": "MATA PANDA MULAI MEMUDAR",
+    "reason": "Menjelaskan manfaat produk untuk mengatasi masalah mata pandemi, termasuk memudarkan lingkaran hitam dan pigment gelap serta membantu melembabkan dan ",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mempudarkan",
+        "category": "attention_benefits",
+        "context": "mempudarkan lingkaran hitam"
+      },
+      {
+        "word": "malembabkan",
+        "category": "attention_benefits",
+        "context": "dia juga bisa untuk menjelakan malembabkan ya"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "MATA PANDA MULAI MEMUDAR",
+      "subtext": "Tanpa treatment mahal",
+      "cta": "RAHASIANYA DI SINI??"
+    },
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 5388.3,
+    "end": 5426.2,
+    "score": 9.0,
+    "hook": "SEBELUMNYA KEMERAHAN, SEKARANG CERAH",
+    "reason": "Menggambarkan manfaat produk secara detail, termasuk melembabkan wajah kering dan meredakan iritasi.",
+    "product": "PROYA 5X Vitamin C",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "membantu melembabkan kulit wajah"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "bisa meredakan kemerahan atau iritasi pada kulit"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan wajah dan meratakan warna kulit"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "SEBELUMNYA KEMERAHAN, SEKARANG CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 2991.5,
+    "end": 3017.0,
+    "score": 8.0,
+    "hook": "GILA SIH, FLEK HITAM JADI CERAH",
+    "reason": "Menjelaskan manfaat produk untuk mencerahkan kulit dan menyamarkan noda hitam.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulitulajak kamu"
+      },
+      {
+        "word": "menyamarkan",
+        "category": "attention_benefits",
+        "context": "menyamarkan noda-noda hitamnya"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "GILA SIH, FLEK HITAM JADI CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 2938.5,
+    "end": 2977.0,
+    "score": 7.0,
+    "hook": "KOK BISA LEMBAP GINI?",
+    "reason": "Menggambarkan manfaat produk untuk melembapkan kulit yang kering dan meredakan kemerahan.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit yang lagi kering"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulitulajak kamu"
+      },
+      {
+        "word": "meredakan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan pada kulit"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KOK BISA LEMBAP GINI?",
+      "subtext": "Dipakai rutin tiap hari",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 1750.5,
+    "end": 1789.0,
+    "score": 6.0,
+    "hook": "KUSAM PARAH JADI CERAH",
+    "reason": "Menjelaskan manfaat produk untuk mencerahkan kulit wajah.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "aman digunakan pagi dan malam hari"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KUSAM PARAH JADI CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0006"
+  }
+]

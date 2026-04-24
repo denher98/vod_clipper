@@ -1,0 +1,687 @@
+[
+  {
+    "start": 2859.4,
+    "end": 2873.0,
+    "score": 10.0,
+    "hook": "Diskon Harga Produk",
+    "reason": "Informasi tentang diskon harga produk yang signifikan.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "harga normal",
+        "category": "result_proof",
+        "context": "harga normal itu dari 187 ribu"
+      },
+      {
+        "word": "diskon harga",
+        "category": "result_proof",
+        "context": "sekarang jadi cuma di 74 ribuan saja"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 3114.2,
+    "end": 3152.7,
+    "score": 9.0,
+    "hook": "Promo Sitmes PROYA",
+    "reason": "Penjelasan detail tentang penawaran harga dan diskon.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "promos",
+        "category": "result_proof",
+        "context": "sekarang lagi promosi"
+      },
+      {
+        "word": "gratis",
+        "category": "result_proof",
+        "context": "dapatkan gratis"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 299.3,
+    "end": 337.8,
+    "score": 8.0,
+    "hook": "Cara Pakai Skincare PROYA",
+    "reason": "Menjelaskan langkah-langkah penggunaan produk dengan detail dan menunjukkan manfaatnya.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "full brightening",
+        "category": "attention_benefits",
+        "context": "udah full brightening"
+      },
+      {
+        "word": "mencerakan",
+        "category": "attention_benefits",
+        "context": "bener-bener full mencerakan"
+      },
+      {
+        "word": "bekas jerout plek hitam teratasi",
+        "category": "attention_benefits",
+        "context": "teratasi sayang"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 416.3,
+    "end": 454.8,
+    "score": 8.0,
+    "hook": "Promo Spesial PROYA",
+    "reason": "Menawarkan diskon besar-besaran pada produk.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "murah banget",
+        "category": "attention_benefits",
+        "context": "bener-bener lagi murce banget"
+      },
+      {
+        "word": "harga promo",
+        "category": "attention_benefits",
+        "context": "promo aku ini berlaku cuma selama saat"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 1984.4,
+    "end": 2022.9,
+    "score": 8.0,
+    "hook": "Diskon Besar Serum Vitamin C Proya",
+    "reason": "Menawarkan diskon besar dan mengingatkan penonton untuk segera membeli.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "diskon",
+        "category": "result_proof",
+        "context": "lep aku itu bener-bener diskonnya besar banget"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 2194.3,
+    "end": 2211.8,
+    "score": 8.0,
+    "hook": "Diskon Harga Sekarang",
+    "reason": "Mendorong penonton untuk membeli produk saat ini karena ada potensi kenaikan harga di masa depan.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "harga",
+        "category": "result_proof",
+        "context": "harganya bakalan baru"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 2391.4,
+    "end": 2404.0,
+    "score": 8.0,
+    "hook": "Diskon Spesial Live PROYA",
+    "reason": "Penawaran harga diskon yang signifikan.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "harga",
+        "category": "result_proof",
+        "context": "Rp119.000 doang"
+      },
+      {
+        "word": "turun",
+        "category": "result_proof",
+        "context": "harganya tuh lagi turun banget"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 2638.5,
+    "end": 2677.0,
+    "score": 8.0,
+    "hook": "Manfaat Eye Cream PROYA",
+    "reason": "Penjelasan detail tentang manfaat eye cream untuk mengurangi lingkaran hitam, pigmentasi gelap, mencerahkan dan melembapkan kulit.",
+    "product": "Eye Cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "lingkaran hitam",
+        "category": "pain_problem",
+        "context": "memudarkan lingkaran hitam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan dia juga bisa"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 2795.1,
+    "end": 2806.6,
+    "score": 8.0,
+    "hook": "Promo Live Streaming",
+    "reason": "Informasi tentang promo yang hanya berlaku selama live streaming.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "berlakunya",
+        "category": "result_proof",
+        "context": "berlakunya cuma saat aku lagi live aja"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 3044.1,
+    "end": 3082.6,
+    "score": 8.0,
+    "hook": "Manfaat Sitmes PROYA",
+    "reason": "Penjelasan detail tentang manfaat produk sitmes untuk kulit.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "auto bikin glowing"
+      },
+      {
+        "word": "lembap",
+        "category": "attention_benefits",
+        "context": "melembap banget"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 3502.5,
+    "end": 3541.0,
+    "score": 8.0,
+    "hook": "Diskon Spesial PROYA Vitamin C",
+    "reason": "Informasi harga produk dengan diskon besar ditambah dorongan langsung kepada penonton.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "bener-bener aman"
+      },
+      {
+        "word": "400 ribuan",
+        "category": "result_proof",
+        "context": "hanya di 400 ribuan aja"
+      }
+    ],
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 3800.2,
+    "end": 3838.7,
+    "score": 8.0,
+    "hook": "Paket Produk Murah",
+    "reason": "Penawaran harga paket produk dan mendorong penonton untuk bertanya.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "murah",
+        "category": "result_proof",
+        "context": "harganya jadi murah"
+      }
+    ],
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 4259.8,
+    "end": 4297.9,
+    "score": 8.0,
+    "hook": "Diskon Cleanser Hanya Rp89k",
+    "reason": "Penawaran harga diskon cleanser dan klaim bahwa produk aman untuk semua jenis kulit.",
+    "product": "Cleanser",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "harga",
+        "category": "result_proof",
+        "context": "harga diskon"
+      },
+      {
+        "word": "aman",
+        "category": "result_proof",
+        "context": "super duper aman"
+      }
+    ],
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 4971.5,
+    "end": 5010.0,
+    "score": 8.0,
+    "hook": "Diskon Facial Cleanser PROYA",
+    "reason": "Menggabungkan penjelasan produk dan penawaran harga spesial.",
+    "product": "Facial Cleanser",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "100 gram",
+        "category": "result_proof",
+        "context": "isinya 100 gram"
+      },
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "mencerahkan warna kulit wajah kamu"
+      },
+      {
+        "word": "89.000 saja",
+        "category": "result_proof",
+        "context": "harga cuma di 89.000 saja"
+      }
+    ],
+    "clip_id": "clip_0014"
+  },
+  {
+    "start": 6157.1,
+    "end": 6195.6,
+    "score": 8.0,
+    "hook": "Diskon Serum PROYA",
+    "reason": "Penawaran harga diskon dan produk cocok untuk semua jenis kulit",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "100 ribuan",
+        "category": "result_proof",
+        "context": "harga 100 ribuan"
+      },
+      {
+        "word": "semua jenis kulit",
+        "category": "result_proof",
+        "context": "cocok semua jenis kulit"
+      }
+    ],
+    "clip_id": "clip_0015"
+  },
+  {
+    "start": 6292.7,
+    "end": 6331.2,
+    "score": 8.0,
+    "hook": "Mencerahkan Bekas Jerawat",
+    "reason": "Penjelasan tentang manfaat produk untuk mencerahkan dan memudarkan bekas jerawat",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "mencerahkan bekas jerawat"
+      },
+      {
+        "word": "plek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan plek hitam"
+      }
+    ],
+    "clip_id": "clip_0016"
+  },
+  {
+    "start": 625.6,
+    "end": 664.1,
+    "score": 7.0,
+    "hook": "Diskon Cleanser Proya",
+    "reason": "Penawaran harga diskon dan pertanyaan penonton tentang masalah kulit wajah.",
+    "product": "Cleanser",
+    "clip_type": "promo",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "suka kering pas lagi cuci muka nya"
+      },
+      {
+        "word": "tarik",
+        "category": "pain_problem",
+        "context": "suka ketarik atau juga suka kering"
+      }
+    ],
+    "clip_id": "clip_0017"
+  },
+  {
+    "start": 1462.0,
+    "end": 1500.5,
+    "score": 7.0,
+    "hook": "Rekomendasi Skincare PROYA",
+    "reason": "Mengandung banyak informasi tentang produk dan manfaatnya.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "suka kering"
+      },
+      {
+        "word": "merah",
+        "category": "pain_problem",
+        "context": "kemerahan"
+      },
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "lebih glowing"
+      }
+    ],
+    "clip_id": "clip_0018"
+  },
+  {
+    "start": 1763.3,
+    "end": 1801.8,
+    "score": 7.0,
+    "hook": "Serum Vitamin C Proya: Solusi Flek Hitam",
+    "reason": "Menggabungkan penjelasan tentang manfaat serum dan pertanyaan penonton mengenai masalah kulit kusam dan flek hitam.",
+    "product": "general",
+    "clip_type": "qna",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "kulitwajanya itu lagi kusam"
+      },
+      {
+        "word": "plek hitam",
+        "category": "pain_problem",
+        "context": "lagi ada plek hitamnya"
+      }
+    ],
+    "clip_id": "clip_0019"
+  },
+  {
+    "start": 2210.3,
+    "end": 2248.8,
+    "score": 7.0,
+    "hook": "Serum Vitamin C untuk Kulit Kering",
+    "reason": "Menginformasikan manfaat serum vitamin c untuk kulit kering dan meredakan kemerahan.",
+    "product": "Serum",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "suka kering"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan dia bisa"
+      }
+    ],
+    "clip_id": "clip_0020"
+  },
+  {
+    "start": 3394.7,
+    "end": 3433.2,
+    "score": 7.0,
+    "hook": "Manfaat Paket Lengkap",
+    "reason": "Menjelaskan berbagai manfaat dari paket lengkap PROYA.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "full brightening",
+        "category": "attention_benefits",
+        "context": "udah full brightening"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "udah full mencerahkan"
+      }
+    ],
+    "clip_id": "clip_0021"
+  },
+  {
+    "start": 3989.6,
+    "end": 4028.1,
+    "score": 7.0,
+    "hook": "Solusi Kulit Kering",
+    "reason": "Mengatasi masalah kulit kering dan menjelaskan manfaat Facial Cleanser.",
+    "product": "Facial Cleanser",
+    "clip_type": "tips",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "suka kering"
+      }
+    ],
+    "clip_id": "clip_0022"
+  },
+  {
+    "start": 4088.4,
+    "end": 4126.9,
+    "score": 7.0,
+    "hook": "Cleanser Mengangkat Debu & Polusi",
+    "reason": "Penjelasan detail tentang manfaat produk untuk mengangkat debu dan polusi, serta mencerahkan kulit.",
+    "product": "Cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mengangkat",
+        "category": "attention_benefits",
+        "context": "mengangkat debu"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      }
+    ],
+    "clip_id": "clip_0023"
+  },
+  {
+    "start": 5768.4,
+    "end": 5806.9,
+    "score": 7.0,
+    "hook": "Serum PROYA: Manfaat Luar Biasa",
+    "reason": "Penjelasan detail tentang manfaat serum untuk mencerahkan kulit dan mengurangi bekas jerawat.",
+    "product": "Serum",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerakan kulit"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "pain_problem",
+        "context": "bekas jerawat plek hitam teratasi sayang kalau kamu pakai ini"
+      }
+    ],
+    "clip_id": "clip_0024"
+  },
+  {
+    "start": 5873.2,
+    "end": 5911.7,
+    "score": 7.0,
+    "hook": "Serum PROYA: Solusi Flek dan Jerawat",
+    "reason": "Momen ini berisi penjelasan detail tentang manfaat produk untuk memudarkan flek hitam dan bekas jerawat.",
+    "product": "Serum",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan plek hitam"
+      },
+      {
+        "word": "glowing alami",
+        "category": "attention_benefits",
+        "context": "tampak lebih glowing alami"
+      }
+    ],
+    "clip_id": "clip_0025"
+  },
+  {
+    "start": 6472.0,
+    "end": 6510.5,
+    "score": 7.0,
+    "hook": "Manfaat Eye Cream PROYA",
+    "reason": "Menjelaskan manfaat dan bahan utama eye cream, serta teksturnya.",
+    "product": "Eye Cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mengunci kelembapan",
+        "category": "attention_benefits",
+        "context": "manfaat utamanya dapat mengunci"
+      },
+      {
+        "word": "memperbaiki skin barrier",
+        "category": "attention_benefits",
+        "context": "memperbaiki skin barrier"
+      },
+      {
+        "word": "menghaluskan kulit",
+        "category": "attention_benefits",
+        "context": "menghaluskan kulit"
+      }
+    ],
+    "clip_id": "clip_0026"
+  },
+  {
+    "start": 6823.4,
+    "end": 6861.9,
+    "score": 7.0,
+    "hook": "Eye Cream Proya - Mencerahkan Area Mata",
+    "reason": "Menggabungkan penjelasan manfaat produk dan demo cara pakai eye cream.",
+    "product": "Eye Cream",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "kulit wajah cerah"
+      },
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "dan juga glowing"
+      }
+    ],
+    "clip_id": "clip_0027"
+  },
+  {
+    "start": 2435.4,
+    "end": 2459.7,
+    "score": 6.0,
+    "hook": "Ajukan Pertanyaan Sekarang",
+    "reason": "Mendorong penonton untuk bertanya.",
+    "product": "general",
+    "clip_type": "qna",
+    "keyword_category": "pain_problem",
+    "keywords_found": [
+      {
+        "word": "pertanyaan",
+        "category": "pain_problem",
+        "context": "tanyain dulu aja"
+      },
+      {
+        "word": "malu-malu",
+        "category": "pain_problem",
+        "context": "nggak usah malu-malu"
+      }
+    ],
+    "clip_id": "clip_0028"
+  },
+  {
+    "start": 3258.9,
+    "end": 3297.4,
+    "score": 6.0,
+    "hook": "Promo Paket Lengkap",
+    "reason": "Mendorong penonton untuk membeli eye cream dan menjelaskan isi paket lengkap.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "mantul",
+        "category": "result_proof",
+        "context": "bener-bener mantul"
+      },
+      {
+        "word": "paket lengkap",
+        "category": "attention_benefits",
+        "context": "udah dapetin apa aja"
+      }
+    ],
+    "clip_id": "clip_0029"
+  },
+  {
+    "start": 5365.9,
+    "end": 5404.4,
+    "score": 6.0,
+    "hook": "Harga naik saat live selesai",
+    "reason": "Informasi penting tentang penawaran harga yang berubah",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "berubah",
+        "category": "result_proof",
+        "context": "harga berubah"
+      },
+      {
+        "word": "mehong",
+        "category": "result_proof",
+        "context": "lebih mehong"
+      }
+    ],
+    "clip_id": "clip_0030"
+  }
+]

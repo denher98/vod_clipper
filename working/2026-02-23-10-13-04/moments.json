@@ -1,0 +1,367 @@
+[
+  {
+    "start": 8970.5,
+    "end": 9009.0,
+    "score": 9.5,
+    "hook": "Manfaat Skincare Lengkap PROYA",
+    "reason": "Menggambarkan manfaat produk secara detail dan mengajak penonton untuk membeli sekarang.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "pain_problem",
+        "context": "memudarkan bekas jerawat"
+      },
+      {
+        "word": "flek hitam",
+        "category": "pain_problem",
+        "context": "memudarkan flek hitamnya"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 848.8,
+    "end": 878.2,
+    "score": 9.0,
+    "hook": "PROYA Vitamin C - Harga Terbaik Sekarang!",
+    "reason": "Menjelaskan manfaat produk dan mengingatkan untuk melakukan checkout sekarang",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerakan memudarkan berkas jerawat"
+      },
+      {
+        "word": "memudarkan flek hitam",
+        "category": "attention_benefits",
+        "context": "mempudarkan flek hitam"
+      },
+      {
+        "word": "meratakan warna kulit",
+        "category": "attention_benefits",
+        "context": "merdakan kemerahan"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 3910.5,
+    "end": 3949.0,
+    "score": 9.0,
+    "hook": "Sebelum Lebaran Glow Up",
+    "reason": "Mengandung manfaat produk yang jelas dan klaim hasil nyata",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glow up",
+        "category": "attention_benefits",
+        "context": "sebelum lebaran glow up"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan kulit"
+      },
+      {
+        "word": "bekas",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas dirawat"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 5977.0,
+    "end": 6015.5,
+    "score": 9.0,
+    "hook": "Meredakan Lingkaran Hitam",
+    "reason": "Menjelaskan manfaat produk secara detail dan spesifik",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan mata"
+      },
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "melembabkan mata"
+      },
+      {
+        "word": "mengurangi pembengakan",
+        "category": "attention_benefits",
+        "context": "mengurangi pembengakan mata"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 6829.3,
+    "end": 6867.8,
+    "score": 9.0,
+    "hook": "Eye Cream Proya untuk Mata Panda",
+    "reason": "Mengatasi masalah mata panda dengan eye cream yang aman dan efektif.",
+    "product": "Froyal Vision Eye Cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mata panda",
+        "category": "pain_problem",
+        "context": "masalah kulit wajahnya itu mata panda"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam atau pigmentasi gelap"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 7892.4,
+    "end": 7930.9,
+    "score": 9.0,
+    "hook": "5X Vitamin C Glowing Skin",
+    "reason": "Menggambarkan manfaat produk secara jelas dan langsung.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "auto glowing"
+      },
+      {
+        "word": "mencerakan",
+        "category": "attention_benefits",
+        "context": "seketika kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 874.7,
+    "end": 913.2,
+    "score": 8.0,
+    "hook": "Mencerahkan Flek Hitam",
+    "reason": "Menjelaskan manfaat produk untuk mencerahkan dan memudarkan flek hitam, serta memlembapkan kulit.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan memudarkan"
+      },
+      {
+        "word": "memudarkan flek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 1300.5,
+    "end": 1339.0,
+    "score": 8.0,
+    "hook": "Facial Cleanser Unik dan Efektif",
+    "reason": "Menjelaskan tekstur unik produk dan manfaat membersihkan wajah.",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "unik",
+        "category": "attention_benefits",
+        "context": "teksurnya unik"
+      },
+      {
+        "word": "membersihkan",
+        "category": "attention_benefits",
+        "context": "membersihkan wajah"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 2346.8,
+    "end": 2385.3,
+    "score": 8.0,
+    "hook": "Etalason Nomor 2: Manfaat Luar Biasa",
+    "reason": "Menggambarkan manfaat produk secara jelas, termasuk melembabkan kulit dan menyeimbangkan pH.",
+    "product": "etalason nomor 2",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kemerahan",
+        "category": "pain_problem",
+        "context": "meredakan kemerahan"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan kulit"
+      },
+      {
+        "word": "menyamarkan noda hitam",
+        "category": "attention_benefits",
+        "context": "menyamarkan noda-noda hitam"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 3269.1,
+    "end": 3307.6,
+    "score": 8.0,
+    "hook": "Serum Vitamin C untuk Kulit Cerah",
+    "reason": "Menjelaskan manfaat serum Vitamin C yang jelas dan spesifik.",
+    "product": "serum Vitamin C",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "kulit jadi cerah"
+      },
+      {
+        "word": "mencerahkan kulitwaja kamu",
+        "category": "attention_benefits",
+        "context": "dia bisa mencerahkan kulitwaja kamu"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 7346.3,
+    "end": 7384.8,
+    "score": 8.0,
+    "hook": "Skin Cream Melembabkan Kulit",
+    "reason": "Menggambarkan manfaat produk secara jelas.",
+    "product": "skin cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembabkan",
+        "category": "attention_benefits",
+        "context": "melembabkan kulit kering"
+      },
+      {
+        "word": "meratakan",
+        "category": "attention_benefits",
+        "context": "meratakan warna kulit"
+      }
+    ],
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 970.5,
+    "end": 1003.8,
+    "score": 7.0,
+    "hook": "Glow Up Sebelum Lebaran",
+    "reason": "Mencerahkan kulit kusam dan bekas jerawat serta mengingatkan penonton untuk glow up menjelang lebaran.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "glow up",
+        "category": "attention_benefits",
+        "context": "gak mau glow up"
+      }
+    ],
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 1251.5,
+    "end": 1281.0,
+    "score": 7.0,
+    "hook": "Facial Cleanser Anti Kering",
+    "reason": "Menjelaskan manfaat produk yang tidak membuat kulit kering dan menjaga kelembapan.",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "bikin kering"
+      },
+      {
+        "word": "lembap",
+        "category": "attention_benefits",
+        "context": "kelembapan alami"
+      }
+    ],
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 2082.5,
+    "end": 2121.0,
+    "score": 7.0,
+    "hook": "Toner Proya Anti Kering",
+    "reason": "Menginformasikan manfaat toner untuk kulit kering dan keamanannya bagi berbagai jenis kulit.",
+    "product": "iDrating Toner",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajah kering"
+      },
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "aman digunakan"
+      }
+    ],
+    "clip_id": "clip_0014"
+  },
+  {
+    "start": 2283.9,
+    "end": 2321.8,
+    "score": 6.0,
+    "hook": "Glow Up Bersama",
+    "reason": "Menekankan manfaat produk untuk meningkatkan penampilan kulit.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glow up",
+        "category": "attention_benefits",
+        "context": "kita sama-sama glow up"
+      }
+    ],
+    "clip_id": "clip_0015"
+  }
+]

@@ -1,0 +1,503 @@
+[
+  {
+    "start": 302.9,
+    "end": 341.4,
+    "score": 9.0,
+    "hook": "MATA PANDA PARAH JADI CERAH",
+    "reason": "Mengandung penjelasan manfaat produk yang jelas, termasuk hasil nyata dan perubahan kulit.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "full brightening",
+        "category": "attention_benefits",
+        "context": "Etalase nomor 7 udah full brightening"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "Serum bisa mencerahkan dan memudarkan bekas jerawat"
+      },
+      {
+        "word": "memudarkan lingkaran hitam",
+        "category": "attention_benefits",
+        "context": "Eye cream untuk memudarkan lingkaran hitam dan pigmentasi gelap"
+      },
+      {
+        "word": "tidak bikin kulit kering atau ketarik",
+        "category": "attention_benefits",
+        "context": "Facial cleanser tidak bikin kulit kering atau ketarik"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "MATA PANDA PARAH JADI CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 1483.1,
+    "end": 1521.6,
+    "score": 9.0,
+    "hook": "AWALNYA KEMERAHAN, SEKARANG CERAH",
+    "reason": "Menjelaskan manfaat produk secara rinci dan detail.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kemerahan",
+        "category": "attention_benefits",
+        "context": "meredakan kemerahan"
+      },
+      {
+        "word": "lembabkan",
+        "category": "attention_benefits",
+        "context": "melembabkan kulit wajah"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA KEMERAHAN, SEKARANG CERAH",
+      "subtext": "Dipakai rutin tiap hari",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 3043.7,
+    "end": 3077.7,
+    "score": 9.0,
+    "hook": "CUMA PAKAI INI, JADI GLOWING",
+    "reason": "Menjelaskan manfaat langsung dari produk, termasuk hasil yang jelas.",
+    "product": "sheet mask",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "auto bikin glowing"
+      },
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "auto cerah seketika"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "CUMA PAKAI INI, JADI GLOWING",
+      "subtext": "Sekali pakai langsung keliatan",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 5838.5,
+    "end": 5877.0,
+    "score": 9.0,
+    "hook": "DARI FLEK HITAM JADI GLOWING",
+    "reason": "Mengandung manfaat produk yang jelas, menjelaskan bahan utama dan hasil nyata.",
+    "product": "serum",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam"
+      },
+      {
+        "word": "glowing alami",
+        "category": "attention_benefits",
+        "context": "tampak lebih glowing alami"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "DARI FLEK HITAM JADI GLOWING",
+      "subtext": "Pakai ini doang",
+      "cta": "PRODUKNYA APA??"
+    },
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 6837.5,
+    "end": 6852.0,
+    "score": 8.5,
+    "hook": "AWALNYA GA PERCAYA, EH GLOWING",
+    "reason": "Menjelaskan hasil nyata setelah tidur",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "auto cerah"
+      },
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "dan juga glowing"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA GA PERCAYA, EH GLOWING",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 6949.5,
+    "end": 6976.0,
+    "score": 8.2,
+    "hook": "KOK BISA SAMAR GINI?",
+    "reason": "Menjelaskan manfaat produk untuk area mata",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan area mata"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KOK BISA SAMAR GINI?",
+      "subtext": "Dipakai rutin tiap hari",
+      "cta": "GIMANA CARANYA??"
+    },
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 582.5,
+    "end": 621.0,
+    "score": 8.0,
+    "hook": "KOK BISA CERAH GINI?",
+    "reason": "Menjelaskan manfaat produk yang jelas dan nyata.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "untuk mencerahkannya"
+      },
+      {
+        "word": "bersih",
+        "category": "attention_benefits",
+        "context": "membersihkan wajah secara menyeluruh"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KOK BISA CERAH GINI?",
+      "subtext": "Pakai ini doang",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 2042.5,
+    "end": 2081.0,
+    "score": 8.0,
+    "hook": "GILA SIH, KEMERAHAN JADI CERAH",
+    "reason": "Menginformasikan manfaat produk dengan jelas, termasuk klaim keamanannya.",
+    "product": "general",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "aman",
+        "category": "attention_benefits",
+        "context": "sudah ber BPOM"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "skin cream bisa meredakan kemerahan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "GILA SIH, KEMERAHAN JADI CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 2631.1,
+    "end": 2669.6,
+    "score": 8.0,
+    "hook": "INI BUKAN FILTER, HALUS",
+    "reason": "Menggambarkan manfaat produk secara detail",
+    "product": "eye cream nomor 5",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "lingkaran hitam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "kulit"
+      },
+      {
+        "word": "menyamarkan",
+        "category": "attention_benefits",
+        "context": "garis halus"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "INI BUKAN FILTER, HALUS",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "AKU PAKAI APA??"
+    },
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 4971.8,
+    "end": 5010.3,
+    "score": 8.0,
+    "hook": "KUSAM AUTO CERAH",
+    "reason": "Menjelaskan manfaat produk yang jelas.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan warna kulit wajah"
+      },
+      {
+        "word": "kusam",
+        "category": "attention_benefits",
+        "context": "mengangkat kekusaman sambil membersihkan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KUSAM AUTO CERAH",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 6301.4,
+    "end": 6339.9,
+    "score": 8.0,
+    "hook": "FLEK HITAM PARAH JADI SAMAR",
+    "reason": "Menjelaskan manfaat produk secara jelas.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "yang mau mencerahkan"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "pain_problem",
+        "context": "memudarkan bekas jerawat flek hitam boleh banget"
+      },
+      {
+        "word": "flek hitam",
+        "category": "pain_problem",
+        "context": "mencerahkan memudarkan bekas jerawat flek hitam bisa banget"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "FLEK HITAM PARAH JADI SAMAR",
+      "subtext": "Pakai ini doang",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 6577.5,
+    "end": 6616.0,
+    "score": 8.0,
+    "hook": "AWALNYA KUSAM, SEKARANG CERAH",
+    "reason": "Menggambarkan manfaat produk dan bahan utama yang digunakan.",
+    "product": "Skin cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "manfaat",
+        "category": "attention_benefits",
+        "context": "manfaat utamanya"
+      },
+      {
+        "word": "kelembapan",
+        "category": "attention_benefits",
+        "context": "mengunci kelembapan"
+      },
+      {
+        "word": "skin barrier",
+        "category": "attention_benefits",
+        "context": "memperbaiki skin barrier"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA KUSAM, SEKARANG CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "PRODUKNYA APA??"
+    },
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 7006.9,
+    "end": 7045.4,
+    "score": 8.0,
+    "hook": "AWALNYA GA PERCAYA, EH CERAH",
+    "reason": "Mengandung manfaat produk yang jelas untuk area mata",
+    "product": "eye cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan area mata"
+      },
+      {
+        "word": "memperbaiki kekeringan",
+        "category": "attention_benefits",
+        "context": "memperbaiki kekeringan di sekitar area mata"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "AWALNYA GA PERCAYA, EH CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "PRODUKNYA APA??"
+    },
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 5071.1,
+    "end": 5109.6,
+    "score": 7.0,
+    "hook": "GILA SIH, KUSAM JADI CERAH",
+    "reason": "Menjelaskan langkah pertama untuk mendapatkan kulit cerah.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "kamu mau punya kulit wajah yang cerah"
+      },
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "kulit akan terlihat lebih cerah transparan"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "GILA SIH, KUSAM JADI CERAH",
+      "subtext": "Tanpa treatment mahal",
+      "cta": "PAKENYA GIMANA??"
+    },
+    "clip_id": "clip_0014"
+  },
+  {
+    "start": 5779.8,
+    "end": 5818.3,
+    "score": 7.0,
+    "hook": "PAKAI SERUM, JADI LEBIH PUDAR",
+    "reason": "Mengandung manfaat produk yang jelas",
+    "product": "serum",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "PAKAI SERUM, JADI LEBIH PUDAR",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "PRODUKNYA APA??"
+    },
+    "clip_id": "clip_0015"
+  },
+  {
+    "start": 6671.3,
+    "end": 6686.2,
+    "score": 7.0,
+    "hook": "CUMA PAKAI INI, JADI CERAH",
+    "reason": "Menjelaskan kecepatan penyerapan produk dan manfaatnya.",
+    "product": "Skin cream",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "cepat meresap",
+        "category": "attention_benefits",
+        "context": "cepat meresap setelah dioleskan juga"
+      },
+      {
+        "word": "pelindung",
+        "category": "attention_benefits",
+        "context": "membentuk lapisan pelindung di permukaan kulit"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "CUMA PAKAI INI, JADI CERAH",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0016"
+  },
+  {
+    "start": 2789.0,
+    "end": 2827.5,
+    "score": 6.0,
+    "hook": "KOK BISA SECEPAT INI?",
+    "reason": "Menginformasikan promo dan harga produk",
+    "product": "eye cream nomor 5",
+    "clip_type": "promo",
+    "keyword_category": "result_proof",
+    "keywords_found": [
+      {
+        "word": "harga promo",
+        "category": "result_proof",
+        "context": "berlaku selama live streaming"
+      },
+      {
+        "word": "74 ribuan",
+        "category": "result_proof",
+        "context": "harga normal dari 187 ribu"
+      }
+    ],
+    "hook_overlay": {
+      "headline": "KOK BISA SECEPAT INI?",
+      "subtext": "Cuma 1 produk ini",
+      "cta": "SERIUS CUMA INI??"
+    },
+    "clip_id": "clip_0017"
+  }
+]

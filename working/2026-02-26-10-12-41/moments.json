@@ -1,0 +1,367 @@
+[
+  {
+    "start": 4500.2,
+    "end": 4538.7,
+    "score": 9.0,
+    "hook": "Serum Vitamin C Proya: Cerahkan Kulit",
+    "reason": "Momen ini menjelaskan manfaat produk secara jelas dan memberikan hasil yang diinginkan pengguna.",
+    "product": "serum vitamin c proya",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 5203.2,
+    "end": 5241.7,
+    "score": 9.0,
+    "hook": "Cegah Flek Hitam & Jerawat",
+    "reason": "Menggambarkan manfaat produk dengan jelas untuk mengatasi masalah kulit kusam, flek hitam dan bekas jerawat.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "attention_benefits",
+        "context": "kulit wajah kamu yang lagi kusamnya"
+      },
+      {
+        "word": "flek hitam",
+        "category": "attention_benefits",
+        "context": "memudarkan flek hitam pada kulit wajah"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 7059.8,
+    "end": 7098.3,
+    "score": 9.0,
+    "hook": "Serum PROYA Vitamin C",
+    "reason": "Mengandung manfaat produk yang jelas, termasuk mencerahkan kulit wajah dan memudarkan bekas jerawat.",
+    "product": "serum vitamin c",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "pain_problem",
+        "context": "memudarkan bekas jerawat"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 8292.3,
+    "end": 8330.8,
+    "score": 9.0,
+    "hook": "PROYA Seed Mesh: Murah Meriah!",
+    "reason": "Menggambarkan manfaat produk secara jelas dan efektif",
+    "product": "Seed Mesh",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "murca",
+        "category": "attention_benefits",
+        "context": "harga murah"
+      },
+      {
+        "word": "lembab",
+        "category": "attention_benefits",
+        "context": "kulit lembab"
+      },
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "terasa glowing"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 1844.5,
+    "end": 1883.0,
+    "score": 8.0,
+    "hook": "Facial Cleanser PROYA - Manfaat Cepat",
+    "reason": "Menggambarkan manfaat cepat facial cleanser PROYA.",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah yang kusam"
+      },
+      {
+        "word": "terasa nyaman",
+        "category": "attention_benefits",
+        "context": "kulit terasa nyaman dan aman"
+      }
+    ],
+    "clip_id": "clip_0005"
+  },
+  {
+    "start": 2315.4,
+    "end": 2344.0,
+    "score": 8.0,
+    "hook": "Anti Kering Kulit Wajah",
+    "reason": "Mengganti produk lama dengan facial cleanser Proya yang menjaga kelembapan alami kulit wajah",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "attention_benefits",
+        "context": "bikin kering itu engga"
+      },
+      {
+        "word": "lembap",
+        "category": "attention_benefits",
+        "context": "kelembapan alaminya"
+      }
+    ],
+    "clip_id": "clip_0006"
+  },
+  {
+    "start": 2972.5,
+    "end": 3011.0,
+    "score": 8.0,
+    "hook": "Tidak Boleh Lewatkan Toner Ini",
+    "reason": "Mengandung manfaat produk dan pentingnya penggunaan toner untuk kulit kering.",
+    "product": "general",
+    "clip_type": "tips",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit wajah"
+      },
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit kering"
+      }
+    ],
+    "clip_id": "clip_0007"
+  },
+  {
+    "start": 5657.9,
+    "end": 5696.4,
+    "score": 8.0,
+    "hook": "Atasi Mata Panda dengan PROYA",
+    "reason": "Menjelaskan manfaat produk untuk mengatasi masalah mata panda secara detail.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "membantu",
+        "category": "attention_benefits",
+        "context": "bisa membantu"
+      },
+      {
+        "word": "memudarkan",
+        "category": "attention_benefits",
+        "context": "memudarkan lingkaran hitam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit di bawah mata"
+      }
+    ],
+    "clip_id": "clip_0008"
+  },
+  {
+    "start": 7660.6,
+    "end": 7699.1,
+    "score": 8.0,
+    "hook": "Melembapkan Kulit Kering",
+    "reason": "Menjelaskan manfaat produk secara rinci dan mendorong pembelian",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit"
+      },
+      {
+        "word": "meredakan kemerahan",
+        "category": "attention_benefits",
+        "context": "bisa meredakan kemerahan pada kulit"
+      }
+    ],
+    "clip_id": "clip_0009"
+  },
+  {
+    "start": 9380.0,
+    "end": 9418.5,
+    "score": 8.0,
+    "hook": "Paket Murah Proya Vitamin C",
+    "reason": "Mengklaim manfaat produk dan menjelaskan hasil positif yang dapat diharapkan.",
+    "product": "general",
+    "clip_type": "promo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "murkel",
+        "category": "result_proof",
+        "context": "harganya murkel banget"
+      },
+      {
+        "word": "mantep",
+        "category": "attention_benefits",
+        "context": "kasiat mantep banget"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit wajah kamu"
+      },
+      {
+        "word": "glowing",
+        "category": "attention_benefits",
+        "context": "bikin kulit glowing"
+      }
+    ],
+    "clip_id": "clip_0010"
+  },
+  {
+    "start": 582.5,
+    "end": 621.0,
+    "score": 7.0,
+    "hook": "Vitamin C Proya: Solusi Kulit Kusam",
+    "reason": "Menjelaskan manfaat produk dalam mencerahkan kulit yang kusam dan menghilangkan iritasi.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kusam",
+        "category": "pain_problem",
+        "context": "masalah kulit wajahnya itu lagi kusam"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan wajah kamu kalau lagi kusam nih"
+      }
+    ],
+    "clip_id": "clip_0011"
+  },
+  {
+    "start": 2388.0,
+    "end": 2415.0,
+    "score": 7.0,
+    "hook": "Vitamin C Serum Cerahkan Wajah",
+    "reason": "Mengandung manfaat produk yang jelas.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan wajakku"
+      },
+      {
+        "word": "membersihkan",
+        "category": "attention_benefits",
+        "context": "membersihkan kotoran fisiknya"
+      }
+    ],
+    "clip_id": "clip_0012"
+  },
+  {
+    "start": 2445.9,
+    "end": 2463.1,
+    "score": 7.0,
+    "hook": "Serum Vitamin C Anti Kering",
+    "reason": "Mengandung manfaat produk yang jelas.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "kering",
+        "category": "pain_problem",
+        "context": "kulit wajanya kering"
+      },
+      {
+        "word": "melembapkan",
+        "category": "attention_benefits",
+        "context": "melembapkan kulit"
+      }
+    ],
+    "clip_id": "clip_0013"
+  },
+  {
+    "start": 1750.5,
+    "end": 1789.0,
+    "score": 6.0,
+    "hook": "Facial Cleanser PROYA - Tekstur Unik",
+    "reason": "Menggambarkan tekstur unik dan manfaat facial cleanser PROYA.",
+    "product": "facial cleanser",
+    "clip_type": "demo",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "lembap",
+        "category": "attention_benefits",
+        "context": "menjaga kelembapan alami"
+      },
+      {
+        "word": "unik",
+        "category": "attention_benefits",
+        "context": "teksutur unik perpaduan cream dan gel"
+      }
+    ],
+    "clip_id": "clip_0014"
+  },
+  {
+    "start": 2124.8,
+    "end": 2144.7,
+    "score": 6.0,
+    "hook": "Facial Cleanser Proya Facial",
+    "reason": "Menjelaskan manfaat produk dan hasil nyata",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "bersih",
+        "category": "attention_benefits",
+        "context": "membersihkan wajah"
+      },
+      {
+        "word": "kering",
+        "category": "attention_benefits",
+        "context": "bikin kering itu engga"
+      }
+    ],
+    "clip_id": "clip_0015"
+  }
+]

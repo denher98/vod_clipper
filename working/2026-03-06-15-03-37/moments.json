@@ -1,0 +1,132 @@
+[
+  {
+    "start": 6236.4,
+    "end": 6274.9,
+    "score": 9.0,
+    "hook": "Serum Vitamin C Proya - Solusi Flek Hitam",
+    "reason": "Menggambarkan manfaat produk secara jelas dan langsung.",
+    "product": "serum vitamin c",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "memudahkan bekas jerawat",
+        "category": "attention_benefits",
+        "context": "mampu ati tuh bisa untuk memudahkan bekas jerawat"
+      },
+      {
+        "word": "flek hitam",
+        "category": "attention_benefits",
+        "context": "dan flek hitam"
+      },
+      {
+        "word": "mencerahkan kulit wajah",
+        "category": "attention_benefits",
+        "context": "bisa mencerahkan kulit wajah kamu juga"
+      }
+    ],
+    "clip_id": "clip_0001"
+  },
+  {
+    "start": 6840.4,
+    "end": 6878.9,
+    "score": 9.0,
+    "hook": "Cuci Muka Seger dan Aman",
+    "reason": "Mengandung manfaat produk yang jelas dan nyata.",
+    "product": "facial cleanser",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "seger",
+        "category": "attention_benefits",
+        "context": "terasa seger"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerah kulit"
+      }
+    ],
+    "clip_id": "clip_0002"
+  },
+  {
+    "start": 2243.6,
+    "end": 2282.1,
+    "score": 8.0,
+    "hook": "Manfaat Membersihkan Kulit",
+    "reason": "Menggambarkan manfaat produk dalam membersihkan kulit dari debu dan polusi.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "membersikan",
+        "category": "attention_benefits",
+        "context": "membersikan kulit"
+      },
+      {
+        "word": "debu",
+        "category": "pain_problem",
+        "context": "dari debu dan polusi"
+      }
+    ],
+    "clip_id": "clip_0003"
+  },
+  {
+    "start": 2961.4,
+    "end": 2999.9,
+    "score": 8.0,
+    "hook": "Manfaat Toner Hydrating Spray",
+    "reason": "Menggambarkan manfaat produk dengan jelas",
+    "product": "toner hydrating spray",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "menyimbangkan",
+        "category": "attention_benefits",
+        "context": "menyimbangkan pehra"
+      },
+      {
+        "word": "mencegah",
+        "category": "attention_benefits",
+        "context": "mencegah kering dan dehidrasi"
+      },
+      {
+        "word": "mencerahkan",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      }
+    ],
+    "clip_id": "clip_0004"
+  },
+  {
+    "start": 4206.3,
+    "end": 4244.8,
+    "score": 8.0,
+    "hook": "Vitamin C Proya: Cerahkan Kulit",
+    "reason": "Menggambarkan manfaat produk secara jelas dan memberikan solusi untuk masalah kulit.",
+    "product": "general",
+    "clip_type": "testimoni",
+    "keyword_category": "attention_benefits",
+    "keywords_found": [
+      {
+        "word": "cerah",
+        "category": "attention_benefits",
+        "context": "mencerahkan kulit"
+      },
+      {
+        "word": "bekas jerawat",
+        "category": "pain_problem",
+        "context": "memudarkan bekas jerawat di kulit"
+      },
+      {
+        "word": "flek hitam",
+        "category": "pain_problem",
+        "context": "memudarkan flek hitam"
+      }
+    ],
+    "clip_id": "clip_0005"
+  }
+]

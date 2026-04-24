@@ -1,0 +1,1036 @@
+[
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1344.0,
+    "end_time": 1344.0,
+    "duration": 0.0,
+    "best_confidence": 0.624,
+    "start_bbox": [
+      744.9,
+      991.4,
+      974.8,
+      1152.0
+    ],
+    "end_bbox": [
+      744.9,
+      991.4,
+      974.8,
+      1152.0
+    ],
+    "best_bbox": [
+      744.9,
+      991.4,
+      974.8,
+      1152.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1344.0,
+        "bbox": [
+          744.9,
+          991.4,
+          974.8,
+          1152.0
+        ],
+        "confidence": 0.624
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1355.2,
+    "end_time": 1355.2,
+    "duration": 0.0,
+    "best_confidence": 0.613,
+    "start_bbox": [
+      833.5,
+      1044.0,
+      955.4,
+      1152.0
+    ],
+    "end_bbox": [
+      833.5,
+      1044.0,
+      955.4,
+      1152.0
+    ],
+    "best_bbox": [
+      833.5,
+      1044.0,
+      955.4,
+      1152.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1355.2,
+        "bbox": [
+          833.5,
+          1044.0,
+          955.4,
+          1152.0
+        ],
+        "confidence": 0.613
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1364.8,
+    "end_time": 1364.8,
+    "duration": 0.0,
+    "best_confidence": 0.563,
+    "start_bbox": [
+      758.8,
+      977.5,
+      877.8,
+      1150.6
+    ],
+    "end_bbox": [
+      758.8,
+      977.5,
+      877.8,
+      1150.6
+    ],
+    "best_bbox": [
+      758.8,
+      977.5,
+      877.8,
+      1150.6
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1364.8,
+        "bbox": [
+          758.8,
+          977.5,
+          877.8,
+          1150.6
+        ],
+        "confidence": 0.563
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1367.2,
+    "end_time": 1367.2,
+    "duration": 0.0,
+    "best_confidence": 0.561,
+    "start_bbox": [
+      722.1,
+      991.4,
+      875.8,
+      1152.0
+    ],
+    "end_bbox": [
+      722.1,
+      991.4,
+      875.8,
+      1152.0
+    ],
+    "best_bbox": [
+      722.1,
+      991.4,
+      875.8,
+      1152.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1367.2,
+        "bbox": [
+          722.1,
+          991.4,
+          875.8,
+          1152.0
+        ],
+        "confidence": 0.561
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 0,
+    "class_name": "Cleanser",
+    "start_time": 1372.0,
+    "end_time": 1372.0,
+    "duration": 0.0,
+    "best_confidence": 0.601,
+    "start_bbox": [
+      699.9,
+      1014.2,
+      850.8,
+      1151.3
+    ],
+    "end_bbox": [
+      699.9,
+      1014.2,
+      850.8,
+      1151.3
+    ],
+    "best_bbox": [
+      699.9,
+      1014.2,
+      850.8,
+      1151.3
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1372.0,
+        "bbox": [
+          699.9,
+          1014.2,
+          850.8,
+          1151.3
+        ],
+        "confidence": 0.601
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 1792.0,
+    "end_time": 1792.0,
+    "duration": 0.0,
+    "best_confidence": 0.723,
+    "start_bbox": [
+      644.5,
+      908.3,
+      762.2,
+      1152.0
+    ],
+    "end_bbox": [
+      644.5,
+      908.3,
+      762.2,
+      1152.0
+    ],
+    "best_bbox": [
+      644.5,
+      908.3,
+      762.2,
+      1152.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1792.0,
+        "bbox": [
+          644.5,
+          908.3,
+          762.2,
+          1152.0
+        ],
+        "confidence": 0.723
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 1795.2,
+    "end_time": 1795.2,
+    "duration": 0.0,
+    "best_confidence": 0.858,
+    "start_bbox": [
+      742.8,
+      894.5,
+      870.2,
+      1143.7
+    ],
+    "end_bbox": [
+      742.8,
+      894.5,
+      870.2,
+      1143.7
+    ],
+    "best_bbox": [
+      742.8,
+      894.5,
+      870.2,
+      1143.7
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1795.2,
+        "bbox": [
+          742.8,
+          894.5,
+          870.2,
+          1143.7
+        ],
+        "confidence": 0.858
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 1829.6,
+    "end_time": 1832.8,
+    "duration": 3.2,
+    "best_confidence": 0.804,
+    "start_bbox": [
+      744.2,
+      912.5,
+      843.9,
+      1150.6
+    ],
+    "end_bbox": [
+      727.6,
+      956.1,
+      832.8,
+      1151.3
+    ],
+    "best_bbox": [
+      751.8,
+      956.8,
+      851.5,
+      1152.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 5,
+    "track": [
+      {
+        "time": 1829.6,
+        "bbox": [
+          744.2,
+          912.5,
+          843.9,
+          1150.6
+        ],
+        "confidence": 0.801
+      },
+      {
+        "time": 1830.4,
+        "bbox": [
+          747.0,
+          937.4,
+          846.7,
+          1152.0
+        ],
+        "confidence": 0.739
+      },
+      {
+        "time": 1831.2,
+        "bbox": [
+          750.5,
+          954.0,
+          847.4,
+          1152.0
+        ],
+        "confidence": 0.709
+      },
+      {
+        "time": 1832.0,
+        "bbox": [
+          751.8,
+          956.8,
+          851.5,
+          1152.0
+        ],
+        "confidence": 0.804
+      },
+      {
+        "time": 1832.8,
+        "bbox": [
+          727.6,
+          956.1,
+          832.8,
+          1151.3
+        ],
+        "confidence": 0.617
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 1925.6,
+    "end_time": 1925.6,
+    "duration": 0.0,
+    "best_confidence": 0.628,
+    "start_bbox": [
+      751.8,
+      906.9,
+      857.1,
+      1142.3
+    ],
+    "end_bbox": [
+      751.8,
+      906.9,
+      857.1,
+      1142.3
+    ],
+    "best_bbox": [
+      751.8,
+      906.9,
+      857.1,
+      1142.3
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 1925.6,
+        "bbox": [
+          751.8,
+          906.9,
+          857.1,
+          1142.3
+        ],
+        "confidence": 0.628
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 2006.4,
+    "end_time": 2006.4,
+    "duration": 0.0,
+    "best_confidence": 0.649,
+    "start_bbox": [
+      605.1,
+      974.8,
+      852.9,
+      1152.0
+    ],
+    "end_bbox": [
+      605.1,
+      974.8,
+      852.9,
+      1152.0
+    ],
+    "best_bbox": [
+      605.1,
+      974.8,
+      852.9,
+      1152.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 2006.4,
+        "bbox": [
+          605.1,
+          974.8,
+          852.9,
+          1152.0
+        ],
+        "confidence": 0.649
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 2008.0,
+    "end_time": 2022.4,
+    "duration": 14.4,
+    "best_confidence": 0.876,
+    "start_bbox": [
+      610.6,
+      981.0,
+      776.8,
+      1151.3
+    ],
+    "end_bbox": [
+      684.0,
+      945.7,
+      840.5,
+      1152.0
+    ],
+    "best_bbox": [
+      728.3,
+      897.2,
+      869.5,
+      1152.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 19,
+    "track": [
+      {
+        "time": 2008.0,
+        "bbox": [
+          610.6,
+          981.0,
+          776.8,
+          1151.3
+        ],
+        "confidence": 0.709
+      },
+      {
+        "time": 2008.8,
+        "bbox": [
+          605.8,
+          970.6,
+          777.5,
+          1152.0
+        ],
+        "confidence": 0.769
+      },
+      {
+        "time": 2009.6,
+        "bbox": [
+          614.8,
+          978.9,
+          789.2,
+          1150.6
+        ],
+        "confidence": 0.723
+      },
+      {
+        "time": 2010.4,
+        "bbox": [
+          633.1,
+          980.3,
+          798.9,
+          1152.0
+        ],
+        "confidence": 0.766
+      },
+      {
+        "time": 2011.2,
+        "bbox": [
+          650.8,
+          952.6,
+          786.5,
+          1152.0
+        ],
+        "confidence": 0.843
+      },
+      {
+        "time": 2012.0,
+        "bbox": [
+          612.3,
+          966.5,
+          783.7,
+          1152.0
+        ],
+        "confidence": 0.845
+      },
+      {
+        "time": 2012.8,
+        "bbox": [
+          604.4,
+          969.2,
+          785.8,
+          1152.0
+        ],
+        "confidence": 0.819
+      },
+      {
+        "time": 2013.6,
+        "bbox": [
+          606.1,
+          963.7,
+          786.5,
+          1152.0
+        ],
+        "confidence": 0.794
+      },
+      {
+        "time": 2014.4,
+        "bbox": [
+          597.5,
+          966.5,
+          774.7,
+          1152.0
+        ],
+        "confidence": 0.811
+      },
+      {
+        "time": 2015.2,
+        "bbox": [
+          578.8,
+          969.2,
+          776.8,
+          1152.0
+        ],
+        "confidence": 0.84
+      },
+      {
+        "time": 2016.0,
+        "bbox": [
+          657.3,
+          945.7,
+          793.4,
+          1152.0
+        ],
+        "confidence": 0.806
+      },
+      {
+        "time": 2016.8,
+        "bbox": [
+          594.7,
+          949.8,
+          734.5,
+          1152.0
+        ],
+        "confidence": 0.681
+      },
+      {
+        "time": 2017.6,
+        "bbox": [
+          639.0,
+          985.8,
+          824.5,
+          1152.0
+        ],
+        "confidence": 0.783
+      },
+      {
+        "time": 2018.4,
+        "bbox": [
+          738.7,
+          913.8,
+          873.0,
+          1152.0
+        ],
+        "confidence": 0.816
+      },
+      {
+        "time": 2019.2,
+        "bbox": [
+          728.3,
+          897.2,
+          869.5,
+          1152.0
+        ],
+        "confidence": 0.876
+      },
+      {
+        "time": 2020.0,
+        "bbox": [
+          700.6,
+          929.8,
+          839.1,
+          1151.3
+        ],
+        "confidence": 0.752
+      },
+      {
+        "time": 2020.8,
+        "bbox": [
+          681.2,
+          948.5,
+          864.0,
+          1152.0
+        ],
+        "confidence": 0.696
+      },
+      {
+        "time": 2021.6,
+        "bbox": [
+          685.4,
+          949.8,
+          862.6,
+          1152.0
+        ],
+        "confidence": 0.602
+      },
+      {
+        "time": 2022.4,
+        "bbox": [
+          684.0,
+          945.7,
+          840.5,
+          1152.0
+        ],
+        "confidence": 0.576
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 3,
+    "class_name": "Eye Cream",
+    "start_time": 3861.6,
+    "end_time": 3862.4,
+    "duration": 0.8,
+    "best_confidence": 0.804,
+    "start_bbox": [
+      690.9,
+      825.2,
+      803.1,
+      977.5
+    ],
+    "end_bbox": [
+      534.5,
+      891.7,
+      612.0,
+      1066.2
+    ],
+    "best_bbox": [
+      535.8,
+      948.5,
+      609.2,
+      1064.8
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 3,
+    "track": [
+      {
+        "time": 3861.6,
+        "bbox": [
+          690.9,
+          825.2,
+          803.1,
+          977.5
+        ],
+        "confidence": 0.723
+      },
+      {
+        "time": 3862.4,
+        "bbox": [
+          535.8,
+          948.5,
+          609.2,
+          1064.8
+        ],
+        "confidence": 0.804
+      },
+      {
+        "time": 3862.4,
+        "bbox": [
+          534.5,
+          891.7,
+          612.0,
+          1066.2
+        ],
+        "confidence": 0.725
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 5,
+    "class_name": "skin cream",
+    "start_time": 3866.4,
+    "end_time": 3867.2,
+    "duration": 0.8,
+    "best_confidence": 0.644,
+    "start_bbox": [
+      639.3,
+      829.4,
+      753.2,
+      1045.4
+    ],
+    "end_bbox": [
+      639.3,
+      846.0,
+      736.6,
+      1046.8
+    ],
+    "best_bbox": [
+      639.3,
+      829.4,
+      753.2,
+      1045.4
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 2,
+    "track": [
+      {
+        "time": 3866.4,
+        "bbox": [
+          639.3,
+          829.4,
+          753.2,
+          1045.4
+        ],
+        "confidence": 0.644
+      },
+      {
+        "time": 3867.2,
+        "bbox": [
+          639.3,
+          846.0,
+          736.6,
+          1046.8
+        ],
+        "confidence": 0.632
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 4,
+    "class_name": "Sheet Mask",
+    "start_time": 5680.0,
+    "end_time": 5684.0,
+    "duration": 4.0,
+    "best_confidence": 0.84,
+    "start_bbox": [
+      637.6,
+      852.9,
+      755.3,
+      949.8
+    ],
+    "end_bbox": [
+      658.0,
+      876.5,
+      796.2,
+      1001.1
+    ],
+    "best_bbox": [
+      637.6,
+      888.9,
+      769.2,
+      1002.5
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 6,
+    "track": [
+      {
+        "time": 5680.0,
+        "bbox": [
+          637.6,
+          852.9,
+          755.3,
+          949.8
+        ],
+        "confidence": 0.822
+      },
+      {
+        "time": 5680.8,
+        "bbox": [
+          659.1,
+          886.2,
+          786.5,
+          1003.8
+        ],
+        "confidence": 0.71
+      },
+      {
+        "time": 5681.6,
+        "bbox": [
+          637.6,
+          888.9,
+          769.2,
+          1002.5
+        ],
+        "confidence": 0.84
+      },
+      {
+        "time": 5682.4,
+        "bbox": [
+          656.3,
+          871.6,
+          785.1,
+          990.7
+        ],
+        "confidence": 0.613
+      },
+      {
+        "time": 5683.2,
+        "bbox": [
+          653.5,
+          886.2,
+          780.9,
+          1002.5
+        ],
+        "confidence": 0.722
+      },
+      {
+        "time": 5684.0,
+        "bbox": [
+          658.0,
+          876.5,
+          796.2,
+          1001.1
+        ],
+        "confidence": 0.615
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 4,
+    "class_name": "Sheet Mask",
+    "start_time": 5689.6,
+    "end_time": 5690.4,
+    "duration": 0.8,
+    "best_confidence": 0.683,
+    "start_bbox": [
+      724.2,
+      874.4,
+      854.3,
+      992.1
+    ],
+    "end_bbox": [
+      672.2,
+      890.3,
+      812.1,
+      1009.4
+    ],
+    "best_bbox": [
+      724.2,
+      874.4,
+      854.3,
+      992.1
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 2,
+    "track": [
+      {
+        "time": 5689.6,
+        "bbox": [
+          724.2,
+          874.4,
+          854.3,
+          992.1
+        ],
+        "confidence": 0.683
+      },
+      {
+        "time": 5690.4,
+        "bbox": [
+          672.2,
+          890.3,
+          812.1,
+          1009.4
+        ],
+        "confidence": 0.658
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 4,
+    "class_name": "Sheet Mask",
+    "start_time": 5692.0,
+    "end_time": 5692.0,
+    "duration": 0.0,
+    "best_confidence": 0.729,
+    "start_bbox": [
+      671.9,
+      893.1,
+      804.5,
+      1013.5
+    ],
+    "end_bbox": [
+      671.9,
+      893.1,
+      804.5,
+      1013.5
+    ],
+    "best_bbox": [
+      671.9,
+      893.1,
+      804.5,
+      1013.5
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 1,
+    "track": [
+      {
+        "time": 5692.0,
+        "bbox": [
+          671.9,
+          893.1,
+          804.5,
+          1013.5
+        ],
+        "confidence": 0.729
+      }
+    ]
+  },
+  {
+    "_schema_version": 3,
+    "class_id": 4,
+    "class_name": "Sheet Mask",
+    "start_time": 5696.8,
+    "end_time": 5697.6,
+    "duration": 0.8,
+    "best_confidence": 0.774,
+    "start_bbox": [
+      713.1,
+      887.5,
+      848.8,
+      1009.4
+    ],
+    "end_bbox": [
+      706.2,
+      873.7,
+      836.3,
+      990.0
+    ],
+    "best_bbox": [
+      706.2,
+      873.7,
+      836.3,
+      990.0
+    ],
+    "frame_w": 1080,
+    "frame_h": 1920,
+    "detection_count": 2,
+    "track": [
+      {
+        "time": 5696.8,
+        "bbox": [
+          713.1,
+          887.5,
+          848.8,
+          1009.4
+        ],
+        "confidence": 0.593
+      },
+      {
+        "time": 5697.6,
+        "bbox": [
+          706.2,
+          873.7,
+          836.3,
+          990.0
+        ],
+        "confidence": 0.774
+      }
+    ]
+  }
+]
