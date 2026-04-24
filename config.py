@@ -188,6 +188,8 @@ WORD_CORRECTIONS = {
     "ceritmen"       : "treatment",
     "ethelosan"      : "etalase",
     "pembersi"       : "pembersih",
+    "tablognya"      : "tap lovenya",
+    
 
 
 
@@ -429,13 +431,18 @@ SFX_VOLUME_RED         = 0.15    # pain / problem words
 # (prevents rapid-fire SFX when multiple keywords appear back-to-back)
 SFX_HIGHLIGHT_DEBOUNCE = 1.5
 
-# Throughput-first overrides for high-volume clip generation on a modern GPU PC.
-# These values intentionally prioritize speed and clip count over quality.
-CHUNK_DURATION = 300
-CHUNK_OVERLAP = 8
-MIN_CLIP_DURATION = 8
-MAX_CLIP_DURATION = 35
-MIN_SCORE = 4.5
+# Quality-first overrides for product-selling clips.
+# Stricter values reduce random cuts, silent clips, and weak filler moments.
+CHUNK_DURATION = 120
+CHUNK_OVERLAP = 12
+MIN_CLIP_DURATION = 15
+MAX_CLIP_DURATION = 45
+MIN_SCORE = 7.0
+PAD_START = 0.5
+PAD_END = 0.75
+MIN_CLIP_WORDS = 18
+MIN_SPEECH_WORDS_PER_SECOND = 0.75
+MAX_CLIP_SEGMENT_GAP = 4.0
 # HOOK_DURATION = 0.0
 # HOST_FACE_ZOOM_ENABLED = False
 OUTPUT_FPS = 24
