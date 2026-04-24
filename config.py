@@ -220,7 +220,9 @@ WHISPERX_INTERPOLATE_METHOD = "nearest"
 WHISPERX_MODEL_DIR          = None
 WHISPERX_MODEL_CACHE_ONLY   = False
 WHISPERX_MAX_SEGMENT_SECONDS = 30              # cap Wav2Vec2 alignment windows to avoid CUDA OOM
+WHISPERX_ALIGN_IN_SUBPROCESS = True            # protect saved raw transcript if WhisperX crashes natively
 WHISPERX_FALLBACK_TO_RAW_ON_OOM = True         # keep queue moving if WhisperX still runs out of VRAM
+WHISPERX_FALLBACK_TO_RAW_ON_ALIGNMENT_CRASH = True
 WHISPERX_ACCEPT_RAW_FALLBACK_CACHE = True      # reuse fallback transcripts instead of retrying WhisperX forever
 
 # ── YOLO / Vision ─────────────────────────────────────────────────────────────

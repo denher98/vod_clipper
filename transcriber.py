@@ -17,6 +17,8 @@ from typing import Optional
 log = logging.getLogger("proya.transcriber")
 
 TRANSCRIPT_SCHEMA_VERSION = 3
+RAW_TRANSCRIPTION_CHECKPOINT = "transcript.raw_checkpoint.json"
+ALIGNMENT_SUBPROCESS_OUTPUT = "transcript.aligned_subprocess.json"
 
 
 def transcribe(video_path: str, output_dir: str, cfg) -> dict:
@@ -30,6 +32,7 @@ def transcribe(video_path: str, output_dir: str, cfg) -> dict:
       - metadata: cache/version/alignment details
     """
     transcript_path = Path(output_dir) / "transcript.json"
+    raw_checkpoint_path = _raw_transcription_checkpoint_path(output_dir)
     alignment_backend = _desired_word_alignment_backend(cfg)
 
     cached = load_cached_transcript(output_dir)
@@ -42,6 +45,63 @@ def transcribe(video_path: str, output_dir: str, cfg) -> dict:
             "regenerating transcript with the current alignment pipeline"
         )
 
+    checkpoint = load_cached_raw_transcription_checkpoint(output_dir, video_path, cfg)
+    if checkpoint is not None:
+        result = checkpoint
+        log.info(f"Resuming from raw transcription checkpoint: {raw_checkpoint_path}")
+    else:
+        result = _run_faster_whisper_transcription(
+            video_path,
+            cfg,
+            alignment_backend,
+            raw_checkpoint_path,
+        )
+
+    if alignment_backend == "whisperx":
+        try:
+            result = _align_with_whisperx_resilient(video_path, result, raw_checkpoint_path, output_dir, cfg)
+            log.info(f"WhisperX alignment complete: {len(result['words'])} aligned words")
+        except Exception as e:
+            fallback_for_oom = _is_cuda_out_of_memory(e) and getattr(cfg, "WHISPERX_FALLBACK_TO_RAW_ON_OOM", True)
+            fallback_for_crash = (
+                "alignment subprocess" in str(e).lower()
+                and getattr(cfg, "WHISPERX_FALLBACK_TO_RAW_ON_ALIGNMENT_CRASH", True)
+            )
+            if fallback_for_oom or fallback_for_crash:
+                log.warning(
+                    "WhisperX alignment failed after raw transcription was checkpointed; "
+                    "falling back to raw faster-whisper word timestamps"
+                )
+                _clear_torch_cuda_cache()
+                result = _fallback_to_raw_word_timestamps(result, reason=str(e))
+                log.info(f"Using raw faster-whisper word timestamps: {len(result['words'])} words")
+            else:
+                raise
+    else:
+        if not result.get("words"):
+            result = _fallback_to_raw_word_timestamps(result, reason=f"WORD_ALIGNMENT_BACKEND={alignment_backend}")
+        log.info(f"Using raw faster-whisper word timestamps: {len(result['words'])} words")
+
+    try:
+        from word_corrector import apply_corrections_to_transcript
+        result = apply_corrections_to_transcript(result, cfg)
+    except Exception as e:
+        log.warning(f"Word correction skipped: {e}")
+
+    _validate_transcript_word_timings(result)
+
+    _write_json_atomic(transcript_path, result)
+
+    log.info(f"Transcript saved to {transcript_path}")
+    return result
+
+
+def _run_faster_whisper_transcription(
+    video_path: str,
+    cfg,
+    alignment_backend: str,
+    raw_checkpoint_path: Path,
+) -> dict:
     log.info(f"Starting transcription of: {video_path}")
     log.info(f"Model: {cfg.WHISPER_MODEL_SIZE} | Device: {cfg.WHISPER_DEVICE}")
 
@@ -78,7 +138,14 @@ def transcribe(video_path: str, output_dir: str, cfg) -> dict:
         "metadata": {
             "schema_version": TRANSCRIPT_SCHEMA_VERSION,
             "transcriber": "faster-whisper",
-            "word_alignment_backend": alignment_backend,
+            "word_alignment_backend": "raw" if alignment_backend != "whisperx" else "raw_checkpoint",
+            "desired_word_alignment_backend": alignment_backend,
+            "checkpoint_kind": "raw_transcription",
+            "source_video_path": str(Path(video_path).resolve()),
+            "whisper_model_size": getattr(cfg, "WHISPER_MODEL_SIZE", None),
+            "whisper_language": getattr(cfg, "WHISPER_LANGUAGE", None),
+            "whisper_beam_size": getattr(cfg, "WHISPER_BEAM_SIZE", None),
+            "whisper_best_of": getattr(cfg, "WHISPER_BEST_OF", None),
             "language": info.language,
             "language_probability": round(float(info.language_probability), 6),
             "timestamp_precision": "float_seconds",
@@ -121,44 +188,16 @@ def transcribe(video_path: str, output_dir: str, cfg) -> dict:
         if total_segments % 50 == 0:
             log.info(f"  Transcribed {total_segments} segments... (t={seg.end:.0f}s)")
 
+    result["metadata"]["transcription_complete"] = True
+    result["metadata"]["segment_count"] = total_segments
+    _write_json_atomic(raw_checkpoint_path, result)
+    log.info(f"Raw transcription checkpoint saved to {raw_checkpoint_path}")
     log.info(f"Transcription complete: {total_segments} segments")
     try:
         del model
     except Exception:
         pass
     gc.collect()
-
-    if alignment_backend == "whisperx":
-        try:
-            result = _align_with_whisperx(video_path, result, cfg)
-            log.info(f"WhisperX alignment complete: {len(result['words'])} aligned words")
-        except Exception as e:
-            if _is_cuda_out_of_memory(e) and getattr(cfg, "WHISPERX_FALLBACK_TO_RAW_ON_OOM", True):
-                log.warning(
-                    "WhisperX alignment ran out of CUDA memory; "
-                    "falling back to raw faster-whisper word timestamps"
-                )
-                _clear_torch_cuda_cache()
-                result = _fallback_to_raw_word_timestamps(result, reason=str(e))
-                log.info(f"Using raw faster-whisper word timestamps: {len(result['words'])} words")
-            else:
-                raise
-    else:
-        log.info(f"Using raw faster-whisper word timestamps: {len(result['words'])} words")
-
-    try:
-        from word_corrector import apply_corrections_to_transcript
-        result = apply_corrections_to_transcript(result, cfg)
-    except Exception as e:
-        log.warning(f"Word correction skipped: {e}")
-
-    _validate_transcript_word_timings(result)
-
-    os.makedirs(output_dir, exist_ok=True)
-    with open(transcript_path, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-
-    log.info(f"Transcript saved to {transcript_path}")
     return result
 
 
@@ -215,6 +254,25 @@ def load_cached_transcript(output_dir: str) -> Optional[dict]:
         return json.load(f)
 
 
+def load_cached_raw_transcription_checkpoint(output_dir: str, video_path: str, cfg) -> Optional[dict]:
+    checkpoint_path = _raw_transcription_checkpoint_path(output_dir)
+    if not checkpoint_path.exists():
+        return None
+
+    try:
+        with open(checkpoint_path, "r", encoding="utf-8") as f:
+            checkpoint = json.load(f)
+    except Exception as exc:
+        log.warning(f"Ignoring unreadable raw transcription checkpoint {checkpoint_path}: {exc}")
+        return None
+
+    if not _raw_transcription_checkpoint_is_compatible(checkpoint, video_path, cfg):
+        log.info(f"Ignoring stale raw transcription checkpoint: {checkpoint_path}")
+        return None
+
+    return checkpoint
+
+
 def transcript_cache_is_compatible(transcript: dict, cfg) -> bool:
     metadata = transcript.get("metadata", {})
     if metadata.get("schema_version") != TRANSCRIPT_SCHEMA_VERSION:
@@ -238,8 +296,110 @@ def _desired_word_alignment_backend(cfg) -> str:
     return getattr(cfg, "WORD_ALIGNMENT_BACKEND", "whisperx").lower()
 
 
+def _raw_transcription_checkpoint_path(output_dir: str) -> Path:
+    return Path(output_dir) / RAW_TRANSCRIPTION_CHECKPOINT
+
+
+def _raw_transcription_checkpoint_is_compatible(checkpoint: dict, video_path: str, cfg) -> bool:
+    metadata = checkpoint.get("metadata", {})
+    if metadata.get("schema_version") != TRANSCRIPT_SCHEMA_VERSION:
+        return False
+    if metadata.get("checkpoint_kind") != "raw_transcription":
+        return False
+    if not metadata.get("transcription_complete"):
+        return False
+
+    source_video_path = metadata.get("source_video_path")
+    if source_video_path:
+        try:
+            if str(Path(source_video_path).resolve()).casefold() != str(Path(video_path).resolve()).casefold():
+                return False
+        except Exception:
+            return False
+
+    desired_backend = metadata.get("desired_word_alignment_backend")
+    if desired_backend and desired_backend != _desired_word_alignment_backend(cfg):
+        return False
+
+    raw_words = _collect_raw_checkpoint_words(checkpoint)
+    return bool(raw_words) and _word_timings_are_valid(raw_words)
+
+
+def _collect_raw_checkpoint_words(checkpoint: dict) -> list:
+    words = []
+    for seg in checkpoint.get("segments", []) or []:
+        for word in seg.get("raw_words", []) or []:
+            timed_word = _coerce_timed_word(word)
+            if timed_word is not None:
+                words.append(timed_word)
+    words.sort(key=lambda word: (float(word.get("start", 0.0)), float(word.get("end", 0.0))))
+    return words
+
+
+def _write_json_atomic(path: Path, payload: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp_path = path.with_suffix(path.suffix + ".tmp")
+    with open(temp_path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    os.replace(temp_path, path)
+
+
 def _normalize_timestamp(value) -> float:
     return round(float(value), 6)
+
+
+def _align_with_whisperx_resilient(
+    video_path: str,
+    transcript: dict,
+    raw_checkpoint_path: Path,
+    output_dir: str,
+    cfg,
+) -> dict:
+    if getattr(cfg, "WHISPERX_ALIGN_IN_SUBPROCESS", True):
+        return _align_with_whisperx_subprocess(video_path, raw_checkpoint_path, output_dir)
+    return _align_with_whisperx(video_path, transcript, cfg)
+
+
+def _align_with_whisperx_subprocess(video_path: str, raw_checkpoint_path: Path, output_dir: str) -> dict:
+    import subprocess
+
+    output_path = Path(output_dir) / ALIGNMENT_SUBPROCESS_OUTPUT
+    if output_path.exists():
+        try:
+            output_path.unlink()
+        except OSError:
+            pass
+
+    cmd = [
+        sys.executable,
+        str(Path(__file__).resolve()),
+        "--align-checkpoint",
+        "--video-path",
+        video_path,
+        "--checkpoint-path",
+        str(raw_checkpoint_path),
+        "--output-path",
+        str(output_path),
+    ]
+    log.info("Starting WhisperX alignment in isolated subprocess")
+    completed = subprocess.run(
+        cmd,
+        cwd=str(Path(__file__).resolve().parent),
+        check=False,
+    )
+    if completed.returncode != 0:
+        raise RuntimeError(f"WhisperX alignment subprocess failed with exit code {completed.returncode}")
+    if not output_path.exists():
+        raise RuntimeError(f"WhisperX alignment subprocess did not write {output_path}")
+
+    with open(output_path, "r", encoding="utf-8") as f:
+        aligned = json.load(f)
+
+    try:
+        output_path.unlink()
+    except OSError:
+        pass
+    return aligned
 
 
 def _align_with_whisperx(video_path: str, transcript: dict, cfg) -> dict:
@@ -323,6 +483,7 @@ def _align_with_whisperx(video_path: str, transcript: dict, cfg) -> dict:
             "whisperx_align_model": align_model_name,
         },
     }
+    aligned_result["metadata"].pop("checkpoint_kind", None)
 
     skipped_words = 0
     fallback_words_used = 0
@@ -470,6 +631,7 @@ def _fallback_to_raw_word_timestamps(transcript: dict, reason: str) -> dict:
             "whisperx_fallback_reason": reason[:500],
         },
     }
+    raw_result["metadata"].pop("checkpoint_kind", None)
 
     for idx, seg in enumerate(transcript.get("segments", [])):
         seg_words = [word for word in (_coerce_timed_word(w) for w in seg.get("raw_words", []) or []) if word]
@@ -721,3 +883,49 @@ def _validate_word_timings(words: list) -> None:
             raise RuntimeError(f"Transcript word {idx} starts before the previous word ({start_f} < {prev_start})")
 
         prev_start = start_f
+
+
+def _run_align_checkpoint_cli(video_path: str, checkpoint_path: str, output_path: str) -> None:
+    import config as cfg
+
+    with open(checkpoint_path, "r", encoding="utf-8") as f:
+        transcript = json.load(f)
+
+    aligned = _align_with_whisperx(video_path, transcript, cfg)
+    _validate_transcript_word_timings(aligned)
+    _write_json_atomic(Path(output_path), aligned)
+    log.info(f"WhisperX aligned transcript saved to {output_path}")
+
+
+def _main() -> int:
+    import argparse
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(name)s] %(levelname)s: %(message)s",
+        datefmt="%H:%M:%S",
+    )
+
+    parser = argparse.ArgumentParser(description="Transcriber helper commands")
+    parser.add_argument("--align-checkpoint", action="store_true", help=argparse.SUPPRESS)
+    parser.add_argument("--video-path", help=argparse.SUPPRESS)
+    parser.add_argument("--checkpoint-path", help=argparse.SUPPRESS)
+    parser.add_argument("--output-path", help=argparse.SUPPRESS)
+    args = parser.parse_args()
+
+    if args.align_checkpoint:
+        if not args.video_path or not args.checkpoint_path or not args.output_path:
+            parser.error("--video-path, --checkpoint-path, and --output-path are required")
+        try:
+            _run_align_checkpoint_cli(args.video_path, args.checkpoint_path, args.output_path)
+        except Exception:
+            log.exception("WhisperX alignment helper failed")
+            return 1
+        return 0
+
+    parser.print_help()
+    return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(_main())
