@@ -492,14 +492,16 @@ def run_pipeline(
 
     jobs = [_build_clip_job(moment, i, output_dir, raw_dir) for i, moment in enumerate(moments)]
     max_workers = max(1, int(getattr(cfg, "MAX_PARALLEL_CLIPS", 6)))
+    edit_log_every = max(1, int(getattr(cfg, "EDIT_LOG_EVERY_N", 25)))
     log.info(f"  Total jobs: {len(jobs)} | Parallel workers: {max_workers}")
 
-    for job in jobs:
-        log.info(
-            f"  [{job['index']+1:03d}/{len(jobs):03d}] {job['clip_id']} | "
-            f"t={job['start']:.1f}s-{job['end']:.1f}s | score={job['score']} | "
-            f"type={job['clip_type']} | product={job['product']}"
-        )
+    if getattr(cfg, "EDIT_LOG_CLIP_PLAN", False):
+        for job in jobs:
+            log.info(
+                f"  [{job['index']+1:03d}/{len(jobs):03d}] {job['clip_id']} | "
+                f"t={job['start']:.1f}s-{job['end']:.1f}s | score={job['score']} | "
+                f"type={job['clip_type']} | product={job['product']}"
+            )
 
     completed = 0
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
@@ -536,18 +538,25 @@ def run_pipeline(
             if result["status"] == "skipped":
                 clips_skipped += 1
                 clips_created += 1
-                log.info(f"    Already exists, skipping: {result['output_filename']}")
+                log.debug(f"    Already exists, skipping: {result['output_filename']}")
                 continue
 
             if result["status"] == "ok":
                 clips_created += 1
-                log.info(f"    Created: {result['output_filename']}")
+                if getattr(cfg, "EDIT_LOG_CREATED_CLIPS", False):
+                    log.info(f"    Created: {result['output_filename']}")
             else:
                 clips_failed += 1
                 log.error(f"    Edit failed for {job['clip_id']}")
 
             if result["manifest"]:
                 manifest.append(result["manifest"])
+
+            if completed % edit_log_every == 0 or completed == len(jobs):
+                log.info(
+                    f"    Editing progress: {completed}/{len(jobs)} done | "
+                    f"created={clips_created} failed={clips_failed} skipped={clips_skipped}"
+                )
 
     # ══════════════════════════════════════════════════════════════════════════
     # DONE

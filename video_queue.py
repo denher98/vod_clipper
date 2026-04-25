@@ -73,6 +73,7 @@ class VideoQueueRunner:
         state_path: str,
         max_retries: int,
         max_inflight_videos: int,
+        ffmpeg_max_parallel_clips: int | None = None,
         output_tag: str | None = None,
         working_tag: str | None = None,
         poll_interval: float = 2.0,
@@ -84,6 +85,11 @@ class VideoQueueRunner:
         self.state_path = Path(state_path)
         self.max_retries = max(0, int(max_retries))
         self.max_active_analysis_videos = max(1, int(max_inflight_videos))
+        self.ffmpeg_max_parallel_clips = (
+            max(1, int(ffmpeg_max_parallel_clips))
+            if ffmpeg_max_parallel_clips is not None
+            else None
+        )
         self.poll_interval = max(0.5, float(poll_interval))
         self.output_tag = output_tag
         self.working_tag = working_tag
@@ -449,15 +455,33 @@ class VideoQueueRunner:
     def _stage_ffmpeg(self, video_path: str) -> None:
         from main import run_pipeline
 
-        run_pipeline(
-            video_path=video_path,
-            skip_transcribe=True,
-            skip_moments=True,
-            skip_vision=True,
-            cut_only=False,
-            output_tag=self.output_tag,
-            working_tag=self.working_tag,
-        )
+        original_max_parallel_clips = getattr(self.cfg, "MAX_PARALLEL_CLIPS", None)
+        original_ffmpeg_priority_flag = os.environ.get("PROYA_QUEUE_FFMPEG_BELOW_NORMAL")
+        if self.ffmpeg_max_parallel_clips is not None:
+            log.info(
+                "Queue FFmpeg throttle active: "
+                f"MAX_PARALLEL_CLIPS {original_max_parallel_clips} -> {self.ffmpeg_max_parallel_clips}"
+            )
+            self.cfg.MAX_PARALLEL_CLIPS = self.ffmpeg_max_parallel_clips
+            os.environ["PROYA_QUEUE_FFMPEG_BELOW_NORMAL"] = "1"
+
+        try:
+            run_pipeline(
+                video_path=video_path,
+                skip_transcribe=True,
+                skip_moments=True,
+                skip_vision=True,
+                cut_only=False,
+                output_tag=self.output_tag,
+                working_tag=self.working_tag,
+            )
+        finally:
+            if self.ffmpeg_max_parallel_clips is not None and original_max_parallel_clips is not None:
+                self.cfg.MAX_PARALLEL_CLIPS = original_max_parallel_clips
+            if original_ffmpeg_priority_flag is None:
+                os.environ.pop("PROYA_QUEUE_FFMPEG_BELOW_NORMAL", None)
+            else:
+                os.environ["PROYA_QUEUE_FFMPEG_BELOW_NORMAL"] = original_ffmpeg_priority_flag
 
     def _run_stage_subprocess(self, stage: str, video_path: str) -> None:
         cmd = [
@@ -793,6 +817,15 @@ def main() -> int:
         ),
     )
     parser.add_argument("--poll-interval", type=float, default=2.0, help="Monitor loop interval in seconds")
+    parser.add_argument(
+        "--ffmpeg-max-parallel-clips",
+        type=int,
+        default=2,
+        help=(
+            "Clip jobs allowed inside the queue FFmpeg worker. "
+            "Lower values leave CPU/GPU room for the next transcription to advance."
+        ),
+    )
     parser.add_argument("--output-tag", default=None, help="Write rendered clips to a new tagged output folder")
     parser.add_argument("--working-tag", default=None, help="Write caches to a new tagged working folder")
     parser.add_argument("--redo-tag", default=None, help="Apply the same tag to both working and output folders")
@@ -817,6 +850,7 @@ def main() -> int:
         state_path=args.state_file,
         max_retries=args.max_retries,
         max_inflight_videos=args.max_inflight_videos,
+        ffmpeg_max_parallel_clips=args.ffmpeg_max_parallel_clips,
         output_tag=output_tag,
         working_tag=working_tag,
         poll_interval=args.poll_interval,

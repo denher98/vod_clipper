@@ -102,6 +102,7 @@ def _run_faster_whisper_transcription(
     alignment_backend: str,
     raw_checkpoint_path: Path,
 ) -> dict:
+    video_name = Path(video_path).name
     log.info(f"Starting transcription of: {video_path}")
     log.info(f"Model: {cfg.WHISPER_MODEL_SIZE} | Device: {cfg.WHISPER_DEVICE}")
 
@@ -186,7 +187,7 @@ def _run_faster_whisper_transcription(
         total_segments += 1
 
         if total_segments % 50 == 0:
-            log.info(f"  Transcribed {total_segments} segments... (t={seg.end:.0f}s)")
+            log.info(f"  {video_name}: transcribed {total_segments} segments... (t={seg.end:.0f}s)")
 
     result["metadata"]["transcription_complete"] = True
     result["metadata"]["segment_count"] = total_segments

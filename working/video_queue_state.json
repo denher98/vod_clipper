@@ -1,0 +1,5416 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-04-25T13:55:04+07:00",
+  "updated_at": "2026-04-25T14:04:28+07:00",
+  "input_dir": "D:\\VOD",
+  "videos": {
+    "D:\\VOD\\2026-02-09-10-15-07.mp4": {
+      "name": "2026-02-09-10-15-07.mp4",
+      "path": "D:\\VOD\\2026-02-09-10-15-07.mp4",
+      "working_dir": "working\\2026-02-09-10-15-07__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-09-10-15-07__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "running",
+      "current_stage": "llm",
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "done",
+          "attempts": 2,
+          "started_at": "2026-04-25T14:03:26+07:00",
+          "finished_at": "2026-04-25T14:04:28+07:00",
+          "duration_sec": 62.597,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "running",
+          "attempts": 1,
+          "started_at": "2026-04-25T14:04:28+07:00",
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-11-10-36-51.mp4": {
+      "name": "2026-02-11-10-36-51.mp4",
+      "path": "D:\\VOD\\2026-02-11-10-36-51.mp4",
+      "working_dir": "working\\2026-02-11-10-36-51__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-11-10-36-51__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-11-15-01-52.mp4": {
+      "name": "2026-02-11-15-01-52.mp4",
+      "path": "D:\\VOD\\2026-02-11-15-01-52.mp4",
+      "working_dir": "working\\2026-02-11-15-01-52__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-11-15-01-52__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-14-10-08-51.mp4": {
+      "name": "2026-02-14-10-08-51.mp4",
+      "path": "D:\\VOD\\2026-02-14-10-08-51.mp4",
+      "working_dir": "working\\2026-02-14-10-08-51__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-14-10-08-51__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-14-14-00-38.mp4": {
+      "name": "2026-02-14-14-00-38.mp4",
+      "path": "D:\\VOD\\2026-02-14-14-00-38.mp4",
+      "working_dir": "working\\2026-02-14-14-00-38__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-14-14-00-38__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-18-15-03-22.mp4": {
+      "name": "2026-02-18-15-03-22.mp4",
+      "path": "D:\\VOD\\2026-02-18-15-03-22.mp4",
+      "working_dir": "working\\2026-02-18-15-03-22__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-18-15-03-22__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-19-10-20-10.mp4": {
+      "name": "2026-02-19-10-20-10.mp4",
+      "path": "D:\\VOD\\2026-02-19-10-20-10.mp4",
+      "working_dir": "working\\2026-02-19-10-20-10__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-19-10-20-10__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-19-15-03-16.mp4": {
+      "name": "2026-02-19-15-03-16.mp4",
+      "path": "D:\\VOD\\2026-02-19-15-03-16.mp4",
+      "working_dir": "working\\2026-02-19-15-03-16__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-19-15-03-16__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-20-10-17-36.mp4": {
+      "name": "2026-02-20-10-17-36.mp4",
+      "path": "D:\\VOD\\2026-02-20-10-17-36.mp4",
+      "working_dir": "working\\2026-02-20-10-17-36__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-20-10-17-36__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-20-15-02-11.mp4": {
+      "name": "2026-02-20-15-02-11.mp4",
+      "path": "D:\\VOD\\2026-02-20-15-02-11.mp4",
+      "working_dir": "working\\2026-02-20-15-02-11__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-20-15-02-11__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-21-10-13-55.mp4": {
+      "name": "2026-02-21-10-13-55.mp4",
+      "path": "D:\\VOD\\2026-02-21-10-13-55.mp4",
+      "working_dir": "working\\2026-02-21-10-13-55__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-21-10-13-55__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-21-14-03-30.mp4": {
+      "name": "2026-02-21-14-03-30.mp4",
+      "path": "D:\\VOD\\2026-02-21-14-03-30.mp4",
+      "working_dir": "working\\2026-02-21-14-03-30__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-21-14-03-30__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-23-10-13-04.mp4": {
+      "name": "2026-02-23-10-13-04.mp4",
+      "path": "D:\\VOD\\2026-02-23-10-13-04.mp4",
+      "working_dir": "working\\2026-02-23-10-13-04__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-23-10-13-04__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-23-15-03-20.mp4": {
+      "name": "2026-02-23-15-03-20.mp4",
+      "path": "D:\\VOD\\2026-02-23-15-03-20.mp4",
+      "working_dir": "working\\2026-02-23-15-03-20__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-23-15-03-20__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-24-10-16-48.mp4": {
+      "name": "2026-02-24-10-16-48.mp4",
+      "path": "D:\\VOD\\2026-02-24-10-16-48.mp4",
+      "working_dir": "working\\2026-02-24-10-16-48__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-24-10-16-48__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-24-15-03-22.mp4": {
+      "name": "2026-02-24-15-03-22.mp4",
+      "path": "D:\\VOD\\2026-02-24-15-03-22.mp4",
+      "working_dir": "working\\2026-02-24-15-03-22__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-24-15-03-22__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-25-10-08-24.mp4": {
+      "name": "2026-02-25-10-08-24.mp4",
+      "path": "D:\\VOD\\2026-02-25-10-08-24.mp4",
+      "working_dir": "working\\2026-02-25-10-08-24__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-25-10-08-24__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-25-15-02-28.mp4": {
+      "name": "2026-02-25-15-02-28.mp4",
+      "path": "D:\\VOD\\2026-02-25-15-02-28.mp4",
+      "working_dir": "working\\2026-02-25-15-02-28__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-25-15-02-28__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-26-10-12-41.mp4": {
+      "name": "2026-02-26-10-12-41.mp4",
+      "path": "D:\\VOD\\2026-02-26-10-12-41.mp4",
+      "working_dir": "working\\2026-02-26-10-12-41__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-26-10-12-41__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-26-15-03-51.mp4": {
+      "name": "2026-02-26-15-03-51.mp4",
+      "path": "D:\\VOD\\2026-02-26-15-03-51.mp4",
+      "working_dir": "working\\2026-02-26-15-03-51__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-26-15-03-51__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-27-10-25-50-005.mp4": {
+      "name": "2026-02-27-10-25-50-005.mp4",
+      "path": "D:\\VOD\\2026-02-27-10-25-50-005.mp4",
+      "working_dir": "working\\2026-02-27-10-25-50-005__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-27-10-25-50-005__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-27-10-25-50.mp4": {
+      "name": "2026-02-27-10-25-50.mp4",
+      "path": "D:\\VOD\\2026-02-27-10-25-50.mp4",
+      "working_dir": "working\\2026-02-27-10-25-50__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-27-10-25-50__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-27-15-03-15-008.mp4": {
+      "name": "2026-02-27-15-03-15-008.mp4",
+      "path": "D:\\VOD\\2026-02-27-15-03-15-008.mp4",
+      "working_dir": "working\\2026-02-27-15-03-15-008__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-27-15-03-15-008__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-27-15-03-15.mp4": {
+      "name": "2026-02-27-15-03-15.mp4",
+      "path": "D:\\VOD\\2026-02-27-15-03-15.mp4",
+      "working_dir": "working\\2026-02-27-15-03-15__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-27-15-03-15__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-28-10-15-05-004.mp4": {
+      "name": "2026-02-28-10-15-05-004.mp4",
+      "path": "D:\\VOD\\2026-02-28-10-15-05-004.mp4",
+      "working_dir": "working\\2026-02-28-10-15-05-004__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-28-10-15-05-004__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-28-10-15-05.mp4": {
+      "name": "2026-02-28-10-15-05.mp4",
+      "path": "D:\\VOD\\2026-02-28-10-15-05.mp4",
+      "working_dir": "working\\2026-02-28-10-15-05__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-28-10-15-05__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-28-14-03-26-003.mp4": {
+      "name": "2026-02-28-14-03-26-003.mp4",
+      "path": "D:\\VOD\\2026-02-28-14-03-26-003.mp4",
+      "working_dir": "working\\2026-02-28-14-03-26-003__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-28-14-03-26-003__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-02-28-14-03-26.mp4": {
+      "name": "2026-02-28-14-03-26.mp4",
+      "path": "D:\\VOD\\2026-02-28-14-03-26.mp4",
+      "working_dir": "working\\2026-02-28-14-03-26__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-02-28-14-03-26__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-02-10-13-17-001.mp4": {
+      "name": "2026-03-02-10-13-17-001.mp4",
+      "path": "D:\\VOD\\2026-03-02-10-13-17-001.mp4",
+      "working_dir": "working\\2026-03-02-10-13-17-001__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-02-10-13-17-001__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-02-15-04-21-007.mp4": {
+      "name": "2026-03-02-15-04-21-007.mp4",
+      "path": "D:\\VOD\\2026-03-02-15-04-21-007.mp4",
+      "working_dir": "working\\2026-03-02-15-04-21-007__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-02-15-04-21-007__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-03-10-17-52-002.mp4": {
+      "name": "2026-03-03-10-17-52-002.mp4",
+      "path": "D:\\VOD\\2026-03-03-10-17-52-002.mp4",
+      "working_dir": "working\\2026-03-03-10-17-52-002__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-03-10-17-52-002__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-03-15-01-20-006.mp4": {
+      "name": "2026-03-03-15-01-20-006.mp4",
+      "path": "D:\\VOD\\2026-03-03-15-01-20-006.mp4",
+      "working_dir": "working\\2026-03-03-15-01-20-006__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-03-15-01-20-006__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-03-15-01-20.mp4": {
+      "name": "2026-03-03-15-01-20.mp4",
+      "path": "D:\\VOD\\2026-03-03-15-01-20.mp4",
+      "working_dir": "working\\2026-03-03-15-01-20__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-03-15-01-20__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-04-10-14-07.mp4": {
+      "name": "2026-03-04-10-14-07.mp4",
+      "path": "D:\\VOD\\2026-03-04-10-14-07.mp4",
+      "working_dir": "working\\2026-03-04-10-14-07__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-04-10-14-07__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-04-15-04-28.mp4": {
+      "name": "2026-03-04-15-04-28.mp4",
+      "path": "D:\\VOD\\2026-03-04-15-04-28.mp4",
+      "working_dir": "working\\2026-03-04-15-04-28__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-04-15-04-28__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-05-10-22-28.mp4": {
+      "name": "2026-03-05-10-22-28.mp4",
+      "path": "D:\\VOD\\2026-03-05-10-22-28.mp4",
+      "working_dir": "working\\2026-03-05-10-22-28__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-05-10-22-28__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-05-15-03-01.mp4": {
+      "name": "2026-03-05-15-03-01.mp4",
+      "path": "D:\\VOD\\2026-03-05-15-03-01.mp4",
+      "working_dir": "working\\2026-03-05-15-03-01__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-05-15-03-01__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-05-15-12-11.mp4": {
+      "name": "2026-03-05-15-12-11.mp4",
+      "path": "D:\\VOD\\2026-03-05-15-12-11.mp4",
+      "working_dir": "working\\2026-03-05-15-12-11__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-05-15-12-11__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-06-10-42-21.mp4": {
+      "name": "2026-03-06-10-42-21.mp4",
+      "path": "D:\\VOD\\2026-03-06-10-42-21.mp4",
+      "working_dir": "working\\2026-03-06-10-42-21__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-06-10-42-21__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-06-15-03-37.mp4": {
+      "name": "2026-03-06-15-03-37.mp4",
+      "path": "D:\\VOD\\2026-03-06-15-03-37.mp4",
+      "working_dir": "working\\2026-03-06-15-03-37__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-06-15-03-37__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-07-10-12-06.mp4": {
+      "name": "2026-03-07-10-12-06.mp4",
+      "path": "D:\\VOD\\2026-03-07-10-12-06.mp4",
+      "working_dir": "working\\2026-03-07-10-12-06__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-07-10-12-06__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-07-14-03-43.mp4": {
+      "name": "2026-03-07-14-03-43.mp4",
+      "path": "D:\\VOD\\2026-03-07-14-03-43.mp4",
+      "working_dir": "working\\2026-03-07-14-03-43__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-07-14-03-43__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-09-10-17-23.mp4": {
+      "name": "2026-03-09-10-17-23.mp4",
+      "path": "D:\\VOD\\2026-03-09-10-17-23.mp4",
+      "working_dir": "working\\2026-03-09-10-17-23__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-09-10-17-23__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-10-10-45-10.mp4": {
+      "name": "2026-03-10-10-45-10.mp4",
+      "path": "D:\\VOD\\2026-03-10-10-45-10.mp4",
+      "working_dir": "working\\2026-03-10-10-45-10__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-10-10-45-10__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-10-15-07-05.mp4": {
+      "name": "2026-03-10-15-07-05.mp4",
+      "path": "D:\\VOD\\2026-03-10-15-07-05.mp4",
+      "working_dir": "working\\2026-03-10-15-07-05__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-10-15-07-05__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-11-10-15-30.mp4": {
+      "name": "2026-03-11-10-15-30.mp4",
+      "path": "D:\\VOD\\2026-03-11-10-15-30.mp4",
+      "working_dir": "working\\2026-03-11-10-15-30__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-11-10-15-30__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-11-15-01-34.mp4": {
+      "name": "2026-03-11-15-01-34.mp4",
+      "path": "D:\\VOD\\2026-03-11-15-01-34.mp4",
+      "working_dir": "working\\2026-03-11-15-01-34__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-11-15-01-34__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-12-10-17-34-004.mp4": {
+      "name": "2026-03-12-10-17-34-004.mp4",
+      "path": "D:\\VOD\\2026-03-12-10-17-34-004.mp4",
+      "working_dir": "working\\2026-03-12-10-17-34-004__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-12-10-17-34-004__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-12-15-03-08-009.mp4": {
+      "name": "2026-03-12-15-03-08-009.mp4",
+      "path": "D:\\VOD\\2026-03-12-15-03-08-009.mp4",
+      "working_dir": "working\\2026-03-12-15-03-08-009__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-12-15-03-08-009__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-13-10-18-02-013.mp4": {
+      "name": "2026-03-13-10-18-02-013.mp4",
+      "path": "D:\\VOD\\2026-03-13-10-18-02-013.mp4",
+      "working_dir": "working\\2026-03-13-10-18-02-013__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-13-10-18-02-013__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-13-15-14-34-007.mp4": {
+      "name": "2026-03-13-15-14-34-007.mp4",
+      "path": "D:\\VOD\\2026-03-13-15-14-34-007.mp4",
+      "working_dir": "working\\2026-03-13-15-14-34-007__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-13-15-14-34-007__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-14-10-19-28-005.mp4": {
+      "name": "2026-03-14-10-19-28-005.mp4",
+      "path": "D:\\VOD\\2026-03-14-10-19-28-005.mp4",
+      "working_dir": "working\\2026-03-14-10-19-28-005__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-14-10-19-28-005__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-14-14-03-34-008.mp4": {
+      "name": "2026-03-14-14-03-34-008.mp4",
+      "path": "D:\\VOD\\2026-03-14-14-03-34-008.mp4",
+      "working_dir": "working\\2026-03-14-14-03-34-008__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-14-14-03-34-008__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-16-10-15-54-016.mp4": {
+      "name": "2026-03-16-10-15-54-016.mp4",
+      "path": "D:\\VOD\\2026-03-16-10-15-54-016.mp4",
+      "working_dir": "working\\2026-03-16-10-15-54-016__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-16-10-15-54-016__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-16-15-42-35-015.mp4": {
+      "name": "2026-03-16-15-42-35-015.mp4",
+      "path": "D:\\VOD\\2026-03-16-15-42-35-015.mp4",
+      "working_dir": "working\\2026-03-16-15-42-35-015__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-16-15-42-35-015__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-17-10-17-28-002.mp4": {
+      "name": "2026-03-17-10-17-28-002.mp4",
+      "path": "D:\\VOD\\2026-03-17-10-17-28-002.mp4",
+      "working_dir": "working\\2026-03-17-10-17-28-002__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-17-10-17-28-002__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-17-15-00-10-012.mp4": {
+      "name": "2026-03-17-15-00-10-012.mp4",
+      "path": "D:\\VOD\\2026-03-17-15-00-10-012.mp4",
+      "working_dir": "working\\2026-03-17-15-00-10-012__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-17-15-00-10-012__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-18-10-15-05-014.mp4": {
+      "name": "2026-03-18-10-15-05-014.mp4",
+      "path": "D:\\VOD\\2026-03-18-10-15-05-014.mp4",
+      "working_dir": "working\\2026-03-18-10-15-05-014__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-18-10-15-05-014__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-18-15-02-01-001.mp4": {
+      "name": "2026-03-18-15-02-01-001.mp4",
+      "path": "D:\\VOD\\2026-03-18-15-02-01-001.mp4",
+      "working_dir": "working\\2026-03-18-15-02-01-001__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-18-15-02-01-001__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-23-10-16-04-003.mp4": {
+      "name": "2026-03-23-10-16-04-003.mp4",
+      "path": "D:\\VOD\\2026-03-23-10-16-04-003.mp4",
+      "working_dir": "working\\2026-03-23-10-16-04-003__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-23-10-16-04-003__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-23-15-01-17-006.mp4": {
+      "name": "2026-03-23-15-01-17-006.mp4",
+      "path": "D:\\VOD\\2026-03-23-15-01-17-006.mp4",
+      "working_dir": "working\\2026-03-23-15-01-17-006__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-23-15-01-17-006__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-24-10-18-52-010.mp4": {
+      "name": "2026-03-24-10-18-52-010.mp4",
+      "path": "D:\\VOD\\2026-03-24-10-18-52-010.mp4",
+      "working_dir": "working\\2026-03-24-10-18-52-010__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-24-10-18-52-010__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-24-10-18-52.mp4": {
+      "name": "2026-03-24-10-18-52.mp4",
+      "path": "D:\\VOD\\2026-03-24-10-18-52.mp4",
+      "working_dir": "working\\2026-03-24-10-18-52__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-24-10-18-52__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-24-15-03-25-011.mp4": {
+      "name": "2026-03-24-15-03-25-011.mp4",
+      "path": "D:\\VOD\\2026-03-24-15-03-25-011.mp4",
+      "working_dir": "working\\2026-03-24-15-03-25-011__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-24-15-03-25-011__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-27-10-12-53.mp4": {
+      "name": "2026-03-27-10-12-53.mp4",
+      "path": "D:\\VOD\\2026-03-27-10-12-53.mp4",
+      "working_dir": "working\\2026-03-27-10-12-53__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-27-10-12-53__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-27-14-59-10.mp4": {
+      "name": "2026-03-27-14-59-10.mp4",
+      "path": "D:\\VOD\\2026-03-27-14-59-10.mp4",
+      "working_dir": "working\\2026-03-27-14-59-10__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-27-14-59-10__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-28-10-11-34.mp4": {
+      "name": "2026-03-28-10-11-34.mp4",
+      "path": "D:\\VOD\\2026-03-28-10-11-34.mp4",
+      "working_dir": "working\\2026-03-28-10-11-34__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-28-10-11-34__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-28-14-01-02.mp4": {
+      "name": "2026-03-28-14-01-02.mp4",
+      "path": "D:\\VOD\\2026-03-28-14-01-02.mp4",
+      "working_dir": "working\\2026-03-28-14-01-02__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-28-14-01-02__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-30-10-12-22.mp4": {
+      "name": "2026-03-30-10-12-22.mp4",
+      "path": "D:\\VOD\\2026-03-30-10-12-22.mp4",
+      "working_dir": "working\\2026-03-30-10-12-22__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-30-10-12-22__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-30-15-10-29.mp4": {
+      "name": "2026-03-30-15-10-29.mp4",
+      "path": "D:\\VOD\\2026-03-30-15-10-29.mp4",
+      "working_dir": "working\\2026-03-30-15-10-29__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-30-15-10-29__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-31-10-12-21.mp4": {
+      "name": "2026-03-31-10-12-21.mp4",
+      "path": "D:\\VOD\\2026-03-31-10-12-21.mp4",
+      "working_dir": "working\\2026-03-31-10-12-21__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-31-10-12-21__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-03-31-15-01-48.mp4": {
+      "name": "2026-03-31-15-01-48.mp4",
+      "path": "D:\\VOD\\2026-03-31-15-01-48.mp4",
+      "working_dir": "working\\2026-03-31-15-01-48__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-03-31-15-01-48__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-01-10-16-19.mp4": {
+      "name": "2026-04-01-10-16-19.mp4",
+      "path": "D:\\VOD\\2026-04-01-10-16-19.mp4",
+      "working_dir": "working\\2026-04-01-10-16-19__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-01-10-16-19__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-01-15-00-12.mp4": {
+      "name": "2026-04-01-15-00-12.mp4",
+      "path": "D:\\VOD\\2026-04-01-15-00-12.mp4",
+      "working_dir": "working\\2026-04-01-15-00-12__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-01-15-00-12__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-02-10-18-24.mp4": {
+      "name": "2026-04-02-10-18-24.mp4",
+      "path": "D:\\VOD\\2026-04-02-10-18-24.mp4",
+      "working_dir": "working\\2026-04-02-10-18-24__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-02-10-18-24__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-02-15-01-58.mp4": {
+      "name": "2026-04-02-15-01-58.mp4",
+      "path": "D:\\VOD\\2026-04-02-15-01-58.mp4",
+      "working_dir": "working\\2026-04-02-15-01-58__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-02-15-01-58__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-06-10-17-05.mp4": {
+      "name": "2026-04-06-10-17-05.mp4",
+      "path": "D:\\VOD\\2026-04-06-10-17-05.mp4",
+      "working_dir": "working\\2026-04-06-10-17-05__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-06-10-17-05__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-06-15-00-08.mp4": {
+      "name": "2026-04-06-15-00-08.mp4",
+      "path": "D:\\VOD\\2026-04-06-15-00-08.mp4",
+      "working_dir": "working\\2026-04-06-15-00-08__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-06-15-00-08__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-07-10-20-36.mp4": {
+      "name": "2026-04-07-10-20-36.mp4",
+      "path": "D:\\VOD\\2026-04-07-10-20-36.mp4",
+      "working_dir": "working\\2026-04-07-10-20-36__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-07-10-20-36__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-07-15-06-51.mp4": {
+      "name": "2026-04-07-15-06-51.mp4",
+      "path": "D:\\VOD\\2026-04-07-15-06-51.mp4",
+      "working_dir": "working\\2026-04-07-15-06-51__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-07-15-06-51__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-08-10-18-50.mp4": {
+      "name": "2026-04-08-10-18-50.mp4",
+      "path": "D:\\VOD\\2026-04-08-10-18-50.mp4",
+      "working_dir": "working\\2026-04-08-10-18-50__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-08-10-18-50__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-08-14-59-47.mp4": {
+      "name": "2026-04-08-14-59-47.mp4",
+      "path": "D:\\VOD\\2026-04-08-14-59-47.mp4",
+      "working_dir": "working\\2026-04-08-14-59-47__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-08-14-59-47__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-09-10-14-58.mp4": {
+      "name": "2026-04-09-10-14-58.mp4",
+      "path": "D:\\VOD\\2026-04-09-10-14-58.mp4",
+      "working_dir": "working\\2026-04-09-10-14-58__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-09-10-14-58__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-09-14-59-05.mp4": {
+      "name": "2026-04-09-14-59-05.mp4",
+      "path": "D:\\VOD\\2026-04-09-14-59-05.mp4",
+      "working_dir": "working\\2026-04-09-14-59-05__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-09-14-59-05__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-09-16-48-18.mp4": {
+      "name": "2026-04-09-16-48-18.mp4",
+      "path": "D:\\VOD\\2026-04-09-16-48-18.mp4",
+      "working_dir": "working\\2026-04-09-16-48-18__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-09-16-48-18__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-10-10-21-58.mp4": {
+      "name": "2026-04-10-10-21-58.mp4",
+      "path": "D:\\VOD\\2026-04-10-10-21-58.mp4",
+      "working_dir": "working\\2026-04-10-10-21-58__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-10-10-21-58__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-10-14-59-16.mp4": {
+      "name": "2026-04-10-14-59-16.mp4",
+      "path": "D:\\VOD\\2026-04-10-14-59-16.mp4",
+      "working_dir": "working\\2026-04-10-14-59-16__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-10-14-59-16__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-11-10-20-42.mp4": {
+      "name": "2026-04-11-10-20-42.mp4",
+      "path": "D:\\VOD\\2026-04-11-10-20-42.mp4",
+      "working_dir": "working\\2026-04-11-10-20-42__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-11-10-20-42__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-11-11-05-38.mp4": {
+      "name": "2026-04-11-11-05-38.mp4",
+      "path": "D:\\VOD\\2026-04-11-11-05-38.mp4",
+      "working_dir": "working\\2026-04-11-11-05-38__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-11-11-05-38__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-15-15-11-14.mp4": {
+      "name": "2026-04-15-15-11-14.mp4",
+      "path": "D:\\VOD\\2026-04-15-15-11-14.mp4",
+      "working_dir": "working\\2026-04-15-15-11-14__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-15-15-11-14__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-16-10-17-09.mp4": {
+      "name": "2026-04-16-10-17-09.mp4",
+      "path": "D:\\VOD\\2026-04-16-10-17-09.mp4",
+      "working_dir": "working\\2026-04-16-10-17-09__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-16-10-17-09__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-16-15-16-43.mp4": {
+      "name": "2026-04-16-15-16-43.mp4",
+      "path": "D:\\VOD\\2026-04-16-15-16-43.mp4",
+      "working_dir": "working\\2026-04-16-15-16-43__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-16-15-16-43__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-17-10-22-51.mp4": {
+      "name": "2026-04-17-10-22-51.mp4",
+      "path": "D:\\VOD\\2026-04-17-10-22-51.mp4",
+      "working_dir": "working\\2026-04-17-10-22-51__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-17-10-22-51__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-17-15-03-52.mp4": {
+      "name": "2026-04-17-15-03-52.mp4",
+      "path": "D:\\VOD\\2026-04-17-15-03-52.mp4",
+      "working_dir": "working\\2026-04-17-15-03-52__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-17-15-03-52__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-18-10-17-27.mp4": {
+      "name": "2026-04-18-10-17-27.mp4",
+      "path": "D:\\VOD\\2026-04-18-10-17-27.mp4",
+      "working_dir": "working\\2026-04-18-10-17-27__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-18-10-17-27__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-18-14-00-28.mp4": {
+      "name": "2026-04-18-14-00-28.mp4",
+      "path": "D:\\VOD\\2026-04-18-14-00-28.mp4",
+      "working_dir": "working\\2026-04-18-14-00-28__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-18-14-00-28__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-20-10-44-44.mp4": {
+      "name": "2026-04-20-10-44-44.mp4",
+      "path": "D:\\VOD\\2026-04-20-10-44-44.mp4",
+      "working_dir": "working\\2026-04-20-10-44-44__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-20-10-44-44__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-20-14-59-45.mp4": {
+      "name": "2026-04-20-14-59-45.mp4",
+      "path": "D:\\VOD\\2026-04-20-14-59-45.mp4",
+      "working_dir": "working\\2026-04-20-14-59-45__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-20-14-59-45__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-21-10-18-10.mp4": {
+      "name": "2026-04-21-10-18-10.mp4",
+      "path": "D:\\VOD\\2026-04-21-10-18-10.mp4",
+      "working_dir": "working\\2026-04-21-10-18-10__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-21-10-18-10__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-21-15-00-15.mp4": {
+      "name": "2026-04-21-15-00-15.mp4",
+      "path": "D:\\VOD\\2026-04-21-15-00-15.mp4",
+      "working_dir": "working\\2026-04-21-15-00-15__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-21-15-00-15__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-23-10-18-18.mp4": {
+      "name": "2026-04-23-10-18-18.mp4",
+      "path": "D:\\VOD\\2026-04-23-10-18-18.mp4",
+      "working_dir": "working\\2026-04-23-10-18-18__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-23-10-18-18__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-23-12-39-20.mp4": {
+      "name": "2026-04-23-12-39-20.mp4",
+      "path": "D:\\VOD\\2026-04-23-12-39-20.mp4",
+      "working_dir": "working\\2026-04-23-12-39-20__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-23-12-39-20__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-23-15-00-22.mp4": {
+      "name": "2026-04-23-15-00-22.mp4",
+      "path": "D:\\VOD\\2026-04-23-15-00-22.mp4",
+      "working_dir": "working\\2026-04-23-15-00-22__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-23-15-00-22__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    },
+    "D:\\VOD\\2026-04-24-10-22-36.mp4": {
+      "name": "2026-04-24-10-22-36.mp4",
+      "path": "D:\\VOD\\2026-04-24-10-22-36.mp4",
+      "working_dir": "working\\2026-04-24-10-22-36__redo_20260425_135504",
+      "output_dir": "D:\\output_clips\\2026-04-24-10-22-36__redo_20260425_135504",
+      "working_tag": "redo_20260425_135504",
+      "output_tag": "redo_20260425_135504",
+      "run_history": [],
+      "status": "queued",
+      "current_stage": null,
+      "created_at": "2026-04-25T13:55:05+07:00",
+      "completed_at": null,
+      "failed_at": null,
+      "stages": {
+        "transcribe": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "llm": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "yolo": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        },
+        "ffmpeg": {
+          "status": "pending",
+          "attempts": 0,
+          "started_at": null,
+          "finished_at": null,
+          "duration_sec": null,
+          "last_error": null,
+          "queued": false
+        }
+      }
+    }
+  }
+}

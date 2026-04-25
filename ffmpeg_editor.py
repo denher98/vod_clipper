@@ -735,7 +735,8 @@ def _build_and_run(
         fc_clean = [f for f in fc if f and f.strip()]
 
         # 🔍 DEBUG LOG HERE
-        log.info("FILTER_COMPLEX:\n" + ";\n".join(fc_clean))
+        if getattr(cfg, "LOG_FFMPEG_FILTER_COMPLEX", False):
+            log.debug("FILTER_COMPLEX:\n" + ";\n".join(fc_clean))
 
     cmd += ["-filter_complex", ";".join(fc_clean)]
 
@@ -1905,7 +1906,16 @@ def _resolve_emoji_asset_path(path_str: str) -> Optional[str]:
 def _run_ffmpeg(cmd: list, output_path: str, timeout: int = 600) -> bool:
     """Run an FFmpeg command and check output."""
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+        creationflags = 0
+        if os.environ.get("PROYA_QUEUE_FFMPEG_BELOW_NORMAL") == "1":
+            creationflags = getattr(subprocess, "BELOW_NORMAL_PRIORITY_CLASS", 0)
+        r = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=timeout,
+            creationflags=creationflags,
+        )
         if r.returncode != 0:
             log.error(f"FFmpeg error:\n{r.stderr[-500:]}")
             return False
