@@ -38,6 +38,7 @@ FILTER KERAS (WAJIB):
 - Promo TANPA manfaat → SKIP
 - Humor TANPA manfaat → SKIP
 - QnA TANPA manfaat → SKIP
+- Welcome orang join live → SKIP
 
 PRIORITAS SKOR (RE-WEIGHTED):
 - Penjelasan manfaat produk jelas → 10 (WAJIB ADA)
@@ -121,7 +122,7 @@ Format setiap objek:
 }
 
 PENTING:
-- Minimum durasi clip: 15 detik
+- Minimum durasi clip: 20 detik
 - Maksimum durasi clip: 60 detik
 - Hanya sertakan momen dengan skor >= 6
 - Boleh ada beberapa momen yang tumpang tindih jika berbeda konteksnya

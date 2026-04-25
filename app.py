@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import json
+import math
 import subprocess
 from collections import Counter
 from datetime import datetime, timedelta
@@ -642,6 +643,32 @@ def format_relative_time(value: datetime | None) -> str:
     return f"{days} day ago" if days == 1 else f"{days} days ago"
 
 
+def infer_run_completed_at(run: dict[str, Any]) -> datetime | None:
+    completed_at = parse_timestamp(run.get("completed_at"))
+    if completed_at:
+        return completed_at
+
+    if (run.get("status") or "").lower() != "completed":
+        return None
+
+    finished_times = []
+    for stage_state in (run.get("stages") or {}).values():
+        if not isinstance(stage_state, dict):
+            continue
+        finished_at = parse_timestamp(stage_state.get("finished_at"))
+        if finished_at:
+            finished_times.append(finished_at)
+
+    return max(finished_times) if finished_times else None
+
+
+def average_per_elapsed_bucket(total: int, elapsed_seconds: float, bucket_seconds: int) -> float:
+    if total <= 0 or elapsed_seconds <= 0:
+        return 0.0
+    bucket_count = max(math.ceil(elapsed_seconds / bucket_seconds), 1)
+    return total / bucket_count
+
+
 @st.cache_data(ttl=2, show_spinner=False)
 def load_state(state_path: str) -> dict[str, Any]:
     path = Path(state_path)
@@ -851,7 +878,7 @@ def summarize_state(state: dict[str, Any]) -> dict[str, Any]:
 
     for video in videos:
         created_at = parse_timestamp(video.get("created_at"))
-        completed_at = parse_timestamp(video.get("completed_at"))
+        completed_at = infer_run_completed_at(video)
 
         if created_at:
             created_times.append(created_at)
@@ -879,7 +906,7 @@ def summarize_state(state: dict[str, Any]) -> dict[str, Any]:
                 stage_bucket = stage_key
 
         for run in video.get("runs", []):
-            run_completed_at = parse_timestamp(run.get("completed_at"))
+            run_completed_at = infer_run_completed_at(run)
             run_clips = load_manifest_clip_count(run.get("output_dir"))
             if run_completed_at and run_clips:
                 bucket = run_completed_at.replace(minute=0, second=0, microsecond=0)
@@ -974,14 +1001,9 @@ def summarize_state(state: dict[str, Any]) -> dict[str, Any]:
     else:
         elapsed_seconds = 0.0
 
-    if elapsed_seconds > 0:
-        clips_per_minute = total_clips / (elapsed_seconds / 60.0)
-        clips_per_hour = total_clips / (elapsed_seconds / 3600.0)
-        clips_per_day = total_clips / (elapsed_seconds / 86400.0)
-    else:
-        clips_per_minute = 0.0
-        clips_per_hour = 0.0
-        clips_per_day = 0.0
+    clips_per_minute = average_per_elapsed_bucket(total_clips, elapsed_seconds, 60)
+    clips_per_hour = average_per_elapsed_bucket(total_clips, elapsed_seconds, 3600)
+    clips_per_day = average_per_elapsed_bucket(total_clips, elapsed_seconds, 86400)
 
     table_df = pd.DataFrame(table_rows)
     if not table_df.empty:
