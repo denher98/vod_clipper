@@ -189,12 +189,15 @@ WORD_CORRECTIONS = {
     "ethelosan"      : "etalase",
     "pembersi"       : "pembersih",
     "tablognya"      : "tap lovenya",
-    
-
-
-
-    
-}
+    "atalse"         : "etalasae",
+    "bekasbekas"     : "bekas bekas",
+    "kongkia"        : "ongkir",
+    "etalose"        : "etalase",
+    "BENERBENER"     : "bener bener",
+    "dari vatipus"   : "derivatives",
+    "aldochronic"    : "Hyaluronic",
+    "FLAGFLAG"       : "flek fleg",
+ }
 # Apply corrections to subtitle text displayed on clips (in addition to transcript)
 WORD_CORRECTION_APPLY_TO_SUBTITLES = True
 
@@ -202,7 +205,7 @@ WORD_CORRECTION_APPLY_TO_SUBTITLES = True
 # LM Studio → Local Server → must be running before you start the pipeline
 LM_STUDIO_BASE_URL = "http://localhost:1234/v1"
 LM_STUDIO_API_KEY  = "lm-studio"               # LM Studio accepts any non-empty string
-LM_STUDIO_MODEL    = "qwen2.5-14b-instruct"          # match the model name shown in LM Studio
+LM_STUDIO_MODEL    = "meta-llama-3.1-8b-instruct"          # match the model name shown in LM Studio
 LM_STUDIO_TIMEOUT  = 360                       # seconds per request
 
 # ── Whisper ───────────────────────────────────────────────────────────────────
@@ -430,6 +433,10 @@ SFX_VOLUME_RED         = 0.15    # pain / problem words
 # Minimum seconds between SFX of the same highlight category
 # (prevents rapid-fire SFX when multiple keywords appear back-to-back)
 SFX_HIGHLIGHT_DEBOUNCE = 1.5
+
+# Highlight SFX cadence in karaoke subtitle blocks.
+# 2 means: trigger on a highlighted block, skip the next block, then allow again.
+SFX_HIGHLIGHT_BLOCK_INTERVAL = 2
 
 # Quality-first overrides for product-selling clips.
 # Stricter values reduce random cuts, silent clips, and weak filler moments.

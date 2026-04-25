@@ -98,7 +98,7 @@ def build_sfx_events(
 
     Events:
       1. Product zoom SFX - plays at product_zoom_start
-      2. Highlight SFX - plays once per karaoke subtitle block (the 2-line phrase)
+      2. Highlight SFX - plays once every N karaoke subtitle blocks
     """
     events = []
 
@@ -135,9 +135,11 @@ def build_sfx_events(
             log.debug(f"SFX: no files in {sfx_product_dir}")
 
     # 2. Highlight SFX
-    # Fire once per subtitle block so a 2-line karaoke phrase only gets one hit.
+    # Fire at most once every N subtitle blocks so it does not feel too busy.
     words_per_chunk = int(getattr(cfg, "SFX_SUBTITLE_CHUNK_WORDS", 4) or 4)
+    block_interval = max(1, int(getattr(cfg, "SFX_HIGHLIGHT_BLOCK_INTERVAL", 2) or 2))
     chunk_count = 0
+    last_trigger_chunk = -block_interval
     for chunk in _chunk_words(highlight_words, words_per_chunk=words_per_chunk):
         if not chunk:
             continue
@@ -160,25 +162,34 @@ def build_sfx_events(
             chosen_word = _normalize_sfx_word(wd.get("word", ""))
             break
 
+        if not chosen_color or chunk_count - last_trigger_chunk < block_interval:
+            continue
+
         if chosen_color == yellow_color:
             sfx_path = _get_random_sfx(sfx_yellow_dir)
             if sfx_path:
                 events.append({"t": chunk_start, "sfx_path": sfx_path, "volume": vol_yellow})
                 log.debug(f"SFX: chunk yellow at t={chunk_start:.2f}s ({chosen_word}) -> {sfx_path.name}")
+                last_trigger_chunk = chunk_count
 
         elif chosen_color == green_color:
             sfx_path = _get_random_sfx(sfx_green_dir)
             if sfx_path:
                 events.append({"t": chunk_start, "sfx_path": sfx_path, "volume": vol_green})
                 log.debug(f"SFX: chunk green at t={chunk_start:.2f}s ({chosen_word}) -> {sfx_path.name}")
+                last_trigger_chunk = chunk_count
 
         elif chosen_color == red_color:
             sfx_path = _get_random_sfx(sfx_red_dir)
             if sfx_path:
                 events.append({"t": chunk_start, "sfx_path": sfx_path, "volume": vol_red})
                 log.debug(f"SFX: chunk red at t={chunk_start:.2f}s ({chosen_word}) -> {sfx_path.name}")
+                last_trigger_chunk = chunk_count
 
-    log.debug(f"SFX events total: {len(events)} across {chunk_count} subtitle chunks")
+    log.debug(
+        f"SFX events total: {len(events)} across {chunk_count} subtitle chunks "
+        f"(block interval={block_interval})"
+    )
     return events
 
 
