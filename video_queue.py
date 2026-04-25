@@ -303,6 +303,8 @@ class VideoQueueRunner:
             stage_state["last_error"] = None
             entry["status"] = "running"
             entry["current_stage"] = job.stage
+            if job.stage == EDIT_STAGE:
+                self._schedule_locked(f"{job.stage}-start")
             self._save_state_locked()
 
         start = time.perf_counter()
