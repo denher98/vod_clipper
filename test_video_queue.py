@@ -9,6 +9,7 @@ from pathlib import Path
 from unittest import mock
 
 import queue_control
+from clipper_app.application.settings import LegacyConfigProvider
 from video_queue import (
     EDIT_STAGE,
     PRE_EDIT_STAGES,
@@ -17,6 +18,7 @@ from video_queue import (
     VideoQueueRunner,
     _build_versioned_stem,
     _reuse_base_transcript_for_tagged_run,
+    clear_pending_queue_state,
 )
 
 
@@ -216,6 +218,151 @@ class VideoQueueSchedulingTests(unittest.TestCase):
                     "queued",
                 )
 
+    def test_single_video_discovery_only_uses_selected_vod(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            input_dir = root / "input"
+            input_dir.mkdir()
+            first = input_dir / "a.mp4"
+            second = input_dir / "b.mp4"
+            first.write_bytes(b"video")
+            second.write_bytes(b"video")
+
+            runner = VideoQueueRunner(
+                input_dir=str(input_dir),
+                state_path=str(root / "state.json"),
+                max_retries=0,
+                max_inflight_videos=1,
+                stable_seconds=0,
+                control_path=str(root / "control.json"),
+                run_mode="single_video",
+                video_path=str(first),
+            )
+
+            self.assertEqual([path.resolve() for path in runner._discover_videos()], [first.resolve()])
+
+    def test_clips_only_skips_analysis_stages_and_starts_at_ffmpeg(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            input_dir = root / "input"
+            input_dir.mkdir()
+            video = input_dir / "a.mp4"
+            video.write_bytes(b"video")
+
+            runner = VideoQueueRunner(
+                input_dir=str(input_dir),
+                state_path=str(root / "state.json"),
+                max_retries=0,
+                max_inflight_videos=1,
+                stable_seconds=0,
+                control_path=str(root / "control.json"),
+                pipeline_mode="clips_only",
+                scan_once=True,
+            )
+            runner._sync_videos([video])
+            key = str(video.resolve())
+
+            with runner.state_lock:
+                entry = runner.state["videos"][key]
+                self.assertEqual(entry["stages"]["transcribe"]["status"], "skipped")
+                self.assertEqual(entry["stages"]["llm"]["status"], "skipped")
+                self.assertEqual(entry["stages"]["yolo"]["status"], "skipped")
+                self.assertEqual(runner._next_stage_locked(entry), EDIT_STAGE)
+                runner._schedule_locked("unit-test")
+                self.assertEqual(entry["stages"][EDIT_STAGE]["status"], "queued")
+
+    def test_raw_cuts_force_original_variant_and_disable_side_effects(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            input_dir = root / "input"
+            input_dir.mkdir()
+
+            runner = VideoQueueRunner(
+                input_dir=str(input_dir),
+                state_path=str(root / "state.json"),
+                max_retries=0,
+                max_inflight_videos=1,
+                control_path=str(root / "control.json"),
+                pipeline_mode="raw_cuts_only",
+                variant_mode="custom",
+                variant_count=6,
+            )
+            overrides = runner._pipeline_settings_overrides()
+
+            self.assertEqual(runner.variant_mode, "original")
+            self.assertEqual(overrides["VARIANTS_PER_CLIP"], 1)
+            self.assertFalse(overrides["SCORER_ENABLED"])
+            self.assertFalse(overrides["COMPLIANCE_ENABLED"])
+            self.assertFalse(overrides["EXPORT_BATCHES_ENABLED"])
+            snapshot = LegacyConfigProvider(types.SimpleNamespace(WORKING_DIR=str(root / "working"))).snapshot(overrides)
+            self.assertFalse(snapshot.get("EXPORT_BATCHES_ENABLED"))
+            self.assertFalse(snapshot.get("HOST_FACE_ZOOM_ENABLED"))
+            self.assertFalse(snapshot.get("BEFORE_AFTER_ENABLED"))
+
+    def test_stuck_stage_detector_repairs_stale_running_marker(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            input_dir = root / "input"
+            input_dir.mkdir()
+            video = input_dir / "a.mp4"
+            video.write_bytes(b"video")
+
+            runner = VideoQueueRunner(
+                input_dir=str(input_dir),
+                state_path=str(root / "state.json"),
+                max_retries=0,
+                max_inflight_videos=1,
+                stable_seconds=0,
+                control_path=str(root / "control.json"),
+            )
+            runner._sync_videos([video])
+            key = str(video.resolve())
+            old = "2000-01-01T00:00:00+00:00"
+
+            with runner.state_lock:
+                entry = runner.state["videos"][key]
+                entry["status"] = "running"
+                entry["current_stage"] = "transcribe"
+                entry["stages"]["transcribe"]["status"] = "running"
+                entry["stages"]["transcribe"]["started_at"] = old
+                repaired = runner._repair_stuck_stages_locked("unit-test")
+
+                self.assertEqual(repaired, 1)
+                self.assertIn("Reset stale running stage", entry["stages"]["transcribe"]["last_error"])
+
+    def test_clear_pending_queue_state_marks_pending_work_stopped(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            state_path = Path(temp_dir) / "state.json"
+            state_path.write_text(
+                json.dumps(
+                    {
+                        "schema_version": 2,
+                        "queue_status": "running",
+                        "videos": {
+                            "vod": {
+                                "status": "queued",
+                                "current_stage": None,
+                                "stages": {
+                                    "transcribe": {"status": "queued", "queued": True},
+                                    "llm": {"status": "pending"},
+                                    "yolo": {"status": "pending"},
+                                    "ffmpeg": {"status": "pending"},
+                                },
+                            }
+                        },
+                    }
+                ),
+                encoding="utf-8",
+            )
+
+            result = clear_pending_queue_state(state_path)
+            payload = json.loads(state_path.read_text(encoding="utf-8"))
+
+            self.assertGreaterEqual(result["changed"], 1)
+            self.assertEqual(payload["queue_status"], "stopped")
+            self.assertEqual(payload["videos"]["vod"]["status"], "stopped")
+            self.assertEqual(payload["videos"]["vod"]["stages"]["transcribe"]["status"], "skipped")
+
     def test_ffmpeg_progress_callback_persists_clip_counts(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir)
@@ -333,6 +480,22 @@ class VideoQueueSchedulingTests(unittest.TestCase):
                 self.assertEqual(observed_kwargs["video_path"], str(video))
             release.set()
             self.assertTrue(finished.wait(timeout=2.0))
+
+    def test_manual_max_clips_run_skips_synchronous_export_batch_packaging(self):
+        import main
+
+        class Cfg:
+            EXPORT_BATCHES_ENABLED = True
+            EXPORT_BATCH_SIZE = 15
+            OUTPUT_DIR = "unused"
+
+        fake_export_packager = types.ModuleType("export_packager")
+        with mock.patch.dict("os.environ", {"PROYA_QUEUE_EXPORT_PACKAGING_ASYNC": ""}), \
+                mock.patch.dict(sys.modules, {"export_packager": fake_export_packager}):
+            result = main._package_export_batches_if_enabled(Cfg, max_clips=1)
+
+        self.assertTrue(result["skipped"])
+        self.assertEqual(result["reason"], "max_clips_manual_run")
 
     def test_ffmpeg_worker_starts_next_video_before_export_packaging_finishes(self):
         with tempfile.TemporaryDirectory() as temp_dir:

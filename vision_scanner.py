@@ -101,6 +101,60 @@ def _load_model(cfg):
     return model
 
 
+def _resolve_yolo_predict_options(cfg) -> dict:
+    device = str(getattr(cfg, "YOLO_DEVICE", "cpu") or "cpu")
+    half = bool(getattr(cfg, "YOLO_HALF", False))
+
+    if device.lower() != "cpu":
+        try:
+            import torch
+
+            cuda_available = bool(torch.cuda.is_available())
+            cuda_count = int(torch.cuda.device_count()) if cuda_available else 0
+        except Exception as exc:
+            log.warning(
+                "Unable to inspect CUDA availability for YOLO device %r (%s); "
+                "falling back to CPU",
+                device,
+                exc,
+            )
+            cuda_available = False
+            cuda_count = 0
+
+        requested_devices = [part.strip() for part in device.split(",") if part.strip()]
+        numeric_devices = []
+        for part in requested_devices:
+            try:
+                numeric_devices.append(int(part))
+            except ValueError:
+                numeric_devices = []
+                break
+        requested_cuda_index_valid = (
+            bool(numeric_devices)
+            and cuda_available
+            and all(0 <= index < cuda_count for index in numeric_devices)
+        )
+
+        if not requested_cuda_index_valid:
+            log.warning(
+                "YOLO_DEVICE=%r requested CUDA, but torch sees %s CUDA device(s); "
+                "using CPU for this scan",
+                device,
+                cuda_count,
+            )
+            device = "cpu"
+
+    if device.lower() == "cpu" and half:
+        log.info("YOLO half precision disabled for CPU inference")
+        half = False
+
+    return {
+        "device": device,
+        "imgsz": getattr(cfg, "YOLO_IMGSZ", 640),
+        "half": half,
+    }
+
+
 def build_scan_ranges_from_moments(moments: list, cfg) -> list:
     """Build merged scan windows around candidate moments."""
     if not getattr(cfg, "YOLO_SCAN_ONLY_MOMENTS", False):
@@ -305,13 +359,12 @@ def scan_video_for_products(video_path: str, working_dir: str, cfg, scan_ranges:
     cap.release()
 
     if sampled_frames:
+        predict_options = _resolve_yolo_predict_options(cfg)
         results = model.predict(
             [sample["frame"] for sample in sampled_frames],
             conf=cfg.YOLO_CONF_THRESHOLD,
             verbose=False,
-            device=getattr(cfg, "YOLO_DEVICE", "cpu"),
-            imgsz=getattr(cfg, "YOLO_IMGSZ", 640),
-            half=getattr(cfg, "YOLO_HALF", False),
+            **predict_options,
         )
         for sample, result in zip(sampled_frames, results):
             if result.boxes is None:

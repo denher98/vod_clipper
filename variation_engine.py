@@ -240,11 +240,13 @@ class VariantConfig:
 
     # Subtitles
     font_subtitle: str = ""
+    subtitle_base_color: str = "#FFFFFF"
     karaoke_active_color: str = ""
     karaoke_inactive_opacity: float = 1.0
     subtitle_stroke: str = "#000000"
     subtitle_stroke_w: int = 3
     subtitle_y_pos: float = 0.80
+    subtitle_y_frac: float = 0.80
 
     # Hook
     hook_color: str = "white"
@@ -279,6 +281,25 @@ class VariantConfig:
     broll_intro_duration: float = 0.0
     broll_intro_product: str = ""
 
+    # Profile-driven metadata and render switches.
+    profile_revision: str = ""
+    display_name: str = ""
+    hook_type: str = "text"
+    font_id: str = ""
+    font_color: str = "#FFFFFF"
+    highlight_color: str = "#FFD600"
+    subtitle_position: str = "bottom"
+    color_grade: str = "original"
+    bgm_mode: str = "auto"
+    bgm_path: str = ""
+    sfx_enabled: bool = True
+    zoom_intensity: str = "normal"
+    product_zoom_enabled: bool = True
+    subtitle_enabled: bool = True
+    letterbox_enabled: bool = False
+    letterbox_top_frac: float = 0.0
+    letterbox_bottom_frac: float = 0.0
+
 
 def apply_variant_to_cfg(base_cfg, variant: VariantConfig):
     """
@@ -306,8 +327,11 @@ def apply_variant_to_cfg(base_cfg, variant: VariantConfig):
     # Apply overrides
     if variant.font_subtitle:
         patched.FONT_SUBTITLE = variant.font_subtitle
+    patched.SUBTITLE_BASE_COLOR = variant.subtitle_base_color
     if variant.karaoke_active_color:
         patched.KARAOKE_ACTIVE_COLOR = variant.karaoke_active_color
+    if variant.highlight_color:
+        patched.HOOK_ACCENT_COLOR = variant.highlight_color
     patched.KARAOKE_INACTIVE_OPACITY = variant.karaoke_inactive_opacity
     patched.SUBTITLE_STROKE = variant.subtitle_stroke
     patched.SUBTITLE_STROKE_W = variant.subtitle_stroke_w
@@ -335,6 +359,37 @@ def apply_variant_to_cfg(base_cfg, variant: VariantConfig):
     patched._broll_intro_path = variant.broll_intro_path
     patched._broll_intro_duration = variant.broll_intro_duration
     patched._broll_intro_product = variant.broll_intro_product
+    patched._variant_profile_revision = variant.profile_revision
+    patched._variant_display_name = variant.display_name
+    patched._hook_type = variant.hook_type
+    patched._variant_font_id = variant.font_id
+    patched._variant_font_color = variant.font_color
+    patched._variant_highlight_color = variant.highlight_color
+    patched._variant_subtitle_position = variant.subtitle_position
+    patched._variant_subtitle_y_frac = variant.subtitle_y_frac
+    patched._variant_color_grade = variant.color_grade
+    patched._variant_bgm_mode = variant.bgm_mode
+    patched._variant_bgm_path = variant.bgm_path
+    patched._variant_sfx_enabled = variant.sfx_enabled
+    patched._variant_zoom_intensity = variant.zoom_intensity
+    patched._variant_product_zoom_enabled = variant.product_zoom_enabled
+    patched._variant_subtitle_enabled = variant.subtitle_enabled
+    patched._letterbox_enabled = variant.letterbox_enabled
+    patched._letterbox_top_frac = variant.letterbox_top_frac
+    patched._letterbox_bottom_frac = variant.letterbox_bottom_frac
+    patched.LETTERBOX_TOP_FRAC = variant.letterbox_top_frac
+    patched.LETTERBOX_BOTTOM_FRAC = variant.letterbox_bottom_frac
+    patched._hook_format = variant.hook_type
+    patched._variation_profile_driven = bool(variant.profile_revision)
+    patched._product_zoom_enabled = bool(variant.product_zoom_enabled)
+    patched._subtitle_enabled = bool(variant.subtitle_enabled)
+    patched._zoom_disabled = variant.zoom_intensity == "none"
+    patched.SFX_ENABLED = bool(variant.sfx_enabled)
+    if variant.bgm_mode == "none":
+        patched.BGM_ENABLED = False
+    elif variant.bgm_mode == "selected" and variant.bgm_path:
+        patched.BGM_ENABLED = True
+        patched._bgm_path = variant.bgm_path
 
     return patched
 
@@ -452,6 +507,165 @@ def _archetype_slot(index: int, rng: random.Random) -> dict[str, Any]:
         "broll_role": rng.choice(["", "optional"]),
         "hook_duration_mult": rng.choice([0.85, 0.95, 1.0, 1.1]),
     }
+
+
+def _slug(text: str, fallback: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "_", str(text or "").lower()).strip("_")
+    return slug[:48] or fallback
+
+
+def _profile_color_grade_filter(name: str) -> str:
+    return {
+        "original": "",
+        "warm": "colortemperature=temperature=7500",
+        "cool": "colortemperature=temperature=5000",
+        "vivid": "eq=saturation=1.35:contrast=1.08",
+        "desaturated": "eq=saturation=0.65:contrast=1.02",
+        "cinematic": "eq=saturation=0.85:contrast=1.15:brightness=-0.02",
+    }.get(str(name or "original"), "")
+
+
+def _profile_subtitle_y(position: str, base_cfg) -> float:
+    if position == "top":
+        return 0.34
+    if position == "center":
+        return 0.58
+    if position == "bottom":
+        return 0.84
+    return float(getattr(base_cfg, "SUBTITLE_Y_POS", 0.80))
+
+
+def _clamp_profile_float(value: Any, lo: float, hi: float, default: float) -> float:
+    try:
+        parsed = float(value)
+    except (TypeError, ValueError):
+        parsed = default
+    return max(lo, min(hi, parsed))
+
+
+def _profile_zoom_scale(intensity: str, base_cfg) -> float:
+    if intensity == "none":
+        return 1.0
+    if intensity == "subtle":
+        return 1.22
+    if intensity == "strong":
+        return 1.65
+    return float(getattr(base_cfg, "ZOOM_SCALE", 1.45))
+
+
+def _profile_hook_layout(hook_type: str, slot_mode: str) -> str:
+    return {
+        "text": slot_mode or "standard",
+        "before_after_image": "clean_banner",
+        "text_before_after_image": "top_heavy",
+        "b_roll": "clean_banner",
+        "text_b_roll": "center_stack",
+    }.get(str(hook_type or "text"), slot_mode or "standard")
+
+
+def _profile_variants(base_cfg, seed: int | None = None) -> list[VariantConfig] | None:
+    try:
+        from variation_profile import load_profile_if_exists
+    except Exception:
+        return None
+
+    try:
+        profile = load_profile_if_exists(base_cfg)
+    except Exception as exc:
+        log.warning("Ignoring invalid variation profile; using legacy variants: %s", exc)
+        return None
+    if not profile:
+        return None
+
+    rng = random.Random(seed)
+    hook_dur_base = getattr(base_cfg, "HOOK_DURATION", 0.0)
+    variants: list[VariantConfig] = []
+    profile_revision = str(profile.get("revision") or "")
+    raw_variants = profile.get("variants") or []
+    for index, raw in enumerate(raw_variants):
+        if not isinstance(raw, dict):
+            continue
+        slot = _archetype_slot(index, rng)
+        hook_type = str(raw.get("hook_type") or "text")
+        subtitle_position = str(raw.get("subtitle_position") or "bottom")
+        color_grade = str(raw.get("color_grade") or "original")
+        zoom_intensity = str(raw.get("zoom_intensity") or "normal")
+        product_zoom_enabled = bool(raw.get("product_zoom_enabled", True))
+        subtitle_enabled = bool(raw.get("subtitle_enabled", True))
+        subtitle_y_frac = _clamp_profile_float(
+            raw.get("subtitle_y_frac"),
+            0.08,
+            0.92,
+            _profile_subtitle_y(subtitle_position, base_cfg),
+        )
+        letterbox_enabled = bool(raw.get("letterbox_enabled", False))
+        letterbox_default = 0.20 if letterbox_enabled else 0.0
+        letterbox_top_frac = _clamp_profile_float(raw.get("letterbox_top_frac"), 0.0, 0.40, letterbox_default)
+        letterbox_bottom_frac = _clamp_profile_float(raw.get("letterbox_bottom_frac"), 0.0, 0.40, letterbox_default)
+        font_color = str(raw.get("font_color") or "#FFFFFF")
+        highlight_color = str(raw.get("highlight_color") or "#FFD600")
+        display_name = str(raw.get("name") or f"Variant {index + 1}")
+        duration_mult = float(slot.get("hook_duration_mult") or 1.0)
+        variant_slug = _slug(display_name, f"variant_{index}")
+
+        variants.append(
+            VariantConfig(
+                variant_id=f"v{index}_{variant_slug}",
+                variant_index=index,
+                archetype=str(slot.get("name") or variant_slug),
+                start_offset_seconds=float(slot.get("start_offset") or 0.0),
+                end_offset_seconds=float(slot.get("end_offset") or 0.0),
+                mirror=bool(slot.get("mirror", False)),
+                font_subtitle=str(raw.get("font_id") or getattr(base_cfg, "FONT_SUBTITLE", "")),
+                subtitle_base_color=font_color,
+                karaoke_active_color=highlight_color,
+                karaoke_inactive_opacity=float(getattr(base_cfg, "KARAOKE_INACTIVE_OPACITY", 1.0)),
+                subtitle_stroke=str(getattr(base_cfg, "SUBTITLE_STROKE", "#000000")),
+                subtitle_stroke_w=int(getattr(base_cfg, "SUBTITLE_STROKE_W", 3)),
+                subtitle_y_pos=subtitle_y_frac,
+                subtitle_y_frac=subtitle_y_frac,
+                hook_color=font_color,
+                hook_stroke_color=str(getattr(base_cfg, "HOOK_STROKE_COLOR", "black")),
+                hook_stroke_w=int(getattr(base_cfg, "HOOK_STROKE_W", 5)),
+                hook_fontsize_mult=float(slot.get("hook_fontsize_mult") or 1.0),
+                hook_duration=float(hook_dur_base or 0.0) * duration_mult,
+                zoom_scale=_profile_zoom_scale(zoom_intensity, base_cfg),
+                zoom_trigger_offset=float(slot.get("zoom_offset") or 0.0),
+                speed_ramp=float(slot.get("speed") or 1.0),
+                color_grade_filter=_profile_color_grade_filter(color_grade),
+                crop_x_offset=float(slot.get("crop") or 0.0),
+                before_after_variant_mode=str(slot.get("before_after_mode") or "standard"),
+                hook_layout_mode=_profile_hook_layout(hook_type, str(slot.get("hook_layout") or "standard")),
+                subtitle_layout_mode=subtitle_position,
+                broll_intro_role=(
+                    "primary"
+                    if hook_type in {"b_roll", "text_b_roll"}
+                    else str(slot.get("broll_role") or "")
+                ),
+                profile_revision=profile_revision,
+                display_name=display_name,
+                hook_type=hook_type,
+                font_id=str(raw.get("font_id") or ""),
+                font_color=font_color,
+                highlight_color=highlight_color,
+                subtitle_position=subtitle_position,
+                color_grade=color_grade,
+                bgm_mode=str(raw.get("bgm_mode") or "auto"),
+                bgm_path=str(raw.get("bgm_path") or ""),
+                sfx_enabled=bool(raw.get("sfx_enabled", True)),
+                zoom_intensity=zoom_intensity,
+                product_zoom_enabled=product_zoom_enabled,
+                subtitle_enabled=subtitle_enabled,
+                letterbox_enabled=letterbox_enabled,
+                letterbox_top_frac=letterbox_top_frac,
+                letterbox_bottom_frac=letterbox_bottom_frac,
+            )
+        )
+
+    if variants:
+        log.info("Loaded %s variation profile variant(s) revision=%s", len(variants), profile_revision[:12])
+        return variants
+    return None
 
 
 def _discover_broll_intro_assets(base_cfg) -> list[Path]:
@@ -644,6 +858,11 @@ def generate_variants(base_cfg, n_variants: int, seed: int | None = None) -> lis
         duration_mult = float(slot.get("hook_duration_mult") or 1.0)
         is_original = i == 0
 
+        subtitle_y = (
+            getattr(base_cfg, "SUBTITLE_Y_POS", 0.80)
+            if slot["subtitle_y"] is None else float(slot["subtitle_y"])
+        )
+
         vc = VariantConfig(
             variant_id=slot["variant_id"],
             variant_index=i,
@@ -660,10 +879,8 @@ def generate_variants(base_cfg, n_variants: int, seed: int | None = None) -> lis
             ),
             subtitle_stroke=stroke_c,
             subtitle_stroke_w=stroke_w,
-            subtitle_y_pos=(
-                getattr(base_cfg, "SUBTITLE_Y_POS", 0.80)
-                if slot["subtitle_y"] is None else float(slot["subtitle_y"])
-            ),
+            subtitle_y_pos=subtitle_y,
+            subtitle_y_frac=subtitle_y,
             hook_color=hook_col,
             hook_stroke_color=hook_stroke_c,
             hook_stroke_w=hook_stroke_w,
@@ -829,6 +1046,26 @@ def _assign_broll_intro_variants_for_moment(
     if not variants or not _broll_intro_has_assets(base_cfg):
         return
 
+    profile_indices = [
+        idx for idx, variant in enumerate(variants)
+        if getattr(variant, "profile_revision", "")
+    ]
+    if profile_indices:
+        intro_duration = _broll_intro_duration(base_cfg)
+        for idx in profile_indices:
+            variant = variants[idx]
+            if getattr(variant, "hook_type", "") not in {"b_roll", "text_b_roll"}:
+                continue
+            _enable_broll_intro_variant(variant, intro_duration)
+            _assign_broll_intro_for_moment(
+                variant,
+                moment,
+                base_cfg,
+                seed,
+                base_clip_id,
+            )
+        return
+
     candidate_indices = _broll_intro_candidate_indices(variants, base_cfg)
     if not candidate_indices:
         return
@@ -934,13 +1171,23 @@ def expand_moments_with_variants(
     if n_variants is None:
         n_variants = getattr(base_cfg, "VARIANTS_PER_CLIP", 4)
 
+    profile_variants = _profile_variants(base_cfg, seed=seed)
+    if profile_variants is not None:
+        variants = profile_variants
+        n_variants = len(variants)
+    else:
+        variants = []
+
     if n_variants <= 1:
         # No expansion â€” just tag every moment as v0_original
+        if not variants:
+            variants = [VariantConfig(variant_id="v0_original", variant_index=0)]
         for m in moments:
-            m["_variant"] = VariantConfig(variant_id="v0_original", variant_index=0)
+            m["_variant"] = copy.deepcopy(variants[0])
         return moments
 
-    variants = generate_variants(base_cfg, n_variants, seed=seed)
+    if not variants:
+        variants = generate_variants(base_cfg, n_variants, seed=seed)
     expanded = []
     broll_jobs = 0
 

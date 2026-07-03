@@ -19,8 +19,19 @@ import psutil
 import streamlit as st
 
 import config as cfg
-import queue_control
 import queue_state_health as qh
+from clipper_app.bootstrap import (
+    build_compliance_service,
+    build_health_service,
+    build_module_service,
+    build_queue_control_service,
+)
+from clipper_app.contracts import (
+    ComplianceScanCommand,
+    ModuleReviewCommand,
+    QueueAction,
+    QueueControlCommand,
+)
 
 
 COLOR_BLUE = "#3b82f6"
@@ -1701,11 +1712,12 @@ def load_state(state_path: str) -> dict[str, Any]:
 
 @st.cache_data(ttl=2, show_spinner=False)
 def load_queue_control_snapshot(state_path: str) -> dict[str, Any]:
-    return queue_control.read_status_snapshot(
-        control_path=DEFAULT_CONTROL_FILE,
-        forever_state_path=DEFAULT_FOREVER_STATE_FILE,
+    return build_queue_control_service().execute(QueueControlCommand(
+        action=QueueAction.STATUS,
+        control_path=str(DEFAULT_CONTROL_FILE),
+        forever_state_path=str(DEFAULT_FOREVER_STATE_FILE),
         queue_state_path=state_path,
-    )
+    )).model_dump()
 
 
 @st.cache_data(ttl=10, show_spinner=False)
@@ -3220,7 +3232,7 @@ def summarize_state(state: dict[str, Any]) -> dict[str, Any]:
     videos = [aggregate_video_entry(video) for video in state.get("videos", {}).values()]
     now = datetime.now().astimezone()
     fallback_sort_time = datetime(1970, 1, 1, tzinfo=now.tzinfo)
-    queue_health = qh.derive_queue_health(
+    queue_health = build_health_service().snapshot(
         state,
         now=now,
         stage_labels=STAGE_LABELS,
@@ -3908,7 +3920,10 @@ def render_queue_attention_panel(queue_health: dict[str, Any]) -> None:
     action_cols = st.columns([1.2, 1.2, 4], gap="small")
     with action_cols[0]:
         if st.button("Continue queue", key="attention_continue_queue", type="primary", use_container_width=True):
-            queue_control.request_continue(DEFAULT_CONTROL_FILE)
+            build_queue_control_service().execute(QueueControlCommand(
+                action=QueueAction.CONTINUE,
+                control_path=str(DEFAULT_CONTROL_FILE),
+            ))
             load_queue_control_snapshot.clear()
             st.success("Continue requested for the current queue.")
     with action_cols[1]:
@@ -4517,15 +4532,12 @@ def render_module_review_controls(selected: pd.Series) -> None:
 
 def apply_module_review_from_dashboard(module_id: str, status: str, reviewer: str, note: str) -> None:
     try:
-        from module_review import update_module_review
-
-        result = update_module_review(
-            module_id,
-            status,
-            cfg,
+        result = build_module_service().review(ModuleReviewCommand(
+            identifier=module_id,
+            status=status,
             note=note,
             reviewer=reviewer or "operator",
-        )
+        )).payload
     except Exception as exc:
         st.error(f"Review update failed: {exc}")
         return
@@ -5565,10 +5577,10 @@ def render_compliance_tab(summary: dict[str, Any]) -> None:
             disabled=selected_run == "Select run",
         ):
             try:
-                import config as cfg
-                from compliance_checker import scan_output_dir
-
-                result = scan_output_dir(selected_run, cfg=cfg, force=True)
+                result = build_compliance_service().scan(ComplianceScanCommand(
+                    output_dir=selected_run,
+                    force=True,
+                )).model_dump()
                 load_json_payload_by_signature.clear()
                 load_compliance_rows.clear()
                 load_compliance_detail_rows.clear()
@@ -6654,17 +6666,26 @@ def render_queue_control_panel(summary: dict[str, Any]) -> None:
         action_cols = st.columns([1, 1, 1, 3], gap="small")
         with action_cols[0]:
             if st.button("Start", key="queue_start", use_container_width=True, type="secondary"):
-                queue_control.request_start(DEFAULT_CONTROL_FILE)
+                build_queue_control_service().execute(QueueControlCommand(
+                    action=QueueAction.START,
+                    control_path=str(DEFAULT_CONTROL_FILE),
+                ))
                 load_queue_control_snapshot.clear()
                 st.success("Start requested. Launch the supervisor if it is not already running.")
         with action_cols[1]:
             if st.button("Continue", key="queue_continue", use_container_width=True, type="primary"):
-                queue_control.request_continue(DEFAULT_CONTROL_FILE)
+                build_queue_control_service().execute(QueueControlCommand(
+                    action=QueueAction.CONTINUE,
+                    control_path=str(DEFAULT_CONTROL_FILE),
+                ))
                 load_queue_control_snapshot.clear()
                 st.success("Continue requested for the current run.")
         with action_cols[2]:
             if st.button("Graceful Stop", key="queue_stop", use_container_width=True, type="secondary"):
-                queue_control.request_stop(DEFAULT_CONTROL_FILE)
+                build_queue_control_service().execute(QueueControlCommand(
+                    action=QueueAction.STOP,
+                    control_path=str(DEFAULT_CONTROL_FILE),
+                ))
                 load_queue_control_snapshot.clear()
                 st.warning("Graceful stop requested. Active clip renders will finish first.")
         with action_cols[3]:

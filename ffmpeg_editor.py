@@ -285,14 +285,17 @@ def edit_clip(
 
     # ── Build ASS subtitle file ───────────────────────────────────────────────
     highlight_plan = _build_highlight_plan(clip_words, cfg, moment=moment)
-    ass_path, ass_fonts_dir = _write_ass_file(
-        highlight_plan["words"],
-        highlight_plan["word_colors"],
-        clip_duration,
-        W,
-        H,
-        cfg,
-    )
+    ass_path, ass_fonts_dir = None, None
+    subtitle_enabled = bool(getattr(cfg, "_subtitle_enabled", True))
+    if subtitle_enabled:
+        ass_path, ass_fonts_dir = _write_ass_file(
+            highlight_plan["words"],
+            highlight_plan["word_colors"],
+            clip_duration,
+            W,
+            H,
+            cfg,
+        )
 
     # ── Plan zooms ────────────────────────────────────────────────────────────
     host_face_class = _normalize_product_name(getattr(cfg, "HOST_FACE_CLASS", "host_face"))
@@ -311,20 +314,31 @@ def edit_clip(
     zoom_dur  = getattr(cfg, "ZOOM_DURATION", 3.0)
     zoom_scale = getattr(cfg, "ZOOM_SCALE", 1.45)
 
-    prod_trigger = _find_zoom_trigger(clip_words, prod_events, hook_end, clip_duration, cfg)
+    product_zoom_enabled = bool(getattr(cfg, "_product_zoom_enabled", True))
+    prod_trigger = (
+        _find_zoom_trigger(clip_words, prod_events, hook_end, clip_duration, cfg)
+        if product_zoom_enabled
+        else None
+    )
     face_zooms   = _plan_face_zooms(clip_words, face_events, clip_duration,
                                     prod_trigger, hook_end, cfg)
 
     # ── Build extra image inputs (before/after, logo) ─────────────────────────
     extra_inputs = []  # list of {"path": str, "type": "ba"|"logo"}
-    ba_enabled = getattr(cfg, "BEFORE_AFTER_ENABLED", False)
+    hook_format = _variant_hook_format(cfg)
+    profile_driven = bool(getattr(cfg, "_variation_profile_driven", False))
+    hook_needs_ba = hook_format in {"before_after_image", "text_before_after_image"}
+    ba_enabled = getattr(cfg, "BEFORE_AFTER_ENABLED", False) and (hook_needs_ba or not profile_driven)
     ba_path = None
     if ba_enabled:
         ba_path = _pick_before_after(cfg)
         if ba_path:
             extra_inputs.append({"path": ba_path, "type": "ba"})
+    if hook_needs_ba and not ba_path:
+        log.warning("Before/after hook format selected but no before/after asset is available; falling back to text hook.")
+        hook_format = "text"
 
-    emoji_overlays = _plan_emoji_overlays(clip_words, clip_duration, W, H, cfg)
+    emoji_overlays = _plan_emoji_overlays(clip_words, clip_duration, W, H, cfg) if subtitle_enabled else []
     for emoji_overlay in emoji_overlays:
         extra_inputs.append({
             "path": emoji_overlay["path"],
@@ -379,6 +393,7 @@ def edit_clip(
             extra_inputs=extra_inputs,
             sfx_events=sfx_events,
             bgm_path=bgm_path,
+            hook_format=hook_format,
             cfg=cfg,
         )
     finally:
@@ -473,7 +488,8 @@ def _write_ass_file(
                  "red": "#FF0000", "green": "#00FF00"}
         return named.get(color.lower(), color if color.startswith("#") else "#FFFFFF")
 
-    white_ass      = hex_to_ass("#FFFFFF")
+    subtitle_base_color = named_to_hex(str(getattr(cfg, "SUBTITLE_BASE_COLOR", "#FFFFFF") or "#FFFFFF"))
+    white_ass      = hex_to_ass(subtitle_base_color)
     active_ass     = hex_to_ass(named_to_hex(active_color))
     inactive_alpha = int((1.0 - inactive_op) * 255)
     price_text_ass = hex_to_ass("#1A1200")
@@ -642,6 +658,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 def _subtitle_line_centers(H: int, ass_fontsize: int, sub_y_frac: float, cfg) -> tuple[int, int, int]:
     line_gap = int(ass_fontsize * 1.18)
+
     y_line2 = int(H * sub_y_frac)
 
     safe_top = _clamp_float(getattr(cfg, "SUBTITLE_SAFE_ZONE_TOP", 0.08), 0.0, 0.45, 0.08)
@@ -665,6 +682,124 @@ def _subtitle_line_centers(H: int, ass_fontsize: int, sub_y_frac: float, cfg) ->
         y_line1 = y_line2 - line_gap
 
     return int(y_line1), int(y_line2), line_gap
+
+
+def _variant_hook_format(cfg, value: Optional[str] = None) -> str:
+    raw = str(value if value is not None else getattr(cfg, "_hook_format", "text") or "text").strip().casefold()
+    if raw in {"auto", "pain", "result", "curiosity", "value", "product_focus"}:
+        return "text"
+    if raw in {"text", "before_after_image", "text_before_after_image", "b_roll", "text_b_roll"}:
+        return raw
+    return "text"
+
+
+def _letterbox_enabled(cfg) -> bool:
+    return bool(getattr(cfg, "_letterbox_enabled", False))
+
+
+def _letterbox_bar_height(H: int, cfg) -> int:
+    top_h, bottom_h = _letterbox_bar_heights(H, cfg)
+    return max(top_h, bottom_h)
+
+
+def _letterbox_bar_heights(H: int, cfg) -> tuple[int, int]:
+    legacy = _clamp_float(getattr(cfg, "LETTERBOX_BAR_HEIGHT_FRAC", 0.20), 0.0, 0.40, 0.20)
+    top_frac = _clamp_float(
+        getattr(cfg, "_letterbox_top_frac", getattr(cfg, "LETTERBOX_TOP_FRAC", legacy)),
+        0.0,
+        0.40,
+        legacy,
+    )
+    bottom_frac = _clamp_float(
+        getattr(cfg, "_letterbox_bottom_frac", getattr(cfg, "LETTERBOX_BOTTOM_FRAC", legacy)),
+        0.0,
+        0.40,
+        legacy,
+    )
+    max_h = max(1, H // 2 - 1)
+    return min(max_h, int(H * top_frac)), min(max_h, int(H * bottom_frac))
+
+
+def _add_letterbox_drawboxes(fc: list[str], vid: str, label: str, H: int, cfg) -> str:
+    if not _letterbox_enabled(cfg):
+        return vid
+    top_h, bottom_h = _letterbox_bar_heights(H, cfg)
+    filters = []
+    if top_h > 0:
+        filters.append(f"drawbox=x=0:y=0:w=iw:h={top_h}:color=black@1:t=fill")
+    if bottom_h > 0:
+        filters.append(f"drawbox=x=0:y=ih-{bottom_h}:w=iw:h={bottom_h}:color=black@1:t=fill")
+    if not filters:
+        return vid
+    fc.append(f"{vid}{','.join(filters)}[{label}]")
+    return f"[{label}]"
+
+
+def _letterbox_has_visible_bars(H: int, cfg) -> bool:
+    if not _letterbox_enabled(cfg):
+        return False
+    top_h, bottom_h = _letterbox_bar_heights(H, cfg)
+    return top_h > 0 or bottom_h > 0
+
+
+def _letterbox_subtitle_band(cfg, H: int) -> tuple[int, int] | None:
+    if not _letterbox_enabled(cfg):
+        return None
+    if getattr(cfg, "_variant_subtitle_y_frac", None) is not None:
+        return None
+
+    top_h, bottom_h = _letterbox_bar_heights(H, cfg)
+    position = str(
+        getattr(cfg, "_variant_subtitle_position", "")
+        or getattr(cfg, "_subtitle_layout_mode", "")
+        or "bottom"
+    ).strip().casefold()
+    if position == "top" and top_h > 0:
+        return 0, top_h
+    if bottom_h > 0:
+        return H - bottom_h, H
+    return None
+
+
+def _letterbox_subtitle_line_centers(
+    H: int,
+    ass_fontsize: int,
+    line_gap: int,
+    cfg,
+) -> tuple[int, int, int]:
+    band = _letterbox_subtitle_band(cfg, H)
+    if band is None:
+        return _subtitle_line_centers(H, ass_fontsize, float(getattr(cfg, "SUBTITLE_Y_POS", 0.80)), cfg)
+
+    band_top, band_bottom = band
+    band_h = max(1, band_bottom - band_top)
+    half_text_h = max(1, int(ass_fontsize * 0.62))
+    pad = max(8, int(band_h * 0.08))
+    min_y = band_top + pad + half_text_h
+    max_y = band_bottom - pad - half_text_h
+
+    if min_y >= max_y:
+        center = int((band_top + band_bottom) / 2)
+        return center, center, max(1, min(line_gap, band_h // 3))
+
+    max_gap = max(1, max_y - min_y)
+    line_gap = max(1, min(line_gap, max_gap))
+    center = int((band_top + band_bottom) / 2)
+    y_line1 = center - int(line_gap / 2)
+    y_line2 = y_line1 + line_gap
+
+    if y_line1 < min_y:
+        shift = min_y - y_line1
+        y_line1 += shift
+        y_line2 += shift
+    if y_line2 > max_y:
+        shift = y_line2 - max_y
+        y_line1 -= shift
+        y_line2 -= shift
+
+    y_line1 = max(min_y, min(max_y, y_line1))
+    y_line2 = max(min_y, min(max_y, y_line2))
+    return int(y_line1), int(y_line2), int(line_gap)
 
 
 def _hook_layout_settings(cfg, W: int, H: int) -> dict[str, Any]:
@@ -732,6 +867,25 @@ def _hook_layout_settings(cfg, W: int, H: int) -> dict[str, Any]:
             "mid_x": "(w-text_w)/2",
         })
 
+    if _letterbox_enabled(cfg):
+        top_h, bottom_h = _letterbox_bar_heights(H, cfg)
+        update_values = {
+            "top_width": min(float(settings.get("top_width", 0.92)), 0.92),
+            "mid_width": min(float(settings.get("mid_width", 0.78)), 0.86),
+            "bottom_width": min(float(settings.get("bottom_width", 0.92)), 0.92),
+            "top_x": "(w-text_w)/2",
+            "mid_x": "(w-text_w)/2",
+            "bottom_x": "(w-text_w)/2",
+        }
+        if top_h > 0:
+            update_values["top_y"] = int(top_h * 0.38)
+            update_values["mid_y"] = int(top_h * 0.72)
+        if bottom_h > 0:
+            update_values["bottom_y"] = int(H - (bottom_h * 0.50))
+        settings.update({
+            **update_values,
+        })
+
     return settings
 
 
@@ -744,7 +898,7 @@ def _build_and_run(
     W, H, clip_duration, clip_fps, has_audio,
     moment, prod_trigger, face_zooms,
     zoom_dur, zoom_scale, hook_end,
-    extra_inputs, sfx_events, bgm_path, cfg,
+    extra_inputs, sfx_events, bgm_path, hook_format, cfg,
 ) -> bool:
     """
     Assemble -filter_complex string and run FFmpeg.
@@ -763,6 +917,8 @@ def _build_and_run(
     zoom_trig_off  = getattr(cfg, "_zoom_trigger_offset",  0.0)
     output_fps     = getattr(cfg, "OUTPUT_FPS", 30)
     timeline_fps   = clip_fps if clip_fps and clip_fps > 1.0 else output_fps
+    hook_format    = _variant_hook_format(cfg, hook_format)
+    profile_driven = bool(getattr(cfg, "_variation_profile_driven", False))
 
     # Apply zoom trigger offset
     if prod_trigger and zoom_trig_off != 0.0:
@@ -786,7 +942,15 @@ def _build_and_run(
         bgm_input_idx = 1 + len(extra_inputs) + len(sfx_events)
         cmd += ["-stream_loop", "-1", "-t", f"{clip_duration:.3f}", "-i", str(bgm_path)]
 
-    broll_intro = _prepare_broll_intro(cfg, clip_duration=clip_duration, hook_end=hook_end)
+    hook_needs_broll = hook_format in {"b_roll", "text_b_roll"}
+    broll_intro = (
+        _prepare_broll_intro(cfg, clip_duration=clip_duration, hook_end=hook_end)
+        if hook_needs_broll or not profile_driven
+        else None
+    )
+    if hook_needs_broll and not broll_intro:
+        log.warning("B-roll hook format selected but no B-roll intro asset is available; falling back to text hook.")
+        hook_format = "text"
     broll_input_idx = None
     if broll_intro:
         broll_input_idx = 1 + len(extra_inputs) + len(sfx_events) + (1 if bgm_path else 0)
@@ -826,6 +990,9 @@ def _build_and_run(
         vid = "[vbase]"
 
     # ── 2. Zoom chain (zoompan) ───────────────────────────────────────────────
+    if getattr(cfg, "_zoom_disabled", False):
+        prod_trigger = None
+        face_zooms = []
     zoom_exprs = _build_zoom_expressions(
         prod_trigger, face_zooms, clip_duration, W, H, zoom_dur, zoom_scale, timeline_fps
     )
@@ -851,6 +1018,8 @@ def _build_and_run(
         fc.append(f"{vid}{ass_filter}[vsub]")
         vid = "[vsub]"
 
+    vid = _add_letterbox_drawboxes(fc, vid, "vletterbox", H, cfg)
+
     # ── 4. Hook title (drawtext) ──────────────────────────────────────────────
     if broll_intro and broll_input_idx is not None:
         vid = _add_broll_intro_replacement_filters(
@@ -865,12 +1034,23 @@ def _build_and_run(
             cfg,
         )
     else:
-        vid = _add_before_after_overlay_filters(fc, vid, extra_inputs, clip_duration, W, H, cfg)
+        vid = _add_before_after_overlay_filters(fc, vid, extra_inputs, clip_duration, W, H, cfg, hook_format)
+
+    if _letterbox_has_visible_bars(H, cfg):
+        vid = _add_letterbox_drawboxes(fc, vid, "vletterboxtext", H, cfg)
+        if ass_path and Path(ass_path).exists():
+            safe_ass = _escape_ass_filter_path(ass_path)
+            ass_filter = f"ass={safe_ass}"
+            if ass_fonts_dir:
+                safe_fonts_dir = _escape_ass_filter_path(ass_fonts_dir)
+                ass_filter += f":fontsdir={safe_fonts_dir}"
+            fc.append(f"{vid}{ass_filter}[vsubtop]")
+            vid = "[vsubtop]"
 
     hook_dur_cfg = getattr(cfg, "HOOK_DURATION", 0.0)
-    if hook_dur_cfg > 0:
+    if hook_dur_cfg > 0 and hook_format in {"text", "text_before_after_image", "text_b_roll"}:
         hook_layout = _hook_layout_settings(cfg, W, H)
-        hook_overlay = ensure_hook_payload(moment)
+        hook_overlay = ensure_hook_payload(moment, hook_type=getattr(cfg, "_hook_text_style", "auto"))
         hook_headline = hook_overlay.get("headline", "")
         hook_subtext = hook_overlay.get("subtext", "")
         hook_cta = hook_overlay.get("cta", "")
@@ -1119,7 +1299,15 @@ def _build_and_run(
         output_path,
     ]
 
-    return _run_ffmpeg(cmd, output_path, timeout=600)
+    ok = _run_ffmpeg(cmd, output_path, timeout=600)
+    if ok or not str(codec).endswith("_nvenc"):
+        return ok
+
+    log.warning(
+        "FFmpeg NVENC encode failed for %s; retrying with CPU libx264",
+        output_path,
+    )
+    return _run_ffmpeg(_cpu_encode_fallback_cmd(cmd, cfg), output_path, timeout=900)
 
 
 # =============================================================================
@@ -1276,7 +1464,7 @@ def _add_broll_intro_replacement_filters(
     return "[vbroll]"
 
 
-def _add_before_after_overlay_filters(fc, vid, extra_inputs, clip_duration, W, H, cfg) -> str:
+def _add_before_after_overlay_filters(fc, vid, extra_inputs, clip_duration, W, H, cfg, hook_format: str = "text") -> str:
     ba_input_idx = None
     for i, ei in enumerate(extra_inputs):
         if ei["type"] == "ba":
@@ -1286,7 +1474,9 @@ def _add_before_after_overlay_filters(fc, vid, extra_inputs, clip_duration, W, H
     if ba_input_idx is None:
         return vid
 
-    mode = str(getattr(cfg, "_before_after_variant_mode", "standard") or "standard")
+    hook_format = _variant_hook_format(cfg, hook_format)
+    hook_media = hook_format in {"before_after_image", "text_before_after_image"}
+    mode = "hook" if hook_media else str(getattr(cfg, "_before_after_variant_mode", "standard") or "standard")
     ba_s = max(0.0, float(getattr(cfg, "BEFORE_AFTER_START_T", 0.0)))
     ba_dur = max(0.0, float(getattr(cfg, "BEFORE_AFTER_DURATION", 2.5)))
     ba_start_offset = max(0.0, float(getattr(cfg, "BEFORE_AFTER_START_OFFSET", 3.0)))
@@ -1299,7 +1489,14 @@ def _add_before_after_overlay_filters(fc, vid, extra_inputs, clip_duration, W, H
     overlay_x = "(W-overlay_w)/2"
     overlay_y = "(H-overlay_h)/2"
 
-    if mode == "hero":
+    if mode == "hook":
+        hook_dur = max(0.0, float(getattr(cfg, "HOOK_DURATION", 0.0) or 0.0))
+        ba_s = 0.0
+        ba_dur = max(ba_dur, min(max(hook_dur, 2.2), clip_duration))
+        scale_ratio = 0.78 if hook_format == "text_before_after_image" else 0.92
+        overlay_x = "(W-overlay_w)/2"
+        overlay_y = "H*0.38" if hook_format == "text_before_after_image" else "(H-overlay_h)/2"
+    elif mode == "hero":
         ba_s = 0.15
         ba_dur = max(ba_dur, 3.4)
         scale_ratio = 1.0
@@ -1321,7 +1518,8 @@ def _add_before_after_overlay_filters(fc, vid, extra_inputs, clip_duration, W, H
         overlay_x = "W*0.06"
         overlay_y = "H*0.14"
 
-    ba_s = max(ba_s, hook_block_duration)
+    if not hook_media:
+        ba_s = max(ba_s, hook_block_duration)
     ba_e = min(ba_s + ba_dur, clip_duration)
     if ba_e <= ba_s + 0.01:
         return vid
@@ -2265,12 +2463,23 @@ def _plan_emoji_overlays(clip_words: list, clip_duration: float, W: int, H: int,
         half_h = size_px // 2
         gap_x = max(10, min(24, int(size_px * 0.18)))
         gap_y = max(8, min(20, int(size_px * 0.14)))
+        letterbox_band = _letterbox_subtitle_band(cfg, H)
+        if letterbox_band is not None:
+            band_top, band_bottom = letterbox_band
+            band_pad_y = max(8, int((band_bottom - band_top) * 0.08))
+            emoji_min_y = band_top + band_pad_y + half_h
+            emoji_max_y = band_bottom - band_pad_y - half_h
+        else:
+            emoji_min_y = pad_y + half_h
+            emoji_max_y = H - pad_y - half_h
+        if emoji_min_y > emoji_max_y:
+            emoji_min_y = emoji_max_y = int((emoji_min_y + emoji_max_y) / 2)
 
         left_x = max(pad_x + half_w, subtitle_block_left - half_w - gap_x)
         right_x = min(W - pad_x - half_w, subtitle_block_right + half_w + gap_x)
-        above_y = max(pad_y + half_h, subtitle_block_top - half_h - gap_y)
-        below_y = min(H - pad_y - half_h, subtitle_block_bottom + half_h + gap_y)
-        mid_y = min(H - pad_y - half_h, max(pad_y + half_h, int((subtitle_block_top + subtitle_block_bottom) * 0.5)))
+        above_y = max(emoji_min_y, subtitle_block_top - half_h - gap_y)
+        below_y = min(emoji_max_y, subtitle_block_bottom + half_h + gap_y)
+        mid_y = min(emoji_max_y, max(emoji_min_y, int((subtitle_block_top + subtitle_block_bottom) * 0.5)))
 
         candidate_positions = [
             (left_x, above_y),
@@ -2292,13 +2501,13 @@ def _plan_emoji_overlays(clip_words: list, clip_duration: float, W: int, H: int,
         center_y = int(base_y + jitter_y + offset_y)
 
         center_x = max(pad_x + half_w, min(W - pad_x - half_w, center_x))
-        center_y = max(pad_y + half_h, min(H - pad_y - half_h, center_y))
+        center_y = max(emoji_min_y, min(emoji_max_y, center_y))
 
         if subtitle_block_left <= center_x <= subtitle_block_right and subtitle_block_top <= center_y <= subtitle_block_bottom:
             side = -1 if center_x < W * 0.5 else 1
             center_x = subtitle_block_left - half_w - gap_x if side < 0 else subtitle_block_right + half_w + gap_x
             center_x = max(pad_x + half_w, min(W - pad_x - half_w, center_x))
-            center_y = max(pad_y + half_h, min(H - pad_y - half_h, above_y))
+            center_y = max(emoji_min_y, min(emoji_max_y, above_y))
 
         overlays.append({
             "path": asset_path,
@@ -2328,6 +2537,14 @@ def _pick_before_after(cfg) -> Optional[str]:
 
 
 def _pick_bgm(cfg) -> Optional[str]:
+    selected_bgm = str(getattr(cfg, "_bgm_path", "") or "").strip()
+    if selected_bgm:
+        selected_path = _existing_file(selected_bgm)
+        if selected_path and selected_path.suffix.lower() in _AUDIO_EXTS:
+            log.debug(f"BGM selected by variant: {selected_path.name}")
+            return str(selected_path)
+        log.warning("Selected variant BGM is missing or unsupported: %s", selected_bgm)
+
     bgm_dir = _existing_dir(getattr(cfg, "BGM_DIR", "assets/bgm"))
     if not bgm_dir:
         return None
@@ -2587,6 +2804,43 @@ def _tail_temp_file(path: str | None, limit: int = 500) -> str:
             return f.read().decode("utf-8", errors="replace")
     except Exception:
         return ""
+
+
+def _cpu_encode_fallback_cmd(cmd: list, cfg) -> list:
+    fallback = list(cmd)
+    remove_next_for = {"-cq", "-rc", "-b:v"}
+    cleaned = []
+    skip_next = False
+    for item in fallback:
+        if skip_next:
+            skip_next = False
+            continue
+        if item in remove_next_for:
+            skip_next = True
+            continue
+        cleaned.append(item)
+
+    try:
+        codec_index = cleaned.index("-c:v") + 1
+        cleaned[codec_index] = "libx264"
+    except (ValueError, IndexError):
+        cleaned.extend(["-c:v", "libx264"])
+
+    try:
+        preset_index = cleaned.index("-preset") + 1
+        cleaned[preset_index] = "fast"
+    except (ValueError, IndexError):
+        cleaned.extend(["-preset", "fast"])
+
+    if "-crf" not in cleaned:
+        output_path = cleaned[-1] if cleaned else None
+        crf = str(getattr(cfg, "OUTPUT_CRF", 23))
+        if output_path:
+            cleaned = cleaned[:-1] + ["-crf", crf, output_path]
+        else:
+            cleaned.extend(["-crf", crf])
+
+    return cleaned
 
 
 def _run_ffmpeg(cmd: list, output_path: str, timeout: int = 600) -> bool:

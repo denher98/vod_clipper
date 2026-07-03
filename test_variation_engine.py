@@ -8,7 +8,9 @@ from variation_engine import (
     apply_variant_to_cfg,
     expand_moments_with_variants,
     generate_variants,
+    VariantConfig,
 )
+from variation_profile import default_profile, save_active_profile
 
 
 class VariationGeneratorTests(unittest.TestCase):
@@ -319,6 +321,106 @@ class VariationGeneratorTests(unittest.TestCase):
                 all(Path(variant.broll_intro_path).parent == serum_dir for variant in broll_variants)
             )
             self.assertTrue(all(variant.broll_intro_product == "serum" for variant in broll_variants))
+
+    def test_active_variation_profile_drives_expansion(self):
+        with TemporaryDirectory() as tmp_dir:
+            cfg = SimpleNamespace(
+                WORKING_DIR=str(Path(tmp_dir) / "working"),
+                OUTPUT_DIR=str(Path(tmp_dir) / "output"),
+                VARIANTS_PER_CLIP=6,
+                HOOK_DURATION=1.5,
+                ZOOM_SCALE=1.45,
+                SUBTITLE_Y_POS=0.80,
+                FONT_SUBTITLE="assets/fonts/Montserrat-ExtraBold.ttf",
+                FONT_HOOK="assets/fonts/Montserrat-ExtraBold.ttf",
+                FONT_HOOK_FALLBACKS=[],
+                KARAOKE_ACTIVE_COLOR="#FFD600",
+                KARAOKE_INACTIVE_OPACITY=1.0,
+                BROLL_INTRO_ENABLED=False,
+                BGM_DIR=str(Path(tmp_dir) / "bgm"),
+            )
+            profile = default_profile(cfg)
+            profile["variant_count"] = 2
+            profile["variants"][0]["name"] = "Clean Control"
+            profile["variants"][0]["hook_type"] = "text_b_roll"
+            profile["variants"][0]["subtitle_enabled"] = False
+            profile["variants"][1]["name"] = "Bar Variant"
+            profile["variants"][1]["letterbox_enabled"] = True
+            profile["variants"][1]["letterbox_top_frac"] = 0.11
+            profile["variants"][1]["letterbox_bottom_frac"] = 0.27
+            profile["variants"][1]["subtitle_y_frac"] = 0.57
+            profile["variants"][1]["zoom_intensity"] = "none"
+            profile["variants"][1]["product_zoom_enabled"] = False
+            saved = save_active_profile(cfg, profile, expected_revision=default_profile(cfg)["revision"])
+            moments = [{
+                "clip_id": "clip_0001",
+                "start": 10.0,
+                "end": 40.0,
+                "score": 9,
+                "hook": "Serum best seller",
+                "product": "Serum",
+                "selected_text": "pakai serum proya ini",
+            }]
+
+            expanded = expand_moments_with_variants(moments, cfg, n_variants=6, seed=42)
+
+            self.assertEqual(len(expanded), 2)
+            self.assertEqual(expanded[0]["_variant"].display_name, "Clean Control")
+            self.assertEqual(expanded[0]["_variant"].hook_type, "text_b_roll")
+            self.assertFalse(expanded[0]["_variant"].subtitle_enabled)
+            self.assertEqual(expanded[0]["_variant"].profile_revision, saved["revision"])
+            self.assertTrue(expanded[1]["_variant"].letterbox_enabled)
+            self.assertEqual(expanded[1]["_variant"].letterbox_top_frac, 0.11)
+            self.assertEqual(expanded[1]["_variant"].letterbox_bottom_frac, 0.27)
+            self.assertEqual(expanded[1]["_variant"].subtitle_y_frac, 0.57)
+            self.assertEqual(expanded[1]["_variant"].zoom_intensity, "none")
+            self.assertFalse(expanded[1]["_variant"].product_zoom_enabled)
+
+    def test_apply_variant_to_cfg_sets_profile_render_overrides(self):
+        base_cfg = SimpleNamespace(
+            BGM_ENABLED=True,
+            SFX_ENABLED=True,
+            HOOK_DURATION=1.5,
+            HOOK_FONTSIZE=100,
+            ZOOM_SCALE=1.45,
+        )
+        variant = VariantConfig(
+            variant_id="v1_test",
+            variant_index=1,
+            font_subtitle="assets/fonts/Anton-Regular.ttf",
+            subtitle_base_color="#EFEFEF",
+            karaoke_active_color="#00D4FF",
+            hook_color="#EFEFEF",
+            highlight_color="#00D4FF",
+            bgm_mode="selected",
+            bgm_path="assets/bgm/focus.mp3",
+            sfx_enabled=False,
+            zoom_intensity="none",
+            product_zoom_enabled=False,
+            subtitle_enabled=False,
+            letterbox_enabled=True,
+            subtitle_y_frac=0.57,
+            letterbox_top_frac=0.11,
+            letterbox_bottom_frac=0.27,
+            hook_type="text_before_after_image",
+        )
+
+        patched = apply_variant_to_cfg(base_cfg, variant)
+
+        self.assertEqual(patched.FONT_SUBTITLE, "assets/fonts/Anton-Regular.ttf")
+        self.assertEqual(patched.SUBTITLE_BASE_COLOR, "#EFEFEF")
+        self.assertEqual(patched.KARAOKE_ACTIVE_COLOR, "#00D4FF")
+        self.assertTrue(patched.BGM_ENABLED)
+        self.assertEqual(patched._bgm_path, "assets/bgm/focus.mp3")
+        self.assertFalse(patched.SFX_ENABLED)
+        self.assertTrue(patched._zoom_disabled)
+        self.assertFalse(patched._product_zoom_enabled)
+        self.assertFalse(patched._subtitle_enabled)
+        self.assertTrue(patched._letterbox_enabled)
+        self.assertEqual(patched._variant_subtitle_y_frac, 0.57)
+        self.assertEqual(patched._letterbox_top_frac, 0.11)
+        self.assertEqual(patched._letterbox_bottom_frac, 0.27)
+        self.assertEqual(patched._hook_format, "text_before_after_image")
 
 
 if __name__ == "__main__":

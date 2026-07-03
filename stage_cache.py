@@ -224,8 +224,12 @@ def _config_hash(cfg, stage: str) -> str:
 
 
 def _jsonable(value: Any) -> Any:
-    if isinstance(value, (str, int, float, bool)) or value is None:
+    if isinstance(value, (str, bool)) or value is None:
         return value
+    if isinstance(value, int):
+        return value
+    if isinstance(value, float):
+        return int(value) if value.is_integer() else value
     if isinstance(value, Path):
         return str(value)
     if isinstance(value, dict):
